@@ -10,12 +10,14 @@ const PROJECTS = [
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <span className="navbar-name">Guillermo Ubeda</span>
-        <span className="navbar-role">Data &amp; BI Analyst</span>
+      <div className="navbar-top">
+        <div className="navbar-brand">
+          <span className="navbar-name">Guillermo Ubeda</span>
+          <span className="navbar-dot">·</span>
+          <span className="navbar-role">Data &amp; BI Analyst</span>
+        </div>
+        <span className="navbar-portfolio-label">Portfolio de proyectos</span>
       </div>
-
-      <div className="navbar-divider" />
 
       <div className="navbar-tabs">
         {PROJECTS.map(({ to, label, badge, icon, color }) => (
