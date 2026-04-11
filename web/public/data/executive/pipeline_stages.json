@@ -1,0 +1,1082 @@
+[
+  {
+    "month": "2022-01",
+    "stage": "Prospecting",
+    "deals": 203,
+    "value": 591425
+  },
+  {
+    "month": "2022-01",
+    "stage": "Qualified",
+    "deals": 111,
+    "value": 324176
+  },
+  {
+    "month": "2022-01",
+    "stage": "Proposal",
+    "deals": 82,
+    "value": 240478
+  },
+  {
+    "month": "2022-01",
+    "stage": "Negotiation",
+    "deals": 62,
+    "value": 180019
+  },
+  {
+    "month": "2022-01",
+    "stage": "Closed Won",
+    "deals": 20,
+    "value": 58034
+  },
+  {
+    "month": "2022-02",
+    "stage": "Prospecting",
+    "deals": 147,
+    "value": 625447
+  },
+  {
+    "month": "2022-02",
+    "stage": "Qualified",
+    "deals": 99,
+    "value": 418431
+  },
+  {
+    "month": "2022-02",
+    "stage": "Proposal",
+    "deals": 61,
+    "value": 260033
+  },
+  {
+    "month": "2022-02",
+    "stage": "Negotiation",
+    "deals": 41,
+    "value": 174195
+  },
+  {
+    "month": "2022-02",
+    "stage": "Closed Won",
+    "deals": 16,
+    "value": 67257
+  },
+  {
+    "month": "2022-03",
+    "stage": "Prospecting",
+    "deals": 254,
+    "value": 746662
+  },
+  {
+    "month": "2022-03",
+    "stage": "Qualified",
+    "deals": 133,
+    "value": 390362
+  },
+  {
+    "month": "2022-03",
+    "stage": "Proposal",
+    "deals": 100,
+    "value": 294692
+  },
+  {
+    "month": "2022-03",
+    "stage": "Negotiation",
+    "deals": 63,
+    "value": 186348
+  },
+  {
+    "month": "2022-03",
+    "stage": "Closed Won",
+    "deals": 26,
+    "value": 77764
+  },
+  {
+    "month": "2022-04",
+    "stage": "Prospecting",
+    "deals": 214,
+    "value": 692925
+  },
+  {
+    "month": "2022-04",
+    "stage": "Qualified",
+    "deals": 164,
+    "value": 533590
+  },
+  {
+    "month": "2022-04",
+    "stage": "Proposal",
+    "deals": 108,
+    "value": 350341
+  },
+  {
+    "month": "2022-04",
+    "stage": "Negotiation",
+    "deals": 72,
+    "value": 234475
+  },
+  {
+    "month": "2022-04",
+    "stage": "Closed Won",
+    "deals": 30,
+    "value": 97672
+  },
+  {
+    "month": "2022-05",
+    "stage": "Prospecting",
+    "deals": 229,
+    "value": 784542
+  },
+  {
+    "month": "2022-05",
+    "stage": "Qualified",
+    "deals": 148,
+    "value": 506584
+  },
+  {
+    "month": "2022-05",
+    "stage": "Proposal",
+    "deals": 111,
+    "value": 379713
+  },
+  {
+    "month": "2022-05",
+    "stage": "Negotiation",
+    "deals": 78,
+    "value": 265844
+  },
+  {
+    "month": "2022-05",
+    "stage": "Closed Won",
+    "deals": 26,
+    "value": 87424
+  },
+  {
+    "month": "2022-06",
+    "stage": "Prospecting",
+    "deals": 290,
+    "value": 764461
+  },
+  {
+    "month": "2022-06",
+    "stage": "Qualified",
+    "deals": 150,
+    "value": 396039
+  },
+  {
+    "month": "2022-06",
+    "stage": "Proposal",
+    "deals": 127,
+    "value": 334478
+  },
+  {
+    "month": "2022-06",
+    "stage": "Negotiation",
+    "deals": 88,
+    "value": 232893
+  },
+  {
+    "month": "2022-06",
+    "stage": "Closed Won",
+    "deals": 29,
+    "value": 77588
+  },
+  {
+    "month": "2022-07",
+    "stage": "Prospecting",
+    "deals": 262,
+    "value": 903287
+  },
+  {
+    "month": "2022-07",
+    "stage": "Qualified",
+    "deals": 154,
+    "value": 531199
+  },
+  {
+    "month": "2022-07",
+    "stage": "Proposal",
+    "deals": 96,
+    "value": 330397
+  },
+  {
+    "month": "2022-07",
+    "stage": "Negotiation",
+    "deals": 74,
+    "value": 256627
+  },
+  {
+    "month": "2022-07",
+    "stage": "Closed Won",
+    "deals": 26,
+    "value": 88791
+  },
+  {
+    "month": "2022-08",
+    "stage": "Prospecting",
+    "deals": 236,
+    "value": 776579
+  },
+  {
+    "month": "2022-08",
+    "stage": "Qualified",
+    "deals": 162,
+    "value": 532492
+  },
+  {
+    "month": "2022-08",
+    "stage": "Proposal",
+    "deals": 114,
+    "value": 376657
+  },
+  {
+    "month": "2022-08",
+    "stage": "Negotiation",
+    "deals": 84,
+    "value": 277557
+  },
+  {
+    "month": "2022-08",
+    "stage": "Closed Won",
+    "deals": 33,
+    "value": 109875
+  },
+  {
+    "month": "2022-09",
+    "stage": "Prospecting",
+    "deals": 307,
+    "value": 891154
+  },
+  {
+    "month": "2022-09",
+    "stage": "Qualified",
+    "deals": 162,
+    "value": 469101
+  },
+  {
+    "month": "2022-09",
+    "stage": "Proposal",
+    "deals": 117,
+    "value": 338826
+  },
+  {
+    "month": "2022-09",
+    "stage": "Negotiation",
+    "deals": 73,
+    "value": 211105
+  },
+  {
+    "month": "2022-09",
+    "stage": "Closed Won",
+    "deals": 30,
+    "value": 87174
+  },
+  {
+    "month": "2022-10",
+    "stage": "Prospecting",
+    "deals": 277,
+    "value": 982567
+  },
+  {
+    "month": "2022-10",
+    "stage": "Qualified",
+    "deals": 183,
+    "value": 649154
+  },
+  {
+    "month": "2022-10",
+    "stage": "Proposal",
+    "deals": 124,
+    "value": 441256
+  },
+  {
+    "month": "2022-10",
+    "stage": "Negotiation",
+    "deals": 88,
+    "value": 312925
+  },
+  {
+    "month": "2022-10",
+    "stage": "Closed Won",
+    "deals": 34,
+    "value": 118911
+  },
+  {
+    "month": "2022-11",
+    "stage": "Prospecting",
+    "deals": 286,
+    "value": 971854
+  },
+  {
+    "month": "2022-11",
+    "stage": "Qualified",
+    "deals": 157,
+    "value": 535408
+  },
+  {
+    "month": "2022-11",
+    "stage": "Proposal",
+    "deals": 142,
+    "value": 482957
+  },
+  {
+    "month": "2022-11",
+    "stage": "Negotiation",
+    "deals": 78,
+    "value": 266525
+  },
+  {
+    "month": "2022-11",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 126670
+  },
+  {
+    "month": "2022-12",
+    "stage": "Prospecting",
+    "deals": 293,
+    "value": 1052667
+  },
+  {
+    "month": "2022-12",
+    "stage": "Qualified",
+    "deals": 152,
+    "value": 546360
+  },
+  {
+    "month": "2022-12",
+    "stage": "Proposal",
+    "deals": 127,
+    "value": 455548
+  },
+  {
+    "month": "2022-12",
+    "stage": "Negotiation",
+    "deals": 80,
+    "value": 288131
+  },
+  {
+    "month": "2022-12",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 133940
+  },
+  {
+    "month": "2023-01",
+    "stage": "Prospecting",
+    "deals": 260,
+    "value": 875793
+  },
+  {
+    "month": "2023-01",
+    "stage": "Qualified",
+    "deals": 131,
+    "value": 440904
+  },
+  {
+    "month": "2023-01",
+    "stage": "Proposal",
+    "deals": 125,
+    "value": 420494
+  },
+  {
+    "month": "2023-01",
+    "stage": "Negotiation",
+    "deals": 75,
+    "value": 251242
+  },
+  {
+    "month": "2023-01",
+    "stage": "Closed Won",
+    "deals": 32,
+    "value": 107927
+  },
+  {
+    "month": "2023-02",
+    "stage": "Prospecting",
+    "deals": 253,
+    "value": 816892
+  },
+  {
+    "month": "2023-02",
+    "stage": "Qualified",
+    "deals": 199,
+    "value": 643133
+  },
+  {
+    "month": "2023-02",
+    "stage": "Proposal",
+    "deals": 111,
+    "value": 359723
+  },
+  {
+    "month": "2023-02",
+    "stage": "Negotiation",
+    "deals": 72,
+    "value": 233779
+  },
+  {
+    "month": "2023-02",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 119814
+  },
+  {
+    "month": "2023-03",
+    "stage": "Prospecting",
+    "deals": 312,
+    "value": 1019712
+  },
+  {
+    "month": "2023-03",
+    "stage": "Qualified",
+    "deals": 198,
+    "value": 647259
+  },
+  {
+    "month": "2023-03",
+    "stage": "Proposal",
+    "deals": 154,
+    "value": 504307
+  },
+  {
+    "month": "2023-03",
+    "stage": "Negotiation",
+    "deals": 94,
+    "value": 309032
+  },
+  {
+    "month": "2023-03",
+    "stage": "Closed Won",
+    "deals": 41,
+    "value": 132959
+  },
+  {
+    "month": "2023-04",
+    "stage": "Prospecting",
+    "deals": 276,
+    "value": 858107
+  },
+  {
+    "month": "2023-04",
+    "stage": "Qualified",
+    "deals": 194,
+    "value": 601523
+  },
+  {
+    "month": "2023-04",
+    "stage": "Proposal",
+    "deals": 152,
+    "value": 470581
+  },
+  {
+    "month": "2023-04",
+    "stage": "Negotiation",
+    "deals": 81,
+    "value": 252208
+  },
+  {
+    "month": "2023-04",
+    "stage": "Closed Won",
+    "deals": 39,
+    "value": 121240
+  },
+  {
+    "month": "2023-05",
+    "stage": "Prospecting",
+    "deals": 292,
+    "value": 1125561
+  },
+  {
+    "month": "2023-05",
+    "stage": "Qualified",
+    "deals": 178,
+    "value": 687534
+  },
+  {
+    "month": "2023-05",
+    "stage": "Proposal",
+    "deals": 141,
+    "value": 546215
+  },
+  {
+    "month": "2023-05",
+    "stage": "Negotiation",
+    "deals": 96,
+    "value": 370850
+  },
+  {
+    "month": "2023-05",
+    "stage": "Closed Won",
+    "deals": 31,
+    "value": 119497
+  },
+  {
+    "month": "2023-06",
+    "stage": "Prospecting",
+    "deals": 375,
+    "value": 1219661
+  },
+  {
+    "month": "2023-06",
+    "stage": "Qualified",
+    "deals": 229,
+    "value": 744347
+  },
+  {
+    "month": "2023-06",
+    "stage": "Proposal",
+    "deals": 132,
+    "value": 427775
+  },
+  {
+    "month": "2023-06",
+    "stage": "Negotiation",
+    "deals": 112,
+    "value": 365318
+  },
+  {
+    "month": "2023-06",
+    "stage": "Closed Won",
+    "deals": 42,
+    "value": 137502
+  },
+  {
+    "month": "2023-07",
+    "stage": "Prospecting",
+    "deals": 347,
+    "value": 1429698
+  },
+  {
+    "month": "2023-07",
+    "stage": "Qualified",
+    "deals": 168,
+    "value": 690757
+  },
+  {
+    "month": "2023-07",
+    "stage": "Proposal",
+    "deals": 125,
+    "value": 515420
+  },
+  {
+    "month": "2023-07",
+    "stage": "Negotiation",
+    "deals": 85,
+    "value": 350037
+  },
+  {
+    "month": "2023-07",
+    "stage": "Closed Won",
+    "deals": 38,
+    "value": 156796
+  },
+  {
+    "month": "2023-08",
+    "stage": "Prospecting",
+    "deals": 315,
+    "value": 1069822
+  },
+  {
+    "month": "2023-08",
+    "stage": "Qualified",
+    "deals": 231,
+    "value": 783994
+  },
+  {
+    "month": "2023-08",
+    "stage": "Proposal",
+    "deals": 163,
+    "value": 551587
+  },
+  {
+    "month": "2023-08",
+    "stage": "Negotiation",
+    "deals": 109,
+    "value": 369292
+  },
+  {
+    "month": "2023-08",
+    "stage": "Closed Won",
+    "deals": 39,
+    "value": 132597
+  },
+  {
+    "month": "2023-09",
+    "stage": "Prospecting",
+    "deals": 304,
+    "value": 1216898
+  },
+  {
+    "month": "2023-09",
+    "stage": "Qualified",
+    "deals": 221,
+    "value": 884256
+  },
+  {
+    "month": "2023-09",
+    "stage": "Proposal",
+    "deals": 162,
+    "value": 650551
+  },
+  {
+    "month": "2023-09",
+    "stage": "Negotiation",
+    "deals": 83,
+    "value": 333412
+  },
+  {
+    "month": "2023-09",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 148383
+  },
+  {
+    "month": "2023-10",
+    "stage": "Prospecting",
+    "deals": 367,
+    "value": 1348412
+  },
+  {
+    "month": "2023-10",
+    "stage": "Qualified",
+    "deals": 217,
+    "value": 798614
+  },
+  {
+    "month": "2023-10",
+    "stage": "Proposal",
+    "deals": 146,
+    "value": 537668
+  },
+  {
+    "month": "2023-10",
+    "stage": "Negotiation",
+    "deals": 114,
+    "value": 418331
+  },
+  {
+    "month": "2023-10",
+    "stage": "Closed Won",
+    "deals": 45,
+    "value": 164673
+  },
+  {
+    "month": "2023-11",
+    "stage": "Prospecting",
+    "deals": 352,
+    "value": 1302849
+  },
+  {
+    "month": "2023-11",
+    "stage": "Qualified",
+    "deals": 223,
+    "value": 825165
+  },
+  {
+    "month": "2023-11",
+    "stage": "Proposal",
+    "deals": 157,
+    "value": 579751
+  },
+  {
+    "month": "2023-11",
+    "stage": "Negotiation",
+    "deals": 91,
+    "value": 337843
+  },
+  {
+    "month": "2023-11",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 138457
+  },
+  {
+    "month": "2023-12",
+    "stage": "Prospecting",
+    "deals": 301,
+    "value": 1135223
+  },
+  {
+    "month": "2023-12",
+    "stage": "Qualified",
+    "deals": 174,
+    "value": 655245
+  },
+  {
+    "month": "2023-12",
+    "stage": "Proposal",
+    "deals": 128,
+    "value": 484465
+  },
+  {
+    "month": "2023-12",
+    "stage": "Negotiation",
+    "deals": 91,
+    "value": 344670
+  },
+  {
+    "month": "2023-12",
+    "stage": "Closed Won",
+    "deals": 43,
+    "value": 161765
+  },
+  {
+    "month": "2024-01",
+    "stage": "Prospecting",
+    "deals": 325,
+    "value": 1228140
+  },
+  {
+    "month": "2024-01",
+    "stage": "Qualified",
+    "deals": 200,
+    "value": 754267
+  },
+  {
+    "month": "2024-01",
+    "stage": "Proposal",
+    "deals": 163,
+    "value": 614465
+  },
+  {
+    "month": "2024-01",
+    "stage": "Negotiation",
+    "deals": 85,
+    "value": 322573
+  },
+  {
+    "month": "2024-01",
+    "stage": "Closed Won",
+    "deals": 38,
+    "value": 141976
+  },
+  {
+    "month": "2024-02",
+    "stage": "Prospecting",
+    "deals": 333,
+    "value": 1391703
+  },
+  {
+    "month": "2024-02",
+    "stage": "Qualified",
+    "deals": 196,
+    "value": 819083
+  },
+  {
+    "month": "2024-02",
+    "stage": "Proposal",
+    "deals": 165,
+    "value": 689363
+  },
+  {
+    "month": "2024-02",
+    "stage": "Negotiation",
+    "deals": 99,
+    "value": 413553
+  },
+  {
+    "month": "2024-02",
+    "stage": "Closed Won",
+    "deals": 37,
+    "value": 152809
+  },
+  {
+    "month": "2024-03",
+    "stage": "Prospecting",
+    "deals": 337,
+    "value": 1525518
+  },
+  {
+    "month": "2024-03",
+    "stage": "Qualified",
+    "deals": 199,
+    "value": 899823
+  },
+  {
+    "month": "2024-03",
+    "stage": "Proposal",
+    "deals": 125,
+    "value": 567146
+  },
+  {
+    "month": "2024-03",
+    "stage": "Negotiation",
+    "deals": 87,
+    "value": 391864
+  },
+  {
+    "month": "2024-03",
+    "stage": "Closed Won",
+    "deals": 36,
+    "value": 164948
+  },
+  {
+    "month": "2024-04",
+    "stage": "Prospecting",
+    "deals": 376,
+    "value": 1526287
+  },
+  {
+    "month": "2024-04",
+    "stage": "Qualified",
+    "deals": 239,
+    "value": 970402
+  },
+  {
+    "month": "2024-04",
+    "stage": "Proposal",
+    "deals": 149,
+    "value": 605976
+  },
+  {
+    "month": "2024-04",
+    "stage": "Negotiation",
+    "deals": 118,
+    "value": 478288
+  },
+  {
+    "month": "2024-04",
+    "stage": "Closed Won",
+    "deals": 52,
+    "value": 211186
+  },
+  {
+    "month": "2024-05",
+    "stage": "Prospecting",
+    "deals": 336,
+    "value": 1335184
+  },
+  {
+    "month": "2024-05",
+    "stage": "Qualified",
+    "deals": 231,
+    "value": 919098
+  },
+  {
+    "month": "2024-05",
+    "stage": "Proposal",
+    "deals": 158,
+    "value": 628711
+  },
+  {
+    "month": "2024-05",
+    "stage": "Negotiation",
+    "deals": 104,
+    "value": 415051
+  },
+  {
+    "month": "2024-05",
+    "stage": "Closed Won",
+    "deals": 54,
+    "value": 215550
+  },
+  {
+    "month": "2024-06",
+    "stage": "Prospecting",
+    "deals": 359,
+    "value": 1412789
+  },
+  {
+    "month": "2024-06",
+    "stage": "Qualified",
+    "deals": 256,
+    "value": 1009496
+  },
+  {
+    "month": "2024-06",
+    "stage": "Proposal",
+    "deals": 154,
+    "value": 607277
+  },
+  {
+    "month": "2024-06",
+    "stage": "Negotiation",
+    "deals": 132,
+    "value": 520057
+  },
+  {
+    "month": "2024-06",
+    "stage": "Closed Won",
+    "deals": 52,
+    "value": 204900
+  },
+  {
+    "month": "2024-07",
+    "stage": "Prospecting",
+    "deals": 418,
+    "value": 1607844
+  },
+  {
+    "month": "2024-07",
+    "stage": "Qualified",
+    "deals": 250,
+    "value": 963923
+  },
+  {
+    "month": "2024-07",
+    "stage": "Proposal",
+    "deals": 185,
+    "value": 710490
+  },
+  {
+    "month": "2024-07",
+    "stage": "Negotiation",
+    "deals": 119,
+    "value": 458993
+  },
+  {
+    "month": "2024-07",
+    "stage": "Closed Won",
+    "deals": 43,
+    "value": 163879
+  },
+  {
+    "month": "2024-08",
+    "stage": "Prospecting",
+    "deals": 373,
+    "value": 1661268
+  },
+  {
+    "month": "2024-08",
+    "stage": "Qualified",
+    "deals": 258,
+    "value": 1151475
+  },
+  {
+    "month": "2024-08",
+    "stage": "Proposal",
+    "deals": 192,
+    "value": 855952
+  },
+  {
+    "month": "2024-08",
+    "stage": "Negotiation",
+    "deals": 119,
+    "value": 528945
+  },
+  {
+    "month": "2024-08",
+    "stage": "Closed Won",
+    "deals": 55,
+    "value": 245830
+  },
+  {
+    "month": "2024-09",
+    "stage": "Prospecting",
+    "deals": 418,
+    "value": 1663599
+  },
+  {
+    "month": "2024-09",
+    "stage": "Qualified",
+    "deals": 284,
+    "value": 1132922
+  },
+  {
+    "month": "2024-09",
+    "stage": "Proposal",
+    "deals": 192,
+    "value": 764524
+  },
+  {
+    "month": "2024-09",
+    "stage": "Negotiation",
+    "deals": 115,
+    "value": 457919
+  },
+  {
+    "month": "2024-09",
+    "stage": "Closed Won",
+    "deals": 50,
+    "value": 199811
+  },
+  {
+    "month": "2024-10",
+    "stage": "Prospecting",
+    "deals": 375,
+    "value": 1461283
+  },
+  {
+    "month": "2024-10",
+    "stage": "Qualified",
+    "deals": 302,
+    "value": 1176905
+  },
+  {
+    "month": "2024-10",
+    "stage": "Proposal",
+    "deals": 170,
+    "value": 662990
+  },
+  {
+    "month": "2024-10",
+    "stage": "Negotiation",
+    "deals": 132,
+    "value": 515199
+  },
+  {
+    "month": "2024-10",
+    "stage": "Closed Won",
+    "deals": 57,
+    "value": 220646
+  },
+  {
+    "month": "2024-11",
+    "stage": "Prospecting",
+    "deals": 391,
+    "value": 1581290
+  },
+  {
+    "month": "2024-11",
+    "stage": "Qualified",
+    "deals": 231,
+    "value": 935535
+  },
+  {
+    "month": "2024-11",
+    "stage": "Proposal",
+    "deals": 192,
+    "value": 775902
+  },
+  {
+    "month": "2024-11",
+    "stage": "Negotiation",
+    "deals": 109,
+    "value": 442428
+  },
+  {
+    "month": "2024-11",
+    "stage": "Closed Won",
+    "deals": 53,
+    "value": 214343
+  },
+  {
+    "month": "2024-12",
+    "stage": "Prospecting",
+    "deals": 369,
+    "value": 1622901
+  },
+  {
+    "month": "2024-12",
+    "stage": "Qualified",
+    "deals": 233,
+    "value": 1023321
+  },
+  {
+    "month": "2024-12",
+    "stage": "Proposal",
+    "deals": 160,
+    "value": 704050
+  },
+  {
+    "month": "2024-12",
+    "stage": "Negotiation",
+    "deals": 122,
+    "value": 535259
+  },
+  {
+    "month": "2024-12",
+    "stage": "Closed Won",
+    "deals": 46,
+    "value": 200687
+  }
+]

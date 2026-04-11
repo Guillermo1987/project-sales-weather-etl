@@ -1,0 +1,1010 @@
+[
+  {
+    "month": "2022-01",
+    "channel": "Inbound",
+    "revenue": 169737,
+    "new_customers": 48,
+    "cac": 262.04
+  },
+  {
+    "month": "2022-02",
+    "channel": "Inbound",
+    "revenue": 174693,
+    "new_customers": 35,
+    "cac": 294.28
+  },
+  {
+    "month": "2022-03",
+    "channel": "Inbound",
+    "revenue": 191671,
+    "new_customers": 59,
+    "cac": 267.57
+  },
+  {
+    "month": "2022-04",
+    "channel": "Inbound",
+    "revenue": 204947,
+    "new_customers": 59,
+    "cac": 255.98
+  },
+  {
+    "month": "2022-05",
+    "channel": "Inbound",
+    "revenue": 228009,
+    "new_customers": 65,
+    "cac": 302.81
+  },
+  {
+    "month": "2022-06",
+    "channel": "Inbound",
+    "revenue": 212381,
+    "new_customers": 64,
+    "cac": 241.97
+  },
+  {
+    "month": "2022-07",
+    "channel": "Inbound",
+    "revenue": 240828,
+    "new_customers": 51,
+    "cac": 270.64
+  },
+  {
+    "month": "2022-08",
+    "channel": "Inbound",
+    "revenue": 245935,
+    "new_customers": 67,
+    "cac": 227.91
+  },
+  {
+    "month": "2022-09",
+    "channel": "Inbound",
+    "revenue": 241143,
+    "new_customers": 76,
+    "cac": 211.34
+  },
+  {
+    "month": "2022-10",
+    "channel": "Inbound",
+    "revenue": 246980,
+    "new_customers": 71,
+    "cac": 259.78
+  },
+  {
+    "month": "2022-11",
+    "channel": "Inbound",
+    "revenue": 235442,
+    "new_customers": 71,
+    "cac": 244.98
+  },
+  {
+    "month": "2022-12",
+    "channel": "Inbound",
+    "revenue": 230553,
+    "new_customers": 63,
+    "cac": 218.4
+  },
+  {
+    "month": "2023-01",
+    "channel": "Inbound",
+    "revenue": 242176,
+    "new_customers": 63,
+    "cac": 255.37
+  },
+  {
+    "month": "2023-02",
+    "channel": "Inbound",
+    "revenue": 245177,
+    "new_customers": 69,
+    "cac": 243.02
+  },
+  {
+    "month": "2023-03",
+    "channel": "Inbound",
+    "revenue": 263505,
+    "new_customers": 86,
+    "cac": 200.09
+  },
+  {
+    "month": "2023-04",
+    "channel": "Inbound",
+    "revenue": 269735,
+    "new_customers": 86,
+    "cac": 225.26
+  },
+  {
+    "month": "2023-05",
+    "channel": "Inbound",
+    "revenue": 294468,
+    "new_customers": 81,
+    "cac": 247.23
+  },
+  {
+    "month": "2023-06",
+    "channel": "Inbound",
+    "revenue": 291622,
+    "new_customers": 75,
+    "cac": 201.77
+  },
+  {
+    "month": "2023-07",
+    "channel": "Inbound",
+    "revenue": 305427,
+    "new_customers": 71,
+    "cac": 240.22
+  },
+  {
+    "month": "2023-08",
+    "channel": "Inbound",
+    "revenue": 310365,
+    "new_customers": 81,
+    "cac": 255.76
+  },
+  {
+    "month": "2023-09",
+    "channel": "Inbound",
+    "revenue": 290761,
+    "new_customers": 82,
+    "cac": 193.79
+  },
+  {
+    "month": "2023-10",
+    "channel": "Inbound",
+    "revenue": 310724,
+    "new_customers": 86,
+    "cac": 229.99
+  },
+  {
+    "month": "2023-11",
+    "channel": "Inbound",
+    "revenue": 312349,
+    "new_customers": 76,
+    "cac": 233.05
+  },
+  {
+    "month": "2023-12",
+    "channel": "Inbound",
+    "revenue": 295511,
+    "new_customers": 75,
+    "cac": 213.66
+  },
+  {
+    "month": "2024-01",
+    "channel": "Inbound",
+    "revenue": 299739,
+    "new_customers": 96,
+    "cac": 215.64
+  },
+  {
+    "month": "2024-02",
+    "channel": "Inbound",
+    "revenue": 318657,
+    "new_customers": 97,
+    "cac": 192.05
+  },
+  {
+    "month": "2024-03",
+    "channel": "Inbound",
+    "revenue": 332753,
+    "new_customers": 70,
+    "cac": 220.25
+  },
+  {
+    "month": "2024-04",
+    "channel": "Inbound",
+    "revenue": 354438,
+    "new_customers": 113,
+    "cac": 199.69
+  },
+  {
+    "month": "2024-05",
+    "channel": "Inbound",
+    "revenue": 372507,
+    "new_customers": 106,
+    "cac": 188.86
+  },
+  {
+    "month": "2024-06",
+    "channel": "Inbound",
+    "revenue": 366057,
+    "new_customers": 120,
+    "cac": 224.02
+  },
+  {
+    "month": "2024-07",
+    "channel": "Inbound",
+    "revenue": 386443,
+    "new_customers": 92,
+    "cac": 185.83
+  },
+  {
+    "month": "2024-08",
+    "channel": "Inbound",
+    "revenue": 397662,
+    "new_customers": 105,
+    "cac": 193.71
+  },
+  {
+    "month": "2024-09",
+    "channel": "Inbound",
+    "revenue": 396667,
+    "new_customers": 116,
+    "cac": 159.27
+  },
+  {
+    "month": "2024-10",
+    "channel": "Inbound",
+    "revenue": 377687,
+    "new_customers": 113,
+    "cac": 150.96
+  },
+  {
+    "month": "2024-11",
+    "channel": "Inbound",
+    "revenue": 383525,
+    "new_customers": 123,
+    "cac": 187.17
+  },
+  {
+    "month": "2024-12",
+    "channel": "Inbound",
+    "revenue": 383680,
+    "new_customers": 115,
+    "cac": 192.21
+  },
+  {
+    "month": "2022-01",
+    "channel": "Outbound",
+    "revenue": 134003,
+    "new_customers": 35,
+    "cac": 514.58
+  },
+  {
+    "month": "2022-02",
+    "channel": "Outbound",
+    "revenue": 136250,
+    "new_customers": 30,
+    "cac": 595.17
+  },
+  {
+    "month": "2022-03",
+    "channel": "Outbound",
+    "revenue": 147681,
+    "new_customers": 38,
+    "cac": 557.91
+  },
+  {
+    "month": "2022-04",
+    "channel": "Outbound",
+    "revenue": 155991,
+    "new_customers": 43,
+    "cac": 532.67
+  },
+  {
+    "month": "2022-05",
+    "channel": "Outbound",
+    "revenue": 171428,
+    "new_customers": 49,
+    "cac": 616.44
+  },
+  {
+    "month": "2022-06",
+    "channel": "Outbound",
+    "revenue": 157724,
+    "new_customers": 52,
+    "cac": 495.96
+  },
+  {
+    "month": "2022-07",
+    "channel": "Outbound",
+    "revenue": 176654,
+    "new_customers": 39,
+    "cac": 490.02
+  },
+  {
+    "month": "2022-08",
+    "channel": "Outbound",
+    "revenue": 178177,
+    "new_customers": 42,
+    "cac": 520.44
+  },
+  {
+    "month": "2022-09",
+    "channel": "Outbound",
+    "revenue": 172545,
+    "new_customers": 48,
+    "cac": 438.3
+  },
+  {
+    "month": "2022-10",
+    "channel": "Outbound",
+    "revenue": 174527,
+    "new_customers": 48,
+    "cac": 525.02
+  },
+  {
+    "month": "2022-11",
+    "channel": "Outbound",
+    "revenue": 164301,
+    "new_customers": 48,
+    "cac": 467.44
+  },
+  {
+    "month": "2022-12",
+    "channel": "Outbound",
+    "revenue": 158877,
+    "new_customers": 48,
+    "cac": 474.19
+  },
+  {
+    "month": "2023-01",
+    "channel": "Outbound",
+    "revenue": 164790,
+    "new_customers": 40,
+    "cac": 537.91
+  },
+  {
+    "month": "2023-02",
+    "channel": "Outbound",
+    "revenue": 164729,
+    "new_customers": 41,
+    "cac": 462.72
+  },
+  {
+    "month": "2023-03",
+    "channel": "Outbound",
+    "revenue": 174800,
+    "new_customers": 52,
+    "cac": 437.18
+  },
+  {
+    "month": "2023-04",
+    "channel": "Outbound",
+    "revenue": 176657,
+    "new_customers": 56,
+    "cac": 413.77
+  },
+  {
+    "month": "2023-05",
+    "channel": "Outbound",
+    "revenue": 190392,
+    "new_customers": 44,
+    "cac": 462.88
+  },
+  {
+    "month": "2023-06",
+    "channel": "Outbound",
+    "revenue": 186133,
+    "new_customers": 51,
+    "cac": 368.76
+  },
+  {
+    "month": "2023-07",
+    "channel": "Outbound",
+    "revenue": 192432,
+    "new_customers": 48,
+    "cac": 464.04
+  },
+  {
+    "month": "2023-08",
+    "channel": "Outbound",
+    "revenue": 193011,
+    "new_customers": 54,
+    "cac": 484.57
+  },
+  {
+    "month": "2023-09",
+    "channel": "Outbound",
+    "revenue": 178467,
+    "new_customers": 57,
+    "cac": 395.16
+  },
+  {
+    "month": "2023-10",
+    "channel": "Outbound",
+    "revenue": 188227,
+    "new_customers": 46,
+    "cac": 496.11
+  },
+  {
+    "month": "2023-11",
+    "channel": "Outbound",
+    "revenue": 186726,
+    "new_customers": 54,
+    "cac": 401.84
+  },
+  {
+    "month": "2023-12",
+    "channel": "Outbound",
+    "revenue": 174327,
+    "new_customers": 46,
+    "cac": 419.04
+  },
+  {
+    "month": "2024-01",
+    "channel": "Outbound",
+    "revenue": 174475,
+    "new_customers": 48,
+    "cac": 435.96
+  },
+  {
+    "month": "2024-02",
+    "channel": "Outbound",
+    "revenue": 183013,
+    "new_customers": 50,
+    "cac": 333.28
+  },
+  {
+    "month": "2024-03",
+    "channel": "Outbound",
+    "revenue": 188545,
+    "new_customers": 51,
+    "cac": 402.7
+  },
+  {
+    "month": "2024-04",
+    "channel": "Outbound",
+    "revenue": 198124,
+    "new_customers": 59,
+    "cac": 409.2
+  },
+  {
+    "month": "2024-05",
+    "channel": "Outbound",
+    "revenue": 205401,
+    "new_customers": 60,
+    "cac": 374.62
+  },
+  {
+    "month": "2024-06",
+    "channel": "Outbound",
+    "revenue": 199092,
+    "new_customers": 58,
+    "cac": 420.44
+  },
+  {
+    "month": "2024-07",
+    "channel": "Outbound",
+    "revenue": 207297,
+    "new_customers": 55,
+    "cac": 382.51
+  },
+  {
+    "month": "2024-08",
+    "channel": "Outbound",
+    "revenue": 210373,
+    "new_customers": 65,
+    "cac": 360
+  },
+  {
+    "month": "2024-09",
+    "channel": "Outbound",
+    "revenue": 206934,
+    "new_customers": 57,
+    "cac": 307.77
+  },
+  {
+    "month": "2024-10",
+    "channel": "Outbound",
+    "revenue": 194281,
+    "new_customers": 57,
+    "cac": 327.76
+  },
+  {
+    "month": "2024-11",
+    "channel": "Outbound",
+    "revenue": 194512,
+    "new_customers": 55,
+    "cac": 343.34
+  },
+  {
+    "month": "2024-12",
+    "channel": "Outbound",
+    "revenue": 191840,
+    "new_customers": 46,
+    "cac": 401.24
+  },
+  {
+    "month": "2022-01",
+    "channel": "Partners",
+    "revenue": 80402,
+    "new_customers": 22,
+    "cac": 338.38
+  },
+  {
+    "month": "2022-02",
+    "channel": "Partners",
+    "revenue": 83162,
+    "new_customers": 17,
+    "cac": 417.84
+  },
+  {
+    "month": "2022-03",
+    "channel": "Partners",
+    "revenue": 91694,
+    "new_customers": 27,
+    "cac": 333.26
+  },
+  {
+    "month": "2022-04",
+    "channel": "Partners",
+    "revenue": 98520,
+    "new_customers": 28,
+    "cac": 310.86
+  },
+  {
+    "month": "2022-05",
+    "channel": "Partners",
+    "revenue": 110132,
+    "new_customers": 31,
+    "cac": 357.25
+  },
+  {
+    "month": "2022-06",
+    "channel": "Partners",
+    "revenue": 103067,
+    "new_customers": 34,
+    "cac": 314.9
+  },
+  {
+    "month": "2022-07",
+    "channel": "Partners",
+    "revenue": 117417,
+    "new_customers": 27,
+    "cac": 306.37
+  },
+  {
+    "month": "2022-08",
+    "channel": "Partners",
+    "revenue": 120458,
+    "new_customers": 34,
+    "cac": 288.42
+  },
+  {
+    "month": "2022-09",
+    "channel": "Partners",
+    "revenue": 118647,
+    "new_customers": 32,
+    "cac": 266.45
+  },
+  {
+    "month": "2022-10",
+    "channel": "Partners",
+    "revenue": 122062,
+    "new_customers": 31,
+    "cac": 316.34
+  },
+  {
+    "month": "2022-11",
+    "channel": "Partners",
+    "revenue": 116874,
+    "new_customers": 36,
+    "cac": 342.86
+  },
+  {
+    "month": "2022-12",
+    "channel": "Partners",
+    "revenue": 114946,
+    "new_customers": 33,
+    "cac": 291.62
+  },
+  {
+    "month": "2023-01",
+    "channel": "Partners",
+    "revenue": 121261,
+    "new_customers": 29,
+    "cac": 372.6
+  },
+  {
+    "month": "2023-02",
+    "channel": "Partners",
+    "revenue": 123285,
+    "new_customers": 33,
+    "cac": 311.83
+  },
+  {
+    "month": "2023-03",
+    "channel": "Partners",
+    "revenue": 133057,
+    "new_customers": 40,
+    "cac": 271.71
+  },
+  {
+    "month": "2023-04",
+    "channel": "Partners",
+    "revenue": 136767,
+    "new_customers": 40,
+    "cac": 273.91
+  },
+  {
+    "month": "2023-05",
+    "channel": "Partners",
+    "revenue": 149918,
+    "new_customers": 41,
+    "cac": 351.2
+  },
+  {
+    "month": "2023-06",
+    "channel": "Partners",
+    "revenue": 149069,
+    "new_customers": 47,
+    "cac": 260.22
+  },
+  {
+    "month": "2023-07",
+    "channel": "Partners",
+    "revenue": 156749,
+    "new_customers": 42,
+    "cac": 335.58
+  },
+  {
+    "month": "2023-08",
+    "channel": "Partners",
+    "revenue": 159911,
+    "new_customers": 50,
+    "cac": 281.22
+  },
+  {
+    "month": "2023-09",
+    "channel": "Partners",
+    "revenue": 150394,
+    "new_customers": 39,
+    "cac": 243.6
+  },
+  {
+    "month": "2023-10",
+    "channel": "Partners",
+    "revenue": 161337,
+    "new_customers": 52,
+    "cac": 303.98
+  },
+  {
+    "month": "2023-11",
+    "channel": "Partners",
+    "revenue": 162798,
+    "new_customers": 51,
+    "cac": 274.46
+  },
+  {
+    "month": "2023-12",
+    "channel": "Partners",
+    "revenue": 154600,
+    "new_customers": 40,
+    "cac": 240.99
+  },
+  {
+    "month": "2024-01",
+    "channel": "Partners",
+    "revenue": 157393,
+    "new_customers": 48,
+    "cac": 305.47
+  },
+  {
+    "month": "2024-02",
+    "channel": "Partners",
+    "revenue": 167941,
+    "new_customers": 47,
+    "cac": 223.89
+  },
+  {
+    "month": "2024-03",
+    "channel": "Partners",
+    "revenue": 176005,
+    "new_customers": 37,
+    "cac": 271.14
+  },
+  {
+    "month": "2024-04",
+    "channel": "Partners",
+    "revenue": 188147,
+    "new_customers": 58,
+    "cac": 226.63
+  },
+  {
+    "month": "2024-05",
+    "channel": "Partners",
+    "revenue": 198438,
+    "new_customers": 62,
+    "cac": 236.45
+  },
+  {
+    "month": "2024-06",
+    "channel": "Partners",
+    "revenue": 195685,
+    "new_customers": 60,
+    "cac": 276.7
+  },
+  {
+    "month": "2024-07",
+    "channel": "Partners",
+    "revenue": 207297,
+    "new_customers": 49,
+    "cac": 269.39
+  },
+  {
+    "month": "2024-08",
+    "channel": "Partners",
+    "revenue": 214045,
+    "new_customers": 62,
+    "cac": 249.31
+  },
+  {
+    "month": "2024-09",
+    "channel": "Partners",
+    "revenue": 214231,
+    "new_customers": 59,
+    "cac": 214.35
+  },
+  {
+    "month": "2024-10",
+    "channel": "Partners",
+    "revenue": 204663,
+    "new_customers": 62,
+    "cac": 221.42
+  },
+  {
+    "month": "2024-11",
+    "channel": "Partners",
+    "revenue": 208513,
+    "new_customers": 66,
+    "cac": 253.04
+  },
+  {
+    "month": "2024-12",
+    "channel": "Partners",
+    "revenue": 209280,
+    "new_customers": 55,
+    "cac": 229.6
+  },
+  {
+    "month": "2022-01",
+    "channel": "Direct",
+    "revenue": 62535,
+    "new_customers": 14,
+    "cac": 180.23
+  },
+  {
+    "month": "2022-02",
+    "channel": "Direct",
+    "revenue": 63549,
+    "new_customers": 12,
+    "cac": 237.02
+  },
+  {
+    "month": "2022-03",
+    "channel": "Direct",
+    "revenue": 68842,
+    "new_customers": 19,
+    "cac": 183.38
+  },
+  {
+    "month": "2022-04",
+    "channel": "Direct",
+    "revenue": 72674,
+    "new_customers": 22,
+    "cac": 165.58
+  },
+  {
+    "month": "2022-05",
+    "channel": "Direct",
+    "revenue": 79820,
+    "new_customers": 20,
+    "cac": 221.31
+  },
+  {
+    "month": "2022-06",
+    "channel": "Direct",
+    "revenue": 73396,
+    "new_customers": 19,
+    "cac": 183.36
+  },
+  {
+    "month": "2022-07",
+    "channel": "Direct",
+    "revenue": 82156,
+    "new_customers": 22,
+    "cac": 190.74
+  },
+  {
+    "month": "2022-08",
+    "channel": "Direct",
+    "revenue": 82815,
+    "new_customers": 23,
+    "cac": 190.38
+  },
+  {
+    "month": "2022-09",
+    "channel": "Direct",
+    "revenue": 80148,
+    "new_customers": 20,
+    "cac": 131.97
+  },
+  {
+    "month": "2022-10",
+    "channel": "Direct",
+    "revenue": 81018,
+    "new_customers": 23,
+    "cac": 163.47
+  },
+  {
+    "month": "2022-11",
+    "channel": "Direct",
+    "revenue": 76222,
+    "new_customers": 23,
+    "cac": 183.6
+  },
+  {
+    "month": "2022-12",
+    "channel": "Direct",
+    "revenue": 73658,
+    "new_customers": 23,
+    "cac": 171.47
+  },
+  {
+    "month": "2023-01",
+    "channel": "Direct",
+    "revenue": 76349,
+    "new_customers": 22,
+    "cac": 188.91
+  },
+  {
+    "month": "2023-02",
+    "channel": "Direct",
+    "revenue": 76270,
+    "new_customers": 23,
+    "cac": 171.38
+  },
+  {
+    "month": "2023-03",
+    "channel": "Direct",
+    "revenue": 80878,
+    "new_customers": 20,
+    "cac": 146.01
+  },
+  {
+    "month": "2023-04",
+    "channel": "Direct",
+    "revenue": 81680,
+    "new_customers": 21,
+    "cac": 160.16
+  },
+  {
+    "month": "2023-05",
+    "channel": "Direct",
+    "revenue": 87969,
+    "new_customers": 18,
+    "cac": 186.75
+  },
+  {
+    "month": "2023-06",
+    "channel": "Direct",
+    "revenue": 85939,
+    "new_customers": 23,
+    "cac": 139.84
+  },
+  {
+    "month": "2023-07",
+    "channel": "Direct",
+    "revenue": 88782,
+    "new_customers": 22,
+    "cac": 167.85
+  },
+  {
+    "month": "2023-08",
+    "channel": "Direct",
+    "revenue": 88983,
+    "new_customers": 23,
+    "cac": 155.78
+  },
+  {
+    "month": "2023-09",
+    "channel": "Direct",
+    "revenue": 82215,
+    "new_customers": 26,
+    "cac": 134.5
+  },
+  {
+    "month": "2023-10",
+    "channel": "Direct",
+    "revenue": 86644,
+    "new_customers": 21,
+    "cac": 177.69
+  },
+  {
+    "month": "2023-11",
+    "channel": "Direct",
+    "revenue": 85885,
+    "new_customers": 24,
+    "cac": 150.01
+  },
+  {
+    "month": "2023-12",
+    "channel": "Direct",
+    "revenue": 80118,
+    "new_customers": 23,
+    "cac": 129.64
+  },
+  {
+    "month": "2024-01",
+    "channel": "Direct",
+    "revenue": 80120,
+    "new_customers": 24,
+    "cac": 155.16
+  },
+  {
+    "month": "2024-02",
+    "channel": "Direct",
+    "revenue": 83970,
+    "new_customers": 24,
+    "cac": 121.28
+  },
+  {
+    "month": "2024-03",
+    "channel": "Direct",
+    "revenue": 86435,
+    "new_customers": 19,
+    "cac": 142.9
+  },
+  {
+    "month": "2024-04",
+    "channel": "Direct",
+    "revenue": 90748,
+    "new_customers": 22,
+    "cac": 147.53
+  },
+  {
+    "month": "2024-05",
+    "channel": "Direct",
+    "revenue": 93997,
+    "new_customers": 24,
+    "cac": 141.58
+  },
+  {
+    "month": "2024-06",
+    "channel": "Direct",
+    "revenue": 91027,
+    "new_customers": 25,
+    "cac": 132.16
+  },
+  {
+    "month": "2024-07",
+    "channel": "Direct",
+    "revenue": 94691,
+    "new_customers": 28,
+    "cac": 137.74
+  },
+  {
+    "month": "2024-08",
+    "channel": "Direct",
+    "revenue": 96005,
+    "new_customers": 27,
+    "cac": 126.43
+  },
+  {
+    "month": "2024-09",
+    "channel": "Direct",
+    "revenue": 94345,
+    "new_customers": 23,
+    "cac": 108.22
+  },
+  {
+    "month": "2024-10",
+    "channel": "Direct",
+    "revenue": 88490,
+    "new_customers": 30,
+    "cac": 105.1
+  },
+  {
+    "month": "2024-11",
+    "channel": "Direct",
+    "revenue": 88506,
+    "new_customers": 28,
+    "cac": 138.77
+  },
+  {
+    "month": "2024-12",
+    "channel": "Direct",
+    "revenue": 87200,
+    "new_customers": 22,
+    "cac": 131.59
+  }
+]
