@@ -1,0 +1,270 @@
+[
+  {
+    "period": "2015-01",
+    "total_sales": 19546.16
+  },
+  {
+    "period": "2015-02",
+    "total_sales": 11678.99
+  },
+  {
+    "period": "2015-03",
+    "total_sales": 6716.04
+  },
+  {
+    "period": "2015-04",
+    "total_sales": 12455.48
+  },
+  {
+    "period": "2015-05",
+    "total_sales": 15165.05
+  },
+  {
+    "period": "2015-06",
+    "total_sales": 11884.17
+  },
+  {
+    "period": "2015-07",
+    "total_sales": 10075.74
+  },
+  {
+    "period": "2015-08",
+    "total_sales": 26797.76
+  },
+  {
+    "period": "2015-09",
+    "total_sales": 17158.93
+  },
+  {
+    "period": "2015-10",
+    "total_sales": 10112.64
+  },
+  {
+    "period": "2015-11",
+    "total_sales": 18349.76
+  },
+  {
+    "period": "2015-12",
+    "total_sales": 17045.84
+  },
+  {
+    "period": "2016-01",
+    "total_sales": 26938.92
+  },
+  {
+    "period": "2016-02",
+    "total_sales": 34807.55
+  },
+  {
+    "period": "2016-03",
+    "total_sales": 17719.65
+  },
+  {
+    "period": "2016-04",
+    "total_sales": 20339.25
+  },
+  {
+    "period": "2016-05",
+    "total_sales": 30992.96
+  },
+  {
+    "period": "2016-06",
+    "total_sales": 50156.14
+  },
+  {
+    "period": "2016-07",
+    "total_sales": 34516.19
+  },
+  {
+    "period": "2016-08",
+    "total_sales": 47783.12
+  },
+  {
+    "period": "2016-09",
+    "total_sales": 39001.5
+  },
+  {
+    "period": "2016-10",
+    "total_sales": 19928.54
+  },
+  {
+    "period": "2016-11",
+    "total_sales": 30358.91
+  },
+  {
+    "period": "2016-12",
+    "total_sales": 17854.19
+  },
+  {
+    "period": "2017-01",
+    "total_sales": 60321.01
+  },
+  {
+    "period": "2017-02",
+    "total_sales": 68887.59
+  },
+  {
+    "period": "2017-03",
+    "total_sales": 50691.11
+  },
+  {
+    "period": "2017-04",
+    "total_sales": 59166.93
+  },
+  {
+    "period": "2017-05",
+    "total_sales": 60260.88
+  },
+  {
+    "period": "2017-06",
+    "total_sales": 33813.23
+  },
+  {
+    "period": "2017-07",
+    "total_sales": 46313.61
+  },
+  {
+    "period": "2017-08",
+    "total_sales": 35987.36
+  },
+  {
+    "period": "2017-09",
+    "total_sales": 31405.45
+  },
+  {
+    "period": "2017-10",
+    "total_sales": 34147.61
+  },
+  {
+    "period": "2017-11",
+    "total_sales": 30552.25
+  },
+  {
+    "period": "2017-12",
+    "total_sales": 43863.33
+  },
+  {
+    "period": "2018-01",
+    "total_sales": 60508.07
+  },
+  {
+    "period": "2018-02",
+    "total_sales": 67828.54
+  },
+  {
+    "period": "2018-03",
+    "total_sales": 62233.74
+  },
+  {
+    "period": "2018-04",
+    "total_sales": 55807.09
+  },
+  {
+    "period": "2018-05",
+    "total_sales": 49044.52
+  },
+  {
+    "period": "2018-06",
+    "total_sales": 48437.03
+  },
+  {
+    "period": "2018-07",
+    "total_sales": 52317.64
+  },
+  {
+    "period": "2018-08",
+    "total_sales": 36957.74
+  },
+  {
+    "period": "2018-09",
+    "total_sales": 44323.07
+  },
+  {
+    "period": "2018-10",
+    "total_sales": 26990.17
+  },
+  {
+    "period": "2018-11",
+    "total_sales": 46651.56
+  },
+  {
+    "period": "2018-12",
+    "total_sales": 36931.29
+  },
+  {
+    "period": "2019-01",
+    "total_sales": 66001.05
+  },
+  {
+    "period": "2019-02",
+    "total_sales": 40703.2
+  },
+  {
+    "period": "2019-03",
+    "total_sales": 32627.87
+  },
+  {
+    "period": "2019-04",
+    "total_sales": 36141.44
+  },
+  {
+    "period": "2019-05",
+    "total_sales": 51433.71
+  },
+  {
+    "period": "2019-06",
+    "total_sales": 38550.46
+  },
+  {
+    "period": "2019-07",
+    "total_sales": 35902.26
+  },
+  {
+    "period": "2019-08",
+    "total_sales": 22933.06
+  },
+  {
+    "period": "2019-09",
+    "total_sales": 29536.29
+  },
+  {
+    "period": "2019-10",
+    "total_sales": 37664.32
+  },
+  {
+    "period": "2019-11",
+    "total_sales": 31141.46
+  },
+  {
+    "period": "2019-12",
+    "total_sales": 26271.56
+  },
+  {
+    "period": "2020-01",
+    "total_sales": 16008.04
+  },
+  {
+    "period": "2020-02",
+    "total_sales": 23883.83
+  },
+  {
+    "period": "2020-03",
+    "total_sales": 17592.4
+  },
+  {
+    "period": "2020-04",
+    "total_sales": 16957.73
+  },
+  {
+    "period": "2020-05",
+    "total_sales": 13434.33
+  },
+  {
+    "period": "2020-06",
+    "total_sales": 23703.67
+  },
+  {
+    "period": "2020-07",
+    "total_sales": 10225.8
+  }
+]

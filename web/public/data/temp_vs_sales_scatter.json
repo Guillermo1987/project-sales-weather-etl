@@ -1,0 +1,2502 @@
+[
+  {
+    "avg_temp_c": 16.3,
+    "sales": 14.62,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.9,
+    "sales": 213.48,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 30.5,
+    "sales": 29.47,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.2,
+    "sales": 213.12,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 15.4,
+    "sales": 21.39,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.1,
+    "sales": 64.62,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.1,
+    "sales": 787.53,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 22.3,
+    "sales": 143.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 30.7,
+    "sales": 177.98,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.8,
+    "sales": 899.14,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 25.9,
+    "sales": 622.45,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 14.5,
+    "sales": 321.57,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 30.1,
+    "sales": 3059.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 1.6,
+    "sales": 24.84,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.4,
+    "sales": 230.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 22.8,
+    "sales": 290.9,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 14.1,
+    "sales": 698.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 25.6,
+    "sales": 388.7,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 19.4,
+    "sales": 8.16,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.7,
+    "sales": 23.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 1199.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.4,
+    "sales": 9.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.2,
+    "sales": 194.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.5,
+    "sales": 28.49,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.8,
+    "sales": 704.25,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.1,
+    "sales": 11.07,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -7.1,
+    "sales": 51.45,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21,
+    "sales": 190.72,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": -4.4,
+    "sales": 11.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.3,
+    "sales": 374.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 1.8,
+    "sales": 470.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 21.5,
+    "sales": 1199.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 21.7,
+    "sales": 40.48,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 28.4,
+    "sales": 103.12,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 24.6,
+    "sales": 99.39,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": -4.7,
+    "sales": 15.07,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.9,
+    "sales": 17.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.9,
+    "sales": 79.92,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.4,
+    "sales": 32.07,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.2,
+    "sales": 20.16,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.8,
+    "sales": 51.84,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.4,
+    "sales": 186.05,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 4.6,
+    "sales": 21.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.1,
+    "sales": 11.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.5,
+    "sales": 83.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.7,
+    "sales": 20.04,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.1,
+    "sales": 21.99,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 28.1,
+    "sales": 29.72,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.7,
+    "sales": 25.47,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.4,
+    "sales": 127.1,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 9.5,
+    "sales": 603.92,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 99.6,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 6.4,
+    "sales": 63.31,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -5.4,
+    "sales": 254.6,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 0.3,
+    "sales": 4.42,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.6,
+    "sales": 29.47,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.6,
+    "sales": 35.78,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 29.3,
+    "sales": 40.97,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.9,
+    "sales": 204.6,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 15.2,
+    "sales": 195.18,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 11.5,
+    "sales": 27.93,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.8,
+    "sales": 223.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.9,
+    "sales": 9.14,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.3,
+    "sales": 1931.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 24.6,
+    "sales": 2.78,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.1,
+    "sales": 38.82,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.5,
+    "sales": 29.33,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 23.4,
+    "sales": 39.88,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 7.5,
+    "sales": 23.99,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 9.7,
+    "sales": 87.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.8,
+    "sales": 79.14,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 1.3,
+    "sales": 9.55,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.7,
+    "sales": 75.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.3,
+    "sales": 2453.43,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.8,
+    "sales": 33.75,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.3,
+    "sales": 6.69,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 13.1,
+    "sales": 5.04,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.3,
+    "sales": 17.88,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 30.3,
+    "sales": 247.1,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 23.91,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.4,
+    "sales": 11.35,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.1,
+    "sales": 307.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 27.8,
+    "sales": 47.99,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 23.3,
+    "sales": 59.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.2,
+    "sales": 19.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.3,
+    "sales": 13.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.2,
+    "sales": 104.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.2,
+    "sales": 310.88,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 22.2,
+    "sales": 11.61,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.2,
+    "sales": 359.06,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 26.4,
+    "sales": 20.88,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.3,
+    "sales": 19.54,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.6,
+    "sales": 368.91,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.1,
+    "sales": 63.84,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.9,
+    "sales": 77.6,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 2.1,
+    "sales": 38.88,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.9,
+    "sales": 37.68,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 6.7,
+    "sales": 257.57,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 12.8,
+    "sales": 470.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 26.4,
+    "sales": 478.48,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 13.1,
+    "sales": 6.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -0.7,
+    "sales": 18.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.8,
+    "sales": 286.29,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.7,
+    "sales": 3.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.1,
+    "sales": 8.75,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": -6.8,
+    "sales": 269.97,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 9,
+    "sales": 25.34,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 24.1,
+    "sales": 146.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.2,
+    "sales": 37.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.9,
+    "sales": 636.41,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.4,
+    "sales": 86.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 0.9,
+    "sales": 14.16,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.8,
+    "sales": 85.23,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.5,
+    "sales": 65.34,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.3,
+    "sales": 16.52,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -2.2,
+    "sales": 319.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.9,
+    "sales": 19.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.8,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.3,
+    "sales": 287.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 18.4,
+    "sales": 390.75,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 2.5,
+    "sales": 194.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.4,
+    "sales": 490.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.8,
+    "sales": 239.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 9.3,
+    "sales": 185.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.2,
+    "sales": 5.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.9,
+    "sales": 7.52,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.9,
+    "sales": 145.98,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 10.4,
+    "sales": 46.53,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.5,
+    "sales": 5.46,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 28,
+    "sales": 300.93,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 28.2,
+    "sales": 1117.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.8,
+    "sales": 6.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.1,
+    "sales": 700.15,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.9,
+    "sales": 15.02,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 8.5,
+    "sales": 914.97,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.4,
+    "sales": 41.57,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 15.8,
+    "sales": 14.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.8,
+    "sales": 821.88,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.3,
+    "sales": 105.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.2,
+    "sales": 3.98,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.7,
+    "sales": 116.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.4,
+    "sales": 1.64,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18,
+    "sales": 125.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.6,
+    "sales": 481.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.9,
+    "sales": 59.2,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.8,
+    "sales": 39.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.9,
+    "sales": 214.11,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 25.4,
+    "sales": 695.7,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 28.2,
+    "sales": 286.93,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.6,
+    "sales": 6.03,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.1,
+    "sales": 26.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.8,
+    "sales": 14.37,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 14.8,
+    "sales": 47.21,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.2,
+    "sales": 43.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.7,
+    "sales": 123.14,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 6.6,
+    "sales": 895.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.8,
+    "sales": 12.03,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.8,
+    "sales": 16.72,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 3.3,
+    "sales": 83.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 20.2,
+    "sales": 31.84,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.6,
+    "sales": 242.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 6.3,
+    "sales": 532.7,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 3.1,
+    "sales": 10.61,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 3.9,
+    "sales": 26,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 19,
+    "sales": 62.19,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.2,
+    "sales": 1633.14,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.4,
+    "sales": 601.54,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 23.4,
+    "sales": 430.88,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 12.3,
+    "sales": 324.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.8,
+    "sales": 733.95,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.6,
+    "sales": 19.19,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 28.6,
+    "sales": 43.51,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -0.6,
+    "sales": 227.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 3.9,
+    "sales": 35.28,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 26,
+    "sales": 580.67,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26,
+    "sales": 629.1,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.4,
+    "sales": 77.52,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.2,
+    "sales": 4.3,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.1,
+    "sales": 5.16,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.6,
+    "sales": 10.85,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21,
+    "sales": 15.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.2,
+    "sales": 40.46,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17,
+    "sales": 11.62,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.6,
+    "sales": 10.13,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.3,
+    "sales": 3.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.9,
+    "sales": 15.55,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.5,
+    "sales": 6.91,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.3,
+    "sales": 7.16,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.6,
+    "sales": 89.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.2,
+    "sales": 15.52,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.4,
+    "sales": 13.88,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.5,
+    "sales": 232.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26,
+    "sales": 249.95,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 18.7,
+    "sales": 71.97,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.8,
+    "sales": 11.68,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.6,
+    "sales": 8.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.2,
+    "sales": 523.76,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.5,
+    "sales": 59.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 29.5,
+    "sales": 87.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.8,
+    "sales": 3.56,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.4,
+    "sales": 842.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 11.6,
+    "sales": 98.11,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 32.6,
+    "sales": 16.1,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.2,
+    "sales": 14.56,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.1,
+    "sales": 38.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.4,
+    "sales": 29.8,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.3,
+    "sales": 79.12,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 193.8,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.3,
+    "sales": 191.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 12.6,
+    "sales": 55.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.3,
+    "sales": 47.81,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.2,
+    "sales": 10.95,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.3,
+    "sales": 17.34,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.8,
+    "sales": 26.03,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.5,
+    "sales": 13.72,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.3,
+    "sales": 48.86,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.3,
+    "sales": 98.16,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 16,
+    "sales": 41.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.3,
+    "sales": 102.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.6,
+    "sales": 20.23,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.4,
+    "sales": 11.67,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -2.2,
+    "sales": 69.26,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 19.2,
+    "sales": 49.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.1,
+    "sales": 447.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.8,
+    "sales": 657.5,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 12,
+    "sales": 253.18,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 22.9,
+    "sales": 199.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.3,
+    "sales": 19.65,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.2,
+    "sales": 26.41,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4,
+    "sales": 16.38,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.6,
+    "sales": 314.55,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.2,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.6,
+    "sales": 54.79,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.7,
+    "sales": 2.3,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -3.2,
+    "sales": 1.93,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 32.1,
+    "sales": 10.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.1,
+    "sales": 17.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.6,
+    "sales": 18.27,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.5,
+    "sales": 134.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.3,
+    "sales": 123.96,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": -3,
+    "sales": 440.19,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25,
+    "sales": 3,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.7,
+    "sales": 440.91,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.7,
+    "sales": 74.42,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.1,
+    "sales": 201.58,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.7,
+    "sales": 53.25,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 7.3,
+    "sales": 33.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.6,
+    "sales": 113.52,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 28.5,
+    "sales": 40.71,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.7,
+    "sales": 43.13,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.9,
+    "sales": 33.63,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.6,
+    "sales": 30.35,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 5.2,
+    "sales": 10.51,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.3,
+    "sales": 563.02,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.1,
+    "sales": 227.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11,
+    "sales": 96.08,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.9,
+    "sales": 117.49,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.6,
+    "sales": 36.11,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.2,
+    "sales": 14.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.1,
+    "sales": 10.56,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -4.1,
+    "sales": 35.17,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.1,
+    "sales": 302.67,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.9,
+    "sales": 720.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 30.8,
+    "sales": 744.1,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.4,
+    "sales": 35.04,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": -0.2,
+    "sales": 17.5,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 6.2,
+    "sales": 17.05,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.4,
+    "sales": 2.69,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 1.1,
+    "sales": 4.99,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.9,
+    "sales": 85.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.9,
+    "sales": 166.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.9,
+    "sales": 362.94,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.3,
+    "sales": 35.2,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.3,
+    "sales": 13.48,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 24.9,
+    "sales": 89.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.3,
+    "sales": 20.74,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.9,
+    "sales": 17.34,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.3,
+    "sales": 45.98,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.7,
+    "sales": 31.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.6,
+    "sales": 9.82,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 87.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.4,
+    "sales": 31.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 14.3,
+    "sales": 10.71,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.9,
+    "sales": 122.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 2,
+    "sales": 218.35,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 11.4,
+    "sales": 20.14,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.8,
+    "sales": 1319.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 24.8,
+    "sales": 59.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.2,
+    "sales": 43.68,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -1.6,
+    "sales": 29.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 47.52,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.8,
+    "sales": 142.49,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 12.4,
+    "sales": 21.3,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.4,
+    "sales": 7.04,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 24.5,
+    "sales": 11.09,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.2,
+    "sales": 98.35,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -2.5,
+    "sales": 139.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 8.8,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.2,
+    "sales": 38.38,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -5.8,
+    "sales": 599.99,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 25.2,
+    "sales": 12.32,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 13.8,
+    "sales": 31.74,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.7,
+    "sales": 90.8,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.3,
+    "sales": 80.96,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 23.8,
+    "sales": 1603.14,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 19.4,
+    "sales": 21.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.3,
+    "sales": 26.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.3,
+    "sales": 110.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11.7,
+    "sales": 71.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 12.7,
+    "sales": 154.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.7,
+    "sales": 8.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 12.1,
+    "sales": 2357.49,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 74.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.7,
+    "sales": 71.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": -14.1,
+    "sales": 272.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 29.1,
+    "sales": 3.49,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.8,
+    "sales": 24.03,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 25.2,
+    "sales": 2888.13,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 26.9,
+    "sales": 409.22,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.3,
+    "sales": 11.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.7,
+    "sales": 772.68,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23,
+    "sales": 23.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.4,
+    "sales": 31.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 28.5,
+    "sales": 56.69,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 4.8,
+    "sales": 177.57,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 20.6,
+    "sales": 13.98,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 19.8,
+    "sales": 34.5,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.9,
+    "sales": 304.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.3,
+    "sales": 6.68,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.9,
+    "sales": 65.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 23.2,
+    "sales": 69.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.4,
+    "sales": 6.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.4,
+    "sales": 99.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.3,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.8,
+    "sales": 47.95,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.8,
+    "sales": 6.29,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.1,
+    "sales": 589.41,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.9,
+    "sales": 15.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 28.4,
+    "sales": 871.8,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.8,
+    "sales": 244.77,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 26.5,
+    "sales": 279.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.6,
+    "sales": 5443.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.3,
+    "sales": 399.95,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 7.4,
+    "sales": 5.04,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.6,
+    "sales": 7.12,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.7,
+    "sales": 101.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 10.4,
+    "sales": 5.34,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 1.4,
+    "sales": 209.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.1,
+    "sales": 627.17,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 29.3,
+    "sales": 46.87,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 0.2,
+    "sales": 7.83,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.4,
+    "sales": 48.03,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -6.2,
+    "sales": 29.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.9,
+    "sales": 17.64,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.4,
+    "sales": 129.93,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 13.6,
+    "sales": 100.8,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.1,
+    "sales": 17.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.3,
+    "sales": 20.7,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.1,
+    "sales": 28.14,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.9,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.9,
+    "sales": 73.34,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -4.7,
+    "sales": 235.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.6,
+    "sales": 24.59,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.8,
+    "sales": 41.58,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.2,
+    "sales": 79.97,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 18.5,
+    "sales": 24.1,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.9,
+    "sales": 5.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.2,
+    "sales": 208.44,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.3,
+    "sales": 146.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.3,
+    "sales": 46.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.7,
+    "sales": 599.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 3.2,
+    "sales": 54.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.9,
+    "sales": 276.78,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.9,
+    "sales": 7.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.9,
+    "sales": 17.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.7,
+    "sales": 12.29,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.4,
+    "sales": 21.84,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.5,
+    "sales": 32.23,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15,
+    "sales": 1350.12,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.4,
+    "sales": 20.74,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 0.1,
+    "sales": 137.94,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 20.1,
+    "sales": 8.64,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 6.9,
+    "sales": 181.86,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.4,
+    "sales": 2541.98,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.7,
+    "sales": 59.99,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 15.1,
+    "sales": 41.96,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 20.5,
+    "sales": 721.88,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 28.6,
+    "sales": 251.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 3.3,
+    "sales": 40.74,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.1,
+    "sales": 15.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.7,
+    "sales": 172.11,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.1,
+    "sales": 36.67,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.3,
+    "sales": 236.53,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 26.9,
+    "sales": 1415.76,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 21.9,
+    "sales": 13.57,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.2,
+    "sales": 362.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.8,
+    "sales": 5.76,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -6.3,
+    "sales": 49.62,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 30.4,
+    "sales": 25.92,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.7,
+    "sales": 49.12,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 9.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.1,
+    "sales": 40.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.4,
+    "sales": 71.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 28.6,
+    "sales": 127.3,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 24.9,
+    "sales": 11.98,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.3,
+    "sales": 99.2,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -3,
+    "sales": 209.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 10.1,
+    "sales": 17.48,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.6,
+    "sales": 15.23,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.9,
+    "sales": 268.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.7,
+    "sales": 26.72,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.9,
+    "sales": 1.8,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.9,
+    "sales": 111.67,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 7.4,
+    "sales": 307.14,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.6,
+    "sales": 235.95,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 16.4,
+    "sales": 272.05,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.2,
+    "sales": 344.37,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.6,
+    "sales": 134.8,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 8.6,
+    "sales": 31.18,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.8,
+    "sales": 8.32,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4.6,
+    "sales": 120,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 8.1,
+    "sales": 75.38,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 4.2,
+    "sales": 17.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.6,
+    "sales": 276.78,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -2.7,
+    "sales": 131.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 11,
+    "sales": 118.25,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 55.58,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.6,
+    "sales": 2.93,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 18.8,
+    "sales": 557.73,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 96.96,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.7,
+    "sales": 156.51,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.1,
+    "sales": 62.82,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 30.4,
+    "sales": 577.76,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": -4.4,
+    "sales": 357,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 5.4,
+    "sales": 46.74,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.2,
+    "sales": 299.9,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 10.2,
+    "sales": 376.51,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 23.1,
+    "sales": 32.95,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 14.9,
+    "sales": 913.43,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 13.7,
+    "sales": 84.78,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 29.1,
+    "sales": 28.91,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13,
+    "sales": 6.85,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13,
+    "sales": 1679.96,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 17.8,
+    "sales": 8.93,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.8,
+    "sales": 5.94,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 73.78,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 17.5,
+    "sales": 33.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.3,
+    "sales": 422.63,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 11.3,
+    "sales": 45.36,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 23.9,
+    "sales": 11.09,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.1,
+    "sales": 475.94,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 20.4,
+    "sales": 15.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.2,
+    "sales": 5.04,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 4,
+    "sales": 118,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 20.7,
+    "sales": 17.12,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 5.7,
+    "sales": 8.02,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 26.7,
+    "sales": 115.14,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 9.3,
+    "sales": 6.98,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 24.6,
+    "sales": 13.25,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 25.9,
+    "sales": 37.68,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 10.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.6,
+    "sales": 46.62,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 29,
+    "sales": 18.9,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 29,
+    "sales": 6.91,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 22.4,
+    "sales": 4.82,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17.2,
+    "sales": 686.4,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 13.8,
+    "sales": 276.28,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -3.7,
+    "sales": 30.84,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 23.1,
+    "sales": 1439.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 16.4,
+    "sales": 204.85,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.6,
+    "sales": 23.13,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 1.2,
+    "sales": 271.76,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 1.7,
+    "sales": 4899.93,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 19.7,
+    "sales": 7.38,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 17,
+    "sales": 117.88,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.6,
+    "sales": 479.97,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 22.1,
+    "sales": 50.12,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": -5.8,
+    "sales": 5.56,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 30.8,
+    "sales": 64.96,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 23.9,
+    "sales": 21.7,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 13.3,
+    "sales": 43.6,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 24.3,
+    "sales": 143.13,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 15.7,
+    "sales": 99.59,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 21.5,
+    "sales": 32.4,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.7,
+    "sales": 568.73,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 21.6,
+    "sales": 3.64,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 2.5,
+    "sales": 11.67,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 28.3,
+    "sales": 72.22,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 14.2,
+    "sales": 118.78,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 15.4,
+    "sales": 859.2,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 3.8,
+    "sales": 3.64,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 19.8,
+    "sales": 8.04,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 27.1,
+    "sales": 631.78,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 14.5,
+    "sales": 12.07,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": 16.8,
+    "sales": 302.38,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 9.1,
+    "sales": 22.24,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 9.4,
+    "sales": 91.48,
+    "category": "Technology"
+  },
+  {
+    "avg_temp_c": 18.4,
+    "sales": 12.96,
+    "category": "Office Supplies"
+  },
+  {
+    "avg_temp_c": 24.2,
+    "sales": 781.86,
+    "category": "Furniture"
+  },
+  {
+    "avg_temp_c": -7.2,
+    "sales": 9.26,
+    "category": "Office Supplies"
+  }
+]

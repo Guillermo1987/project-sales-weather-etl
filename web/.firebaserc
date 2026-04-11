@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "sales-weather-etl"
+  },
+  "targets": {
+    "sales-weather-etl": {
+      "hosting": {
+        "etl-dashboard": ["sales-weather-etl"]
+      }
+    }
+  }
+}

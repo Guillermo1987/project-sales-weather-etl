@@ -1,0 +1,14 @@
+[
+  {
+    "day_type": "Weekday",
+    "total_sales": 1645076.2,
+    "avg_sales": 231.96,
+    "num_orders": 7092
+  },
+  {
+    "day_type": "Weekend",
+    "total_sales": 616460.59,
+    "avg_sales": 227.64,
+    "num_orders": 2708
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "region": "South",
+    "total_sales": 389151.46,
+    "avg_sales": 243.52
+  },
+  {
+    "region": "West",
+    "total_sales": 710219.68,
+    "avg_sales": 226.18
+  },
+  {
+    "region": "Central",
+    "total_sales": 492646.91,
+    "avg_sales": 216.36
+  },
+  {
+    "region": "East",
+    "total_sales": 669518.73,
+    "avg_sales": 240.4
+  }
+]

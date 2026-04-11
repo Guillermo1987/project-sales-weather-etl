@@ -1,0 +1,26 @@
+[
+  {
+    "temp_category": "Cold (<10°C)",
+    "total_sales": 449609.12,
+    "avg_sales": 253.16,
+    "num_orders": 1776
+  },
+  {
+    "temp_category": "Mild (10-20°C)",
+    "total_sales": 612188.44,
+    "avg_sales": 239.04,
+    "num_orders": 2561
+  },
+  {
+    "temp_category": "Warm (20-30°C)",
+    "total_sales": 394804.54,
+    "avg_sales": 228.21,
+    "num_orders": 1730
+  },
+  {
+    "temp_category": "Hot (>30°C)",
+    "total_sales": 38028.47,
+    "avg_sales": 319.57,
+    "num_orders": 119
+  }
+]
