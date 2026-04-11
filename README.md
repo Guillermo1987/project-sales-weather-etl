@@ -2,8 +2,8 @@
 
 > **Data Engineering Portfolio Project** · Python ETL Pipeline + React Dashboard
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://sales-weather-etl.web.app)
-[![Executive Dashboard](https://img.shields.io/badge/Also%20See-Executive%20Dashboard%20360°-34d399?style=for-the-badge)](https://sales-weather-etl.web.app/executive)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
+[![Executive Dashboard](https://img.shields.io/badge/Also%20See-Executive%20Dashboard%20360°-34d399?style=for-the-badge)](https://proyectos-personales.web.app/executive)
 
 ---
 
@@ -11,7 +11,7 @@
 
 A production-ready ETL pipeline that joins two independent data sources — Superstore Sales transactions and US City daily temperatures — into a single analytical dataset. The output is served as a live React dashboard on Firebase Hosting.
 
-**Live dashboard → [sales-weather-etl.web.app](https://sales-weather-etl.web.app)**
+**Live dashboard → [proyectos-personales.web.app](https://proyectos-personales.web.app)**
 
 ---
 
@@ -98,7 +98,7 @@ cd web && npm install && npm run dev
 
 ## Also in This Repo
 
-This project also hosts the **[Executive Dashboard 360°](https://sales-weather-etl.web.app/executive)** — a BI portfolio project with 24 executive KPIs across Finance, RevOps and Marketing.
+This project also hosts the **[Executive Dashboard 360°](https://proyectos-personales.web.app/executive)** — a BI portfolio project with 24 executive KPIs across Finance, RevOps and Marketing.
 
 ---
 
