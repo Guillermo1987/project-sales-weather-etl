@@ -1,6 +1,7 @@
 
 # ── Archivos privados Claude / IA ──────────────────
 CLAUDE.md
+SKILL_*.md
 .claude/
 agents/
 skills/
