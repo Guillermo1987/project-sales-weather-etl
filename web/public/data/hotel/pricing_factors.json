@@ -1,0 +1,32 @@
+[
+  {
+    "factor": "Base Price",
+    "avg_value": 120,
+    "description": "Starting point"
+  },
+  {
+    "factor": "Seasonality",
+    "avg_value": 1.029,
+    "description": "Monthly demand index"
+  },
+  {
+    "factor": "Day of Week",
+    "avg_value": 1.039,
+    "description": "Weekend premium"
+  },
+  {
+    "factor": "Local Events",
+    "avg_value": 1.01,
+    "description": "Conferences & holidays"
+  },
+  {
+    "factor": "Occupancy Pressure",
+    "avg_value": 1.05,
+    "description": "Supply/demand balance"
+  },
+  {
+    "factor": "Lead Time",
+    "avg_value": 1.08,
+    "description": "Last-minute premium"
+  }
+]

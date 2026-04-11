@@ -4,6 +4,7 @@ import Navbar             from './components/Navbar'
 import EtlDashboard       from './pages/EtlDashboard'
 import ExecutiveDashboard from './pages/ExecutiveDashboard'
 import ChurnDashboard     from './pages/ChurnDashboard'
+import HotelDashboard     from './pages/HotelDashboard'
 import './App.css'
 
 const ETL_FILES = [
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/"          element={<EtlLoader />} />
         <Route path="/executive" element={<ExecutiveDashboard />} />
         <Route path="/churn"     element={<ChurnDashboard />} />
+        <Route path="/hotel"     element={<HotelDashboard />} />
       </Routes>
     </BrowserRouter>
   )

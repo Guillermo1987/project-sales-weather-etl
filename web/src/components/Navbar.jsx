@@ -19,6 +19,12 @@ const PROJECTS = [
     badge: 'Data Science',
     icon: '🔬',
   },
+  {
+    to: '/hotel',
+    label: 'Hotel Pricing Engine',
+    badge: 'Revenue Management',
+    icon: '🏨',
+  },
 ]
 
 export default function Navbar() {

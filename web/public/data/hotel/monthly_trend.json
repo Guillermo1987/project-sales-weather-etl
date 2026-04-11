@@ -1,0 +1,170 @@
+[
+  {
+    "month": "2024-05",
+    "avg_adr": 226.27,
+    "avg_revpar": 171.72,
+    "avg_occupancy": 0.7438,
+    "total_revenue": 508013.54
+  },
+  {
+    "month": "2024-06",
+    "avg_adr": 271.08,
+    "avg_revpar": 235.04,
+    "avg_occupancy": 0.8556,
+    "total_revenue": 673551.17
+  },
+  {
+    "month": "2024-07",
+    "avg_adr": 295.05,
+    "avg_revpar": 268.6,
+    "avg_occupancy": 0.9027,
+    "total_revenue": 795713.56
+  },
+  {
+    "month": "2024-08",
+    "avg_adr": 285.04,
+    "avg_revpar": 256.69,
+    "avg_occupancy": 0.8904,
+    "total_revenue": 760329.25
+  },
+  {
+    "month": "2024-09",
+    "avg_adr": 236.21,
+    "avg_revpar": 183.63,
+    "avg_occupancy": 0.7652,
+    "total_revenue": 526280.89
+  },
+  {
+    "month": "2024-10",
+    "avg_adr": 217.8,
+    "avg_revpar": 156.93,
+    "avg_occupancy": 0.7087,
+    "total_revenue": 465119.25
+  },
+  {
+    "month": "2024-11",
+    "avg_adr": 180.49,
+    "avg_revpar": 104.73,
+    "avg_occupancy": 0.5712,
+    "total_revenue": 299664.83
+  },
+  {
+    "month": "2024-12",
+    "avg_adr": 256.32,
+    "avg_revpar": 210.1,
+    "avg_occupancy": 0.8092,
+    "total_revenue": 623064.19
+  },
+  {
+    "month": "2025-01",
+    "avg_adr": 156.93,
+    "avg_revpar": 79.43,
+    "avg_occupancy": 0.4984,
+    "total_revenue": 234581.47
+  },
+  {
+    "month": "2025-02",
+    "avg_adr": 171.27,
+    "avg_revpar": 95.98,
+    "avg_occupancy": 0.5516,
+    "total_revenue": 256516.14
+  },
+  {
+    "month": "2025-03",
+    "avg_adr": 192.73,
+    "avg_revpar": 121.86,
+    "avg_occupancy": 0.6218,
+    "total_revenue": 360416.36
+  },
+  {
+    "month": "2025-04",
+    "avg_adr": 205.68,
+    "avg_revpar": 139.52,
+    "avg_occupancy": 0.6668,
+    "total_revenue": 399624.65
+  },
+  {
+    "month": "2025-05",
+    "avg_adr": 229.67,
+    "avg_revpar": 173.96,
+    "avg_occupancy": 0.7452,
+    "total_revenue": 515107.97
+  },
+  {
+    "month": "2025-06",
+    "avg_adr": 267.37,
+    "avg_revpar": 229.21,
+    "avg_occupancy": 0.8439,
+    "total_revenue": 657166.58
+  },
+  {
+    "month": "2025-07",
+    "avg_adr": 293.62,
+    "avg_revpar": 269.1,
+    "avg_occupancy": 0.9081,
+    "total_revenue": 797241.31
+  },
+  {
+    "month": "2025-08",
+    "avg_adr": 291.87,
+    "avg_revpar": 262.94,
+    "avg_occupancy": 0.8896,
+    "total_revenue": 779010.56
+  },
+  {
+    "month": "2025-09",
+    "avg_adr": 235.12,
+    "avg_revpar": 184.8,
+    "avg_occupancy": 0.7732,
+    "total_revenue": 529788.4
+  },
+  {
+    "month": "2025-10",
+    "avg_adr": 217.54,
+    "avg_revpar": 158.07,
+    "avg_occupancy": 0.7157,
+    "total_revenue": 467929.84
+  },
+  {
+    "month": "2025-11",
+    "avg_adr": 181.9,
+    "avg_revpar": 108.07,
+    "avg_occupancy": 0.5858,
+    "total_revenue": 309267.58
+  },
+  {
+    "month": "2025-12",
+    "avg_adr": 251.79,
+    "avg_revpar": 205.74,
+    "avg_occupancy": 0.8067,
+    "total_revenue": 609410.74
+  },
+  {
+    "month": "2026-01",
+    "avg_adr": 159.98,
+    "avg_revpar": 84.46,
+    "avg_occupancy": 0.5191,
+    "total_revenue": 249192.38
+  },
+  {
+    "month": "2026-02",
+    "avg_adr": 168.76,
+    "avg_revpar": 94.9,
+    "avg_occupancy": 0.5524,
+    "total_revenue": 253413.05
+  },
+  {
+    "month": "2026-03",
+    "avg_adr": 190.65,
+    "avg_revpar": 120.35,
+    "avg_occupancy": 0.6215,
+    "total_revenue": 356304.38
+  },
+  {
+    "month": "2026-04",
+    "avg_adr": 203.59,
+    "avg_revpar": 138.84,
+    "avg_occupancy": 0.6702,
+    "total_revenue": 132187.39
+  }
+]
