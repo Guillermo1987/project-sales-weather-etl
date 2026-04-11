@@ -1,0 +1,20 @@
+[
+  {
+    "room_type": "Standard",
+    "total_revenue": 2346236.58,
+    "avg_adr": 129.68,
+    "avg_occupancy": 0.7208
+  },
+  {
+    "room_type": "Deluxe",
+    "total_revenue": 2104501.57,
+    "avg_adr": 199.92,
+    "avg_occupancy": 0.7208
+  },
+  {
+    "room_type": "Suite",
+    "total_revenue": 1478838.94,
+    "avg_adr": 345.8,
+    "avg_occupancy": 0.7208
+  }
+]
