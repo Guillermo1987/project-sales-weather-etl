@@ -15,7 +15,7 @@ export default function MarketingFunnel({ data }) {
     <div className="card">
       <h2>Marketing Funnel</h2>
       <p className="card-desc">MQLs → SQLs → Won — conversion rates & ROAS</p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+      <div className="chart-grid-2">
         <ResponsiveContainer width="100%" height={220}>
           <BarChart data={display} margin={{ top: 8, right: 8, bottom: 8, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
