@@ -16,6 +16,11 @@ paperclip.config.*
 *.key
 secrets/
 
+# ── Datos Kaggle (no subir a GitHub) ───────────────
+data/raw/
+data/processed/
+GEMINI_INSTRUCTIONS.md
+
 # ── Python ─────────────────────────────────────────
 __pycache__/
 *.pyc
