@@ -1,0 +1,32 @@
+[
+  {
+    "segment": "0",
+    "total": 83,
+    "churned": 20,
+    "churn_rate": 0.241
+  },
+  {
+    "segment": "1–2",
+    "total": 200,
+    "churned": 61,
+    "churn_rate": 0.305
+  },
+  {
+    "segment": "3–4",
+    "total": 191,
+    "churned": 73,
+    "churn_rate": 0.3822
+  },
+  {
+    "segment": "5–6",
+    "total": 231,
+    "churned": 62,
+    "churn_rate": 0.2684
+  },
+  {
+    "segment": "7+",
+    "total": 295,
+    "churned": 188,
+    "churn_rate": 0.6373
+  }
+]

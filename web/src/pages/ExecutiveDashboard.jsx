@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import HeroSection      from '../components/HeroSection'
 import ExecKpiCards     from '../components/executive/ExecKpiCards'
 import RevenueTrend     from '../components/executive/RevenueTrend'
 import RevenueBySegment from '../components/executive/RevenueBySegment'
@@ -10,11 +10,8 @@ import PipelineFunnel   from '../components/executive/PipelineFunnel'
 import ChurnNrrTrend    from '../components/executive/ChurnNrrTrend'
 
 const EXEC_FILES = [
-  'executive_summary',
-  'revenue_by_segment',
-  'revenue_by_channel',
-  'marketing_funnel',
-  'pipeline_stages',
+  'executive_summary', 'revenue_by_segment',
+  'revenue_by_channel', 'marketing_funnel', 'pipeline_stages',
 ]
 
 export default function ExecutiveDashboard() {
@@ -24,35 +21,35 @@ export default function ExecutiveDashboard() {
 
   useEffect(() => {
     Promise.all(
-      EXEC_FILES.map((f) =>
-        fetch(`/data/executive/${f}.json`)
-          .then((r) => r.json())
-          .then((d) => [f, d])
+      EXEC_FILES.map(f =>
+        fetch(`/data/executive/${f}.json`).then(r => r.json()).then(d => [f, d])
       )
     )
-      .then((results) => { setData(Object.fromEntries(results)); setLoading(false) })
-      .catch((e)      => { setError(e.message);                  setLoading(false) })
+      .then(results => { setData(Object.fromEntries(results)); setLoading(false) })
+      .catch(e      => { setError(e.message);                  setLoading(false) })
   }, [])
 
   if (loading) return <div className="loading">Loading executive data...</div>
   if (error)   return <div className="error">Error loading data: {error}</div>
 
+  const last = data.executive_summary?.at(-1)
+
   return (
     <div className="dashboard">
-      <header>
-        <div className="header-top">
-          <span className="badge">BI Portfolio</span>
-          <Link to="/" className="nav-back">← Sales &amp; Weather ETL</Link>
-        </div>
-        <h1>Executive Dashboard 360°</h1>
-        <p className="subtitle">
-          Finance · RevOps · Marketing · Pipeline &middot; 36-month synthetic dataset &middot;{' '}
-          <a href="https://github.com/Guillermo1987/project-executive-dashboard-data" target="_blank" rel="noreferrer">
-            GitHub
-          </a>{' '}
-          &middot; Guillermo Ubeda
-        </p>
-      </header>
+      <HeroSection
+        badge="BI & RevOps"
+        badgeColor="#34d399"
+        title="Executive Dashboard 360°"
+        description="Single source of truth for Finance, RevOps and Marketing leadership. 24 interconnected KPIs covering ARR, CAC, LTV, NRR, pipeline health and marketing funnel efficiency across 36 months."
+        stats={[
+          { value: '24',    label: 'KPIs tracked' },
+          { value: '36mo',  label: 'Historical data' },
+          { value: '3',     label: 'Segments' },
+          { value: '4',     label: 'Channels' },
+        ]}
+        techs={['Python', 'Pandas', 'NumPy', 'React', 'Recharts', 'Firebase']}
+        githubUrl="https://github.com/Guillermo1987/project-executive-dashboard-data"
+      />
 
       <ExecKpiCards data={data.executive_summary} />
 
@@ -67,7 +64,7 @@ export default function ExecutiveDashboard() {
         </div>
 
         <div className="grid grid-2">
-          <CacLtvTrend  data={data.executive_summary} />
+          <CacLtvTrend   data={data.executive_summary} />
           <ChurnNrrTrend data={data.executive_summary} />
         </div>
 
@@ -82,7 +79,7 @@ export default function ExecutiveDashboard() {
 
       <footer>
         <p>
-          Synthetic data generated with Python / Node.js &middot; Visualized with React + Recharts &middot;{' '}
+          Synthetic data · Python / Node.js · React + Recharts &middot;{' '}
           <a href="https://github.com/Guillermo1987/project-executive-dashboard-data" target="_blank" rel="noreferrer">
             project-executive-dashboard-data
           </a>
