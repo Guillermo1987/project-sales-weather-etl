@@ -1,0 +1,866 @@
+[
+  {
+    "month": "2022-01",
+    "segment": "SMB",
+    "revenue": 201004,
+    "new_customers": 49,
+    "churn_rate": 0.0697,
+    "avg_deal_size": 4102.12
+  },
+  {
+    "month": "2022-02",
+    "segment": "SMB",
+    "revenue": 204244,
+    "new_customers": 41,
+    "churn_rate": 0.0714,
+    "avg_deal_size": 4981.56
+  },
+  {
+    "month": "2022-03",
+    "segment": "SMB",
+    "revenue": 221236,
+    "new_customers": 60,
+    "churn_rate": 0.0668,
+    "avg_deal_size": 3687.27
+  },
+  {
+    "month": "2022-04",
+    "segment": "SMB",
+    "revenue": 233530,
+    "new_customers": 66,
+    "churn_rate": 0.0672,
+    "avg_deal_size": 3538.33
+  },
+  {
+    "month": "2022-05",
+    "segment": "SMB",
+    "revenue": 256468,
+    "new_customers": 70,
+    "churn_rate": 0.0687,
+    "avg_deal_size": 3663.83
+  },
+  {
+    "month": "2022-06",
+    "segment": "SMB",
+    "revenue": 235805,
+    "new_customers": 74,
+    "churn_rate": 0.0625,
+    "avg_deal_size": 3186.55
+  },
+  {
+    "month": "2022-07",
+    "segment": "SMB",
+    "revenue": 263923,
+    "new_customers": 58,
+    "churn_rate": 0.068,
+    "avg_deal_size": 4550.4
+  },
+  {
+    "month": "2022-08",
+    "segment": "SMB",
+    "revenue": 266011,
+    "new_customers": 74,
+    "churn_rate": 0.0566,
+    "avg_deal_size": 3594.74
+  },
+  {
+    "month": "2022-09",
+    "segment": "SMB",
+    "revenue": 257418,
+    "new_customers": 73,
+    "churn_rate": 0.0626,
+    "avg_deal_size": 3526.27
+  },
+  {
+    "month": "2022-10",
+    "segment": "SMB",
+    "revenue": 260185,
+    "new_customers": 63,
+    "churn_rate": 0.061,
+    "avg_deal_size": 4129.92
+  },
+  {
+    "month": "2022-11",
+    "segment": "SMB",
+    "revenue": 244758,
+    "new_customers": 77,
+    "churn_rate": 0.0586,
+    "avg_deal_size": 3178.68
+  },
+  {
+    "month": "2022-12",
+    "segment": "SMB",
+    "revenue": 236498,
+    "new_customers": 69,
+    "churn_rate": 0.0618,
+    "avg_deal_size": 3427.51
+  },
+  {
+    "month": "2023-01",
+    "segment": "SMB",
+    "revenue": 245112,
+    "new_customers": 60,
+    "churn_rate": 0.0627,
+    "avg_deal_size": 4085.2
+  },
+  {
+    "month": "2023-02",
+    "segment": "SMB",
+    "revenue": 244829,
+    "new_customers": 69,
+    "churn_rate": 0.0604,
+    "avg_deal_size": 3548.25
+  },
+  {
+    "month": "2023-03",
+    "segment": "SMB",
+    "revenue": 259591,
+    "new_customers": 74,
+    "churn_rate": 0.058,
+    "avg_deal_size": 3507.99
+  },
+  {
+    "month": "2023-04",
+    "segment": "SMB",
+    "revenue": 262137,
+    "new_customers": 85,
+    "churn_rate": 0.0583,
+    "avg_deal_size": 3083.96
+  },
+  {
+    "month": "2023-05",
+    "segment": "SMB",
+    "revenue": 282284,
+    "new_customers": 63,
+    "churn_rate": 0.0583,
+    "avg_deal_size": 4480.7
+  },
+  {
+    "month": "2023-06",
+    "segment": "SMB",
+    "revenue": 275738,
+    "new_customers": 74,
+    "churn_rate": 0.0559,
+    "avg_deal_size": 3726.19
+  },
+  {
+    "month": "2023-07",
+    "segment": "SMB",
+    "revenue": 284825,
+    "new_customers": 79,
+    "churn_rate": 0.0522,
+    "avg_deal_size": 3605.38
+  },
+  {
+    "month": "2023-08",
+    "segment": "SMB",
+    "revenue": 285432,
+    "new_customers": 86,
+    "churn_rate": 0.0575,
+    "avg_deal_size": 3318.98
+  },
+  {
+    "month": "2023-09",
+    "segment": "SMB",
+    "revenue": 263690,
+    "new_customers": 75,
+    "churn_rate": 0.0514,
+    "avg_deal_size": 3515.87
+  },
+  {
+    "month": "2023-10",
+    "segment": "SMB",
+    "revenue": 277859,
+    "new_customers": 83,
+    "churn_rate": 0.0454,
+    "avg_deal_size": 3347.7
+  },
+  {
+    "month": "2023-11",
+    "segment": "SMB",
+    "revenue": 275389,
+    "new_customers": 74,
+    "churn_rate": 0.053,
+    "avg_deal_size": 3721.47
+  },
+  {
+    "month": "2023-12",
+    "segment": "SMB",
+    "revenue": 256861,
+    "new_customers": 66,
+    "churn_rate": 0.0493,
+    "avg_deal_size": 3891.83
+  },
+  {
+    "month": "2024-01",
+    "segment": "SMB",
+    "revenue": 256832,
+    "new_customers": 74,
+    "churn_rate": 0.049,
+    "avg_deal_size": 3470.7
+  },
+  {
+    "month": "2024-02",
+    "segment": "SMB",
+    "revenue": 269136,
+    "new_customers": 74,
+    "churn_rate": 0.0459,
+    "avg_deal_size": 3636.97
+  },
+  {
+    "month": "2024-03",
+    "segment": "SMB",
+    "revenue": 276996,
+    "new_customers": 64,
+    "churn_rate": 0.0486,
+    "avg_deal_size": 4328.06
+  },
+  {
+    "month": "2024-04",
+    "segment": "SMB",
+    "revenue": 290772,
+    "new_customers": 76,
+    "churn_rate": 0.0479,
+    "avg_deal_size": 3825.95
+  },
+  {
+    "month": "2024-05",
+    "segment": "SMB",
+    "revenue": 301139,
+    "new_customers": 93,
+    "churn_rate": 0.0467,
+    "avg_deal_size": 3238.05
+  },
+  {
+    "month": "2024-06",
+    "segment": "SMB",
+    "revenue": 291580,
+    "new_customers": 77,
+    "churn_rate": 0.0449,
+    "avg_deal_size": 3786.75
+  },
+  {
+    "month": "2024-07",
+    "segment": "SMB",
+    "revenue": 303268,
+    "new_customers": 78,
+    "churn_rate": 0.044,
+    "avg_deal_size": 3888.05
+  },
+  {
+    "month": "2024-08",
+    "segment": "SMB",
+    "revenue": 307427,
+    "new_customers": 88,
+    "churn_rate": 0.0374,
+    "avg_deal_size": 3493.49
+  },
+  {
+    "month": "2024-09",
+    "segment": "SMB",
+    "revenue": 302061,
+    "new_customers": 89,
+    "churn_rate": 0.0385,
+    "avg_deal_size": 3393.94
+  },
+  {
+    "month": "2024-10",
+    "segment": "SMB",
+    "revenue": 283265,
+    "new_customers": 93,
+    "churn_rate": 0.0394,
+    "avg_deal_size": 3045.86
+  },
+  {
+    "month": "2024-11",
+    "segment": "SMB",
+    "revenue": 283268,
+    "new_customers": 82,
+    "churn_rate": 0.0415,
+    "avg_deal_size": 3454.49
+  },
+  {
+    "month": "2024-12",
+    "segment": "SMB",
+    "revenue": 279040,
+    "new_customers": 71,
+    "churn_rate": 0.041,
+    "avg_deal_size": 3930.14
+  },
+  {
+    "month": "2022-01",
+    "segment": "Mid-Market",
+    "revenue": 156337,
+    "new_customers": 41,
+    "churn_rate": 0.0429,
+    "avg_deal_size": 3813.1
+  },
+  {
+    "month": "2022-02",
+    "segment": "Mid-Market",
+    "revenue": 160833,
+    "new_customers": 30,
+    "churn_rate": 0.0508,
+    "avg_deal_size": 5361.1
+  },
+  {
+    "month": "2022-03",
+    "segment": "Mid-Market",
+    "revenue": 176389,
+    "new_customers": 53,
+    "churn_rate": 0.0475,
+    "avg_deal_size": 3328.09
+  },
+  {
+    "month": "2022-04",
+    "segment": "Mid-Market",
+    "revenue": 188527,
+    "new_customers": 54,
+    "churn_rate": 0.0528,
+    "avg_deal_size": 3491.24
+  },
+  {
+    "month": "2022-05",
+    "segment": "Mid-Market",
+    "revenue": 209654,
+    "new_customers": 51,
+    "churn_rate": 0.0526,
+    "avg_deal_size": 4110.86
+  },
+  {
+    "month": "2022-06",
+    "segment": "Mid-Market",
+    "revenue": 195203,
+    "new_customers": 65,
+    "churn_rate": 0.0511,
+    "avg_deal_size": 3003.12
+  },
+  {
+    "month": "2022-07",
+    "segment": "Mid-Market",
+    "revenue": 221258,
+    "new_customers": 53,
+    "churn_rate": 0.0517,
+    "avg_deal_size": 4174.68
+  },
+  {
+    "month": "2022-08",
+    "segment": "Mid-Market",
+    "revenue": 225859,
+    "new_customers": 59,
+    "churn_rate": 0.0471,
+    "avg_deal_size": 3828.12
+  },
+  {
+    "month": "2022-09",
+    "segment": "Mid-Market",
+    "revenue": 221369,
+    "new_customers": 59,
+    "churn_rate": 0.0421,
+    "avg_deal_size": 3752.02
+  },
+  {
+    "month": "2022-10",
+    "segment": "Mid-Market",
+    "revenue": 226636,
+    "new_customers": 59,
+    "churn_rate": 0.0429,
+    "avg_deal_size": 3841.29
+  },
+  {
+    "month": "2022-11",
+    "segment": "Mid-Market",
+    "revenue": 215963,
+    "new_customers": 63,
+    "churn_rate": 0.0441,
+    "avg_deal_size": 3427.98
+  },
+  {
+    "month": "2022-12",
+    "segment": "Mid-Market",
+    "revenue": 211395,
+    "new_customers": 65,
+    "churn_rate": 0.043,
+    "avg_deal_size": 3252.23
+  },
+  {
+    "month": "2023-01",
+    "segment": "Mid-Market",
+    "revenue": 221966,
+    "new_customers": 54,
+    "churn_rate": 0.0377,
+    "avg_deal_size": 4110.48
+  },
+  {
+    "month": "2023-02",
+    "segment": "Mid-Market",
+    "revenue": 224630,
+    "new_customers": 67,
+    "churn_rate": 0.0445,
+    "avg_deal_size": 3352.69
+  },
+  {
+    "month": "2023-03",
+    "segment": "Mid-Market",
+    "revenue": 241328,
+    "new_customers": 67,
+    "churn_rate": 0.0428,
+    "avg_deal_size": 3601.91
+  },
+  {
+    "month": "2023-04",
+    "segment": "Mid-Market",
+    "revenue": 246941,
+    "new_customers": 71,
+    "churn_rate": 0.0432,
+    "avg_deal_size": 3478.04
+  },
+  {
+    "month": "2023-05",
+    "segment": "Mid-Market",
+    "revenue": 269481,
+    "new_customers": 65,
+    "churn_rate": 0.0381,
+    "avg_deal_size": 4145.86
+  },
+  {
+    "month": "2023-06",
+    "segment": "Mid-Market",
+    "revenue": 266777,
+    "new_customers": 77,
+    "churn_rate": 0.0428,
+    "avg_deal_size": 3464.64
+  },
+  {
+    "month": "2023-07",
+    "segment": "Mid-Market",
+    "revenue": 279302,
+    "new_customers": 77,
+    "churn_rate": 0.0399,
+    "avg_deal_size": 3627.3
+  },
+  {
+    "month": "2023-08",
+    "segment": "Mid-Market",
+    "revenue": 283713,
+    "new_customers": 84,
+    "churn_rate": 0.037,
+    "avg_deal_size": 3377.54
+  },
+  {
+    "month": "2023-09",
+    "segment": "Mid-Market",
+    "revenue": 265695,
+    "new_customers": 71,
+    "churn_rate": 0.0424,
+    "avg_deal_size": 3742.18
+  },
+  {
+    "month": "2023-10",
+    "segment": "Mid-Market",
+    "revenue": 283834,
+    "new_customers": 72,
+    "churn_rate": 0.0433,
+    "avg_deal_size": 3942.14
+  },
+  {
+    "month": "2023-11",
+    "segment": "Mid-Market",
+    "revenue": 285216,
+    "new_customers": 80,
+    "churn_rate": 0.0421,
+    "avg_deal_size": 3565.2
+  },
+  {
+    "month": "2023-12",
+    "segment": "Mid-Market",
+    "revenue": 269744,
+    "new_customers": 72,
+    "churn_rate": 0.0368,
+    "avg_deal_size": 3746.44
+  },
+  {
+    "month": "2024-01",
+    "segment": "Mid-Market",
+    "revenue": 273507,
+    "new_customers": 78,
+    "churn_rate": 0.0316,
+    "avg_deal_size": 3506.5
+  },
+  {
+    "month": "2024-02",
+    "segment": "Mid-Market",
+    "revenue": 290667,
+    "new_customers": 79,
+    "churn_rate": 0.0287,
+    "avg_deal_size": 3679.33
+  },
+  {
+    "month": "2024-03",
+    "segment": "Mid-Market",
+    "revenue": 303419,
+    "new_customers": 75,
+    "churn_rate": 0.036,
+    "avg_deal_size": 4045.59
+  },
+  {
+    "month": "2024-04",
+    "segment": "Mid-Market",
+    "revenue": 323080,
+    "new_customers": 99,
+    "churn_rate": 0.0313,
+    "avg_deal_size": 3263.43
+  },
+  {
+    "month": "2024-05",
+    "segment": "Mid-Market",
+    "revenue": 339434,
+    "new_customers": 87,
+    "churn_rate": 0.0312,
+    "avg_deal_size": 3901.54
+  },
+  {
+    "month": "2024-06",
+    "segment": "Mid-Market",
+    "revenue": 333443,
+    "new_customers": 88,
+    "churn_rate": 0.035,
+    "avg_deal_size": 3789.13
+  },
+  {
+    "month": "2024-07",
+    "segment": "Mid-Market",
+    "revenue": 351894,
+    "new_customers": 104,
+    "churn_rate": 0.0354,
+    "avg_deal_size": 3383.6
+  },
+  {
+    "month": "2024-08",
+    "segment": "Mid-Market",
+    "revenue": 361988,
+    "new_customers": 101,
+    "churn_rate": 0.031,
+    "avg_deal_size": 3584.04
+  },
+  {
+    "month": "2024-09",
+    "segment": "Mid-Market",
+    "revenue": 360961,
+    "new_customers": 102,
+    "churn_rate": 0.0345,
+    "avg_deal_size": 3538.83
+  },
+  {
+    "month": "2024-10",
+    "segment": "Mid-Market",
+    "revenue": 343577,
+    "new_customers": 103,
+    "churn_rate": 0.0318,
+    "avg_deal_size": 3335.7
+  },
+  {
+    "month": "2024-11",
+    "segment": "Mid-Market",
+    "revenue": 348772,
+    "new_customers": 112,
+    "churn_rate": 0.0317,
+    "avg_deal_size": 3114.04
+  },
+  {
+    "month": "2024-12",
+    "segment": "Mid-Market",
+    "revenue": 348800,
+    "new_customers": 98,
+    "churn_rate": 0.0261,
+    "avg_deal_size": 3559.18
+  },
+  {
+    "month": "2022-01",
+    "segment": "Enterprise",
+    "revenue": 89335,
+    "new_customers": 25,
+    "churn_rate": 0.0277,
+    "avg_deal_size": 3573.4
+  },
+  {
+    "month": "2022-02",
+    "segment": "Enterprise",
+    "revenue": 92577,
+    "new_customers": 20,
+    "churn_rate": 0.0267,
+    "avg_deal_size": 4628.85
+  },
+  {
+    "month": "2022-03",
+    "segment": "Enterprise",
+    "revenue": 102263,
+    "new_customers": 27,
+    "churn_rate": 0.0302,
+    "avg_deal_size": 3787.52
+  },
+  {
+    "month": "2022-04",
+    "segment": "Enterprise",
+    "revenue": 110075,
+    "new_customers": 31,
+    "churn_rate": 0.0308,
+    "avg_deal_size": 3550.81
+  },
+  {
+    "month": "2022-05",
+    "segment": "Enterprise",
+    "revenue": 123266,
+    "new_customers": 32,
+    "churn_rate": 0.0276,
+    "avg_deal_size": 3852.06
+  },
+  {
+    "month": "2022-06",
+    "segment": "Enterprise",
+    "revenue": 115560,
+    "new_customers": 33,
+    "churn_rate": 0.0252,
+    "avg_deal_size": 3501.82
+  },
+  {
+    "month": "2022-07",
+    "segment": "Enterprise",
+    "revenue": 131873,
+    "new_customers": 33,
+    "churn_rate": 0.0273,
+    "avg_deal_size": 3996.15
+  },
+  {
+    "month": "2022-08",
+    "segment": "Enterprise",
+    "revenue": 135515,
+    "new_customers": 33,
+    "churn_rate": 0.0232,
+    "avg_deal_size": 4106.52
+  },
+  {
+    "month": "2022-09",
+    "segment": "Enterprise",
+    "revenue": 133696,
+    "new_customers": 38,
+    "churn_rate": 0.028,
+    "avg_deal_size": 3518.32
+  },
+  {
+    "month": "2022-10",
+    "segment": "Enterprise",
+    "revenue": 137766,
+    "new_customers": 32,
+    "churn_rate": 0.0262,
+    "avg_deal_size": 4305.19
+  },
+  {
+    "month": "2022-11",
+    "segment": "Enterprise",
+    "revenue": 132119,
+    "new_customers": 39,
+    "churn_rate": 0.0271,
+    "avg_deal_size": 3387.67
+  },
+  {
+    "month": "2022-12",
+    "segment": "Enterprise",
+    "revenue": 130140,
+    "new_customers": 40,
+    "churn_rate": 0.0258,
+    "avg_deal_size": 3253.5
+  },
+  {
+    "month": "2023-01",
+    "segment": "Enterprise",
+    "revenue": 137498,
+    "new_customers": 33,
+    "churn_rate": 0.0224,
+    "avg_deal_size": 4166.61
+  },
+  {
+    "month": "2023-02",
+    "segment": "Enterprise",
+    "revenue": 140002,
+    "new_customers": 41,
+    "churn_rate": 0.0219,
+    "avg_deal_size": 3414.68
+  },
+  {
+    "month": "2023-03",
+    "segment": "Enterprise",
+    "revenue": 151319,
+    "new_customers": 41,
+    "churn_rate": 0.0236,
+    "avg_deal_size": 3690.71
+  },
+  {
+    "month": "2023-04",
+    "segment": "Enterprise",
+    "revenue": 155763,
+    "new_customers": 49,
+    "churn_rate": 0.0246,
+    "avg_deal_size": 3178.84
+  },
+  {
+    "month": "2023-05",
+    "segment": "Enterprise",
+    "revenue": 170981,
+    "new_customers": 43,
+    "churn_rate": 0.0257,
+    "avg_deal_size": 3976.3
+  },
+  {
+    "month": "2023-06",
+    "segment": "Enterprise",
+    "revenue": 170249,
+    "new_customers": 44,
+    "churn_rate": 0.0223,
+    "avg_deal_size": 3869.3
+  },
+  {
+    "month": "2023-07",
+    "segment": "Enterprise",
+    "revenue": 179263,
+    "new_customers": 44,
+    "churn_rate": 0.0204,
+    "avg_deal_size": 4074.16
+  },
+  {
+    "month": "2023-08",
+    "segment": "Enterprise",
+    "revenue": 183124,
+    "new_customers": 57,
+    "churn_rate": 0.0214,
+    "avg_deal_size": 3212.7
+  },
+  {
+    "month": "2023-09",
+    "segment": "Enterprise",
+    "revenue": 172451,
+    "new_customers": 48,
+    "churn_rate": 0.0164,
+    "avg_deal_size": 3592.73
+  },
+  {
+    "month": "2023-10",
+    "segment": "Enterprise",
+    "revenue": 185239,
+    "new_customers": 55,
+    "churn_rate": 0.0206,
+    "avg_deal_size": 3367.98
+  },
+  {
+    "month": "2023-11",
+    "segment": "Enterprise",
+    "revenue": 187153,
+    "new_customers": 49,
+    "churn_rate": 0.0217,
+    "avg_deal_size": 3819.45
+  },
+  {
+    "month": "2023-12",
+    "segment": "Enterprise",
+    "revenue": 177951,
+    "new_customers": 49,
+    "churn_rate": 0.0244,
+    "avg_deal_size": 3631.65
+  },
+  {
+    "month": "2024-01",
+    "segment": "Enterprise",
+    "revenue": 181389,
+    "new_customers": 53,
+    "churn_rate": 0.0232,
+    "avg_deal_size": 3422.43
+  },
+  {
+    "month": "2024-02",
+    "segment": "Enterprise",
+    "revenue": 193778,
+    "new_customers": 57,
+    "churn_rate": 0.0191,
+    "avg_deal_size": 3399.61
+  },
+  {
+    "month": "2024-03",
+    "segment": "Enterprise",
+    "revenue": 203324,
+    "new_customers": 48,
+    "churn_rate": 0.0217,
+    "avg_deal_size": 4235.92
+  },
+  {
+    "month": "2024-04",
+    "segment": "Enterprise",
+    "revenue": 217604,
+    "new_customers": 56,
+    "churn_rate": 0.0204,
+    "avg_deal_size": 3885.79
+  },
+  {
+    "month": "2024-05",
+    "segment": "Enterprise",
+    "revenue": 229771,
+    "new_customers": 66,
+    "churn_rate": 0.018,
+    "avg_deal_size": 3481.38
+  },
+  {
+    "month": "2024-06",
+    "segment": "Enterprise",
+    "revenue": 226838,
+    "new_customers": 68,
+    "churn_rate": 0.0163,
+    "avg_deal_size": 3335.85
+  },
+  {
+    "month": "2024-07",
+    "segment": "Enterprise",
+    "revenue": 240567,
+    "new_customers": 71,
+    "churn_rate": 0.0198,
+    "avg_deal_size": 3388.27
+  },
+  {
+    "month": "2024-08",
+    "segment": "Enterprise",
+    "revenue": 248670,
+    "new_customers": 67,
+    "churn_rate": 0.0199,
+    "avg_deal_size": 3711.49
+  },
+  {
+    "month": "2024-09",
+    "segment": "Enterprise",
+    "revenue": 249155,
+    "new_customers": 67,
+    "churn_rate": 0.012,
+    "avg_deal_size": 3718.73
+  },
+  {
+    "month": "2024-10",
+    "segment": "Enterprise",
+    "revenue": 238279,
+    "new_customers": 77,
+    "churn_rate": 0.0135,
+    "avg_deal_size": 3094.53
+  },
+  {
+    "month": "2024-11",
+    "segment": "Enterprise",
+    "revenue": 243016,
+    "new_customers": 66,
+    "churn_rate": 0.0166,
+    "avg_deal_size": 3682.06
+  },
+  {
+    "month": "2024-12",
+    "segment": "Enterprise",
+    "revenue": 244160,
+    "new_customers": 71,
+    "churn_rate": 0.016,
+    "avg_deal_size": 3438.87
+  }
+]
