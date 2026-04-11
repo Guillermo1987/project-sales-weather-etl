@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Furniture",
+    "total_sales": 728658.58,
+    "avg_sales": 350.65,
+    "num_orders": 2078
+  },
+  {
+    "category": "Office Supplies",
+    "total_sales": 705422.33,
+    "avg_sales": 119.38,
+    "num_orders": 5909
+  },
+  {
+    "category": "Technology",
+    "total_sales": 827455.87,
+    "avg_sales": 456.4,
+    "num_orders": 1813
+  }
+]
