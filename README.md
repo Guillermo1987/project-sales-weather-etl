@@ -102,4 +102,4 @@ This project also hosts the **[Executive Dashboard 360°](https://sales-weather-
 
 ---
 
-*Built by [Guillermo Ubeda](https://github.com/Guillermo1987) · Data & BI Analyst · [LinkedIn](https://linkedin.com/in/guillermoubedasanchez)*
+*Built by [Guillermo Ubeda](https://github.com/Guillermo1987) · Data & BI Analyst · [LinkedIn](https://linkedin.com/in/guillermo-alejandro-ú-027a3a120)*
