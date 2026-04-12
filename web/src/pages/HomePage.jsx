@@ -207,11 +207,11 @@ function OrgLogo({ org }) {
     </svg>
   )
   if (org === 'Indiana Tech') return (
-    <svg viewBox="0 0 94 24" width="84" height="22" aria-label="Indiana Institute of Technology">
-      {/* Official wordmark: "INDIANA" black thin + "TECH" orange bold, white bg */}
-      <rect width="94" height="24" rx="4" fill="white"/>
-      <text x="5"  y="18" fontFamily={ff} fontSize="15" fontWeight="300" fill="#111111" letterSpacing="1.8">INDIANA</text>
-      <text x="61" y="18" fontFamily={ff} fontSize="15" fontWeight="800" fill="#D93A00" letterSpacing="0.5">TECH</text>
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-label="Indiana Institute of Technology">
+      {/* LinkedIn logo: dark crimson bg, INDIANA white thin, TECH orange bold */}
+      <rect width="32" height="32" rx="5" fill="#8B0020"/>
+      <text x="16" y="14" textAnchor="middle" fontFamily={ff} fontSize="6.5" fontWeight="300" fill="#ffffff" letterSpacing="0.6">INDIANA</text>
+      <text x="16" y="24" textAnchor="middle" fontFamily={ff} fontSize="9"   fontWeight="800" fill="#F07820">TECH</text>
     </svg>
   )
   return <span style={{ fontSize: '1.1rem' }}>{org[0]}</span>
