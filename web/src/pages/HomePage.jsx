@@ -165,20 +165,20 @@ function OrgLogo({ org }) {
     </svg>
   )
   if (org === 'IBM') return (
-    <svg viewBox="0 0 44 20" width="38" height="17" aria-label="IBM">
-      {/* Simplified IBM horizontal bar logo — 8 stripes */}
-      {[0,2,4,6,8,10,12,14].map((y,i) => (
-        <g key={i}>
-          {/* I */}
-          <rect x="0"  y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
-          {/* B */}
-          <rect x="8"  y={y} width={i===2||i===6?5:6} height="1.4" fill="#1F70C1" rx="0.3"/>
-          {/* M */}
-          <rect x="15" y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
-          {/* M right leg */}
-          <rect x="22" y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
-        </g>
-      ))}
+    <svg viewBox="0 0 50 21" width="46" height="20" aria-label="IBM">
+      {/* IBM classic 8-stripe logo — I, B, M in #1F70C1 */}
+      {/* Stripe Y positions: 0, 2.7, 5.4, 8.1, 10.8, 13.5, 16.2, 18.9 */}
+      {/* --- I (x:0, w:7) --- */}
+      {[0,2.7,5.4,8.1,10.8,13.5,16.2,18.9].map((y,i)=><rect key={`i${i}`} x="0"  y={y} width="7"  height="1.5" fill="#1F70C1"/>)}
+      {/* --- B full rows 0,1,3,4,6,7 (x:9, w:16); short rows 2,5 (w:12) --- */}
+      {[0,2.7,8.1,10.8,16.2,18.9].map((y,i)=><rect key={`bf${i}`} x="9"  y={y} width="16" height="1.5" fill="#1F70C1"/>)}
+      {[5.4,13.5].map((y,i)=>                 <rect key={`bs${i}`} x="9"  y={y} width="12" height="1.5" fill="#1F70C1"/>)}
+      {/* --- M left leg (x:27, w:6) all rows --- */}
+      {[0,2.7,5.4,8.1,10.8,13.5,16.2,18.9].map((y,i)=><rect key={`ml${i}`} x="27" y={y} width="6"  height="1.5" fill="#1F70C1"/>)}
+      {/* --- M top connector (x:33, w:11) rows 0,1 only --- */}
+      {[0,2.7].map((y,i)=>                             <rect key={`mc${i}`} x="33" y={y} width="11" height="1.5" fill="#1F70C1"/>)}
+      {/* --- M right leg (x:44, w:6) all rows --- */}
+      {[0,2.7,5.4,8.1,10.8,13.5,16.2,18.9].map((y,i)=><rect key={`mr${i}`} x="44" y={y} width="6"  height="1.5" fill="#1F70C1"/>)}
     </svg>
   )
   if (org === 'ISC2') return (
@@ -207,10 +207,11 @@ function OrgLogo({ org }) {
     </svg>
   )
   if (org === 'Indiana Tech') return (
-    <svg viewBox="0 0 32 32" width="28" height="28" aria-label="Indiana Institute of Technology">
-      <rect width="32" height="32" rx="6" fill="#003087"/>
-      <text x="16" y="15" textAnchor="middle" fill="white" fontSize="8" fontWeight="800" fontFamily={ff}>Indiana</text>
-      <text x="16" y="26" textAnchor="middle" fill="#C9A84C" fontSize="9" fontWeight="900" fontFamily={ff}>TECH</text>
+    <svg viewBox="0 0 94 24" width="84" height="22" aria-label="Indiana Institute of Technology">
+      {/* Official wordmark: "INDIANA" black thin + "TECH" orange bold, white bg */}
+      <rect width="94" height="24" rx="4" fill="white"/>
+      <text x="5"  y="18" fontFamily={ff} fontSize="15" fontWeight="300" fill="#111111" letterSpacing="1.8">INDIANA</text>
+      <text x="61" y="18" fontFamily={ff} fontSize="15" fontWeight="800" fill="#D93A00" letterSpacing="0.5">TECH</text>
     </svg>
   )
   return <span style={{ fontSize: '1.1rem' }}>{org[0]}</span>
