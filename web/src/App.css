@@ -118,9 +118,16 @@ body {
   border-radius: 12px;
   box-shadow: 0 16px 40px rgba(0,0,0,0.5);
   min-width: 280px;
-  overflow: hidden;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  overflow-x: hidden;
   animation: dropIn 0.15s ease;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
 }
+.nav-dropdown::-webkit-scrollbar { width: 4px; }
+.nav-dropdown::-webkit-scrollbar-track { background: transparent; }
+.nav-dropdown::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
 
 @keyframes dropIn {
   from { opacity: 0; transform: translateY(-6px); }
