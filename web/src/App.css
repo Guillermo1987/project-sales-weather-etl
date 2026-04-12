@@ -215,14 +215,16 @@ body {
 /* ── Hero Section ────────────────────────────────────────────────────────────── */
 
 .hero {
-  padding: 2rem 0 1.5rem;
+  padding: 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #1e293b;
   margin-bottom: 1.75rem;
+  text-align: center;
 }
 
 .hero-top {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 0.75rem;
 }
@@ -264,21 +266,23 @@ body {
 .hero-desc {
   font-size: 0.92rem;
   color: #64748b;
-  max-width: 780px;
+  max-width: 700px;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin: 0 auto 1.25rem;
 }
 
 .hero-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
   margin-bottom: 1.25rem;
 }
 
 .hero-stat {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-stat-value {
@@ -294,11 +298,13 @@ body {
   margin-top: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .hero-techs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
 }
 
