@@ -534,7 +534,33 @@ footer a:hover,
 
 .home-hero-body { flex: 1; min-width: 0; }
 
-.home-hero-top { margin-bottom: 0.6rem; }
+.home-hero-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Language toggle button */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.22rem 0.65rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.03em;
+}
+.lang-toggle:hover {
+  background: #273549;
+  color: #f1f5f9;
+}
 
 .home-hero-badge {
   display: inline-block;
@@ -1048,4 +1074,167 @@ footer a:hover,
   .iad-workflows-grid { grid-template-columns: 1fr; }
   .iad-agents-grid    { grid-template-columns: repeat(2, 1fr); }
   .iad-tech-grid      { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   IA DIGOX — Hero centrado
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.iad-hero {
+  background: #0a1120;
+  border-bottom: 1px solid #1e293b;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.iad-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.iad-hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iad-hero-badge {
+  display: inline-block;
+  background: color-mix(in srgb, #f472b6 15%, transparent);
+  color: #f472b6;
+  border: 1px solid color-mix(in srgb, #f472b6 40%, transparent);
+  border-radius: 99px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.8rem;
+}
+
+.iad-hero-gh {
+  font-size: 0.78rem;
+  color: #60a5fa;
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #1d4ed8;
+  border-radius: 6px;
+  background: #0f1f3d;
+  transition: background 0.15s;
+}
+.iad-hero-gh:hover { background: #1e3a5f; }
+
+.iad-hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.iad-hero-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+.iad-hero-desc strong { color: #94a3b8; }
+
+.iad-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.iad-hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iad-hero-stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.iad-hero-stat-lbl {
+  font-size: 0.65rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.3rem;
+}
+
+.iad-hero-techs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .iad-hero          { padding: 2rem 1rem 1.75rem; }
+  .iad-hero-title    { font-size: 1.6rem; }
+  .iad-hero-desc     { font-size: 0.85rem; }
+  .iad-hero-stats    { gap: 1.5rem; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   HOME — Certification cards
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.home-certs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.home-cert-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.home-cert-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+.home-cert-icon { font-size: 0.9rem; line-height: 1; }
+
+.home-cert-org {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.home-cert-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  line-height: 1.35;
+}
+
+.home-cert-date {
+  font-size: 0.67rem;
+  color: #334155;
+}
+
+@media (max-width: 480px) {
+  .home-certs-grid { grid-template-columns: 1fr; }
 }
