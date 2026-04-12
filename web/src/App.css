@@ -1542,6 +1542,9 @@ footer a:hover,
   line-height: 1.6;
   margin-bottom: 1.5rem;
   max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* Workflow cards */
@@ -1808,6 +1811,7 @@ footer a:hover,
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  text-align: left;
 }
 
 .auto-agent-header {
