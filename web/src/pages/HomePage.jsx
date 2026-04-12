@@ -137,21 +137,84 @@ const PROJECTS = [
 
 /* ── Education ─────────────────────────────────────────────────────────────── */
 const EDU = [
-  { icon:'🎓', title:'MBA', sub:{ es:'Master in Business Administration', en:'Master in Business Administration' } },
-  { icon:'📊', title:'Graduate Certificate in Business Analytics', sub:{ es:'Análisis de datos orientado a decisiones de negocio', en:'Data-driven business decision making' } },
+  { org:'Indiana Tech', title:'MBA', sub:{ es:'Master in Business Administration', en:'Master in Business Administration' } },
+  { org:'Indiana Tech', title:'Graduate Certificate in Business Analytics', sub:{ es:'Análisis de datos orientado a decisiones de negocio', en:'Data-driven business decision making' } },
 ]
 
 /* ── Certifications ────────────────────────────────────────────────────────── */
 const CERTS = [
-  { org:'ISC2',                             color:'#a78bfa', icon:'🔐', name:'Certified in Cybersecurity (CC)',              date:'Sep 2024',  id:'f83ec23e' },
-  { org:'IBM',                              color:'#60a5fa', icon:'💻', name:'Full Stack Software Developer',                date:'Aug 2024',  id:'c845625d' },
-  { org:'IBM',                              color:'#60a5fa', icon:'⚙️', name:'DevOps and Software Engineering',              date:null,        id:'7Z2FU9C6' },
-  { org:'Palo Alto Networks',               color:'#fb923c', icon:'🛡️', name:'Palo Alto Networks Cybersecurity',             date:'Aug 2024',  id:'B8GMFKRW' },
-  { org:'Google',                           color:'#34d399', icon:'🔒', name:'Google Cybersecurity',                         date:'Aug 2024',  id:'M0JCAKMI' },
-  { org:'Google',                           color:'#34d399', icon:'🖥️', name:'Google IT Support',                            date:'Sep 2024',  id:'XYFRQ9AI' },
-  { org:'ESSEC Business School',            color:'#fbbf24', icon:'🏨', name:'Hotel Management: Revenue & Demand Management',date:'Aug 2025',  id:'TDEGVC60' },
-  { org:'Univ. of Illinois Urbana-Champaign',color:'#f472b6', icon:'📣', name:'Digital Marketing',                          date:'Sep 2020',  id:'CQ2UHRF2' },
+  { org:'ISC2',                             color:'#a78bfa', name:'Certified in Cybersecurity (CC)',              date:'Sep 2024',  id:'f83ec23e' },
+  { org:'IBM',                              color:'#60a5fa', name:'Full Stack Software Developer',                date:'Aug 2024',  id:'c845625d' },
+  { org:'IBM',                              color:'#60a5fa', name:'DevOps and Software Engineering',              date:null,        id:'7Z2FU9C6' },
+  { org:'Palo Alto Networks',               color:'#fb923c', name:'Palo Alto Networks Cybersecurity',             date:'Aug 2024',  id:'B8GMFKRW' },
+  { org:'Google',                           color:'#34d399', name:'Google Cybersecurity',                         date:'Aug 2024',  id:'M0JCAKMI' },
+  { org:'Google',                           color:'#34d399', name:'Google IT Support',                            date:'Sep 2024',  id:'XYFRQ9AI' },
+  { org:'ESSEC Business School',            color:'#fbbf24', name:'Hotel Management: Revenue & Demand Management',date:'Aug 2025',  id:'TDEGVC60' },
+  { org:'Univ. of Illinois',                color:'#f472b6', name:'Digital Marketing',                            date:'Sep 2020',  id:'CQ2UHRF2' },
 ]
+
+/* ── Org Logo SVGs ─────────────────────────────────────────────────────────── */
+function OrgLogo({ org }) {
+  const ff = "system-ui,-apple-system,'Segoe UI',sans-serif"
+  if (org === 'Google') return (
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-label="Google">
+      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+    </svg>
+  )
+  if (org === 'IBM') return (
+    <svg viewBox="0 0 44 20" width="38" height="17" aria-label="IBM">
+      {/* Simplified IBM horizontal bar logo — 8 stripes */}
+      {[0,2,4,6,8,10,12,14].map((y,i) => (
+        <g key={i}>
+          {/* I */}
+          <rect x="0"  y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
+          {/* B */}
+          <rect x="8"  y={y} width={i===2||i===6?5:6} height="1.4" fill="#1F70C1" rx="0.3"/>
+          {/* M */}
+          <rect x="15" y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
+          {/* M right leg */}
+          <rect x="22" y={y} width="6"  height="1.4" fill="#1F70C1" rx="0.3"/>
+        </g>
+      ))}
+    </svg>
+  )
+  if (org === 'ISC2') return (
+    <svg viewBox="0 0 32 36" width="26" height="30" aria-label="ISC2">
+      <path d="M16 1L3 7v12c0 7.5 5.5 14.5 13 16 7.5-1.5 13-8.5 13-16V7L16 1z" fill="#6d28d9"/>
+      <text x="16" y="22.5" textAnchor="middle" fill="white" fontSize="9.5" fontWeight="800" fontFamily={ff}>ISC²</text>
+    </svg>
+  )
+  if (org === 'Palo Alto Networks') return (
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-label="Palo Alto Networks">
+      <circle cx="16" cy="16" r="15" fill="#FF6720"/>
+      <text x="16" y="20" textAnchor="middle" fill="white" fontSize="10" fontWeight="800" fontFamily={ff}>PAN</text>
+    </svg>
+  )
+  if (org === 'ESSEC Business School') return (
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-label="ESSEC Business School">
+      <rect width="32" height="32" rx="6" fill="#002855"/>
+      <text x="16" y="15" textAnchor="middle" fill="#C9A84C" fontSize="9" fontWeight="800" fontFamily={ff}>ESSEC</text>
+      <text x="16" y="26" textAnchor="middle" fill="white" fontSize="6" fontFamily={ff}>Business School</text>
+    </svg>
+  )
+  if (org === 'Univ. of Illinois') return (
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-label="University of Illinois">
+      <rect width="32" height="32" rx="6" fill="#13294B"/>
+      <text x="16" y="22" textAnchor="middle" fill="#E84A27" fontSize="22" fontWeight="900" fontFamily={ff}>I</text>
+    </svg>
+  )
+  if (org === 'Indiana Tech') return (
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-label="Indiana Institute of Technology">
+      <rect width="32" height="32" rx="6" fill="#003087"/>
+      <text x="16" y="15" textAnchor="middle" fill="white" fontSize="8" fontWeight="800" fontFamily={ff}>Indiana</text>
+      <text x="16" y="26" textAnchor="middle" fill="#C9A84C" fontSize="9" fontWeight="900" fontFamily={ff}>TECH</text>
+    </svg>
+  )
+  return <span style={{ fontSize: '1.1rem' }}>{org[0]}</span>
+}
 
 /* ── Component ──────────────────────────────────────────────────────────────── */
 export default function HomePage() {
@@ -271,9 +334,9 @@ export default function HomePage() {
         {/* Education + Certifications */}
         <div className="home-about-col">
           <h2 className="home-section-title">{t.eduTitle}</h2>
-          {EDU.map(({ icon, title, sub }) => (
+          {EDU.map(({ org, title, sub }) => (
             <div key={title} className="home-edu-item">
-              <span className="home-edu-icon">{icon}</span>
+              <span className="home-edu-icon"><OrgLogo org={org} /></span>
               <div>
                 <p className="home-edu-title">{title}</p>
                 <p className="home-edu-sub">{sub[lang]}</p>
@@ -283,10 +346,10 @@ export default function HomePage() {
 
           <h2 className="home-section-title" style={{ marginTop: '1.75rem' }}>{t.certTitle}</h2>
           <div className="home-certs-grid">
-            {CERTS.map(({ org, color, icon, name, date, id }) => (
+            {CERTS.map(({ org, color, name, date, id }) => (
               <div key={id} className="home-cert-card">
                 <div className="home-cert-header">
-                  <span className="home-cert-icon">{icon}</span>
+                  <span className="home-cert-icon"><OrgLogo org={org} /></span>
                   <span className="home-cert-org" style={{ color }}>{org}</span>
                 </div>
                 <p className="home-cert-name">{name}</p>

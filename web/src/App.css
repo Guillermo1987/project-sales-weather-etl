@@ -704,9 +704,7 @@ footer a:hover,
   margin-bottom: 1.25rem;
   max-width: 680px;
   line-height: 1.6;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  text-align: left;
 }
 
 /* Projects grid */
@@ -849,6 +847,7 @@ footer a:hover,
   font-size: 0.86rem;
   color: #64748b;
   line-height: 1.65;
+  text-align: left;
 }
 .home-about-p strong { color: #94a3b8; }
 
@@ -880,6 +879,7 @@ footer a:hover,
   font-size: 0.82rem;
   color: #94a3b8;
   line-height: 1.8;
+  text-align: left;
 }
 
 .home-edu-item {
@@ -892,7 +892,7 @@ footer a:hover,
   border-radius: 10px;
 }
 
-.home-edu-icon { font-size: 1.3rem; flex-shrink: 0; line-height: 1; margin-top: 0.1rem; }
+.home-edu-icon { display: flex; align-items: center; flex-shrink: 0; line-height: 1; margin-top: 0.1rem; }
 
 .home-edu-title {
   font-size: 0.85rem;
@@ -1238,7 +1238,7 @@ footer a:hover,
   margin-bottom: 0.1rem;
 }
 
-.home-cert-icon { font-size: 0.9rem; line-height: 1; }
+.home-cert-icon { display: flex; align-items: center; flex-shrink: 0; line-height: 1; }
 
 .home-cert-org {
   font-size: 0.65rem;
@@ -1311,6 +1311,7 @@ footer a:hover,
   font-size: 0.81rem;
   color: #64748b;
   line-height: 1.6;
+  text-align: left;
 }
 
 .home-iadigox-stats {
@@ -1408,6 +1409,13 @@ footer a:hover,
 }
 .footer-built a { color: #60a5fa; text-decoration: none; }
 .footer-built a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .footer-link-text { display: none; }
+  .footer-sep { display: none; }
+  .footer-links { gap: 0.25rem 1.5rem; justify-content: center; }
+  .footer-icon { width: 20px; height: 20px; opacity: 0.9; }
+}
 
 /* ── AutomationsPage ────────────────────────────────────────────────────────── */
 
