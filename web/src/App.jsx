@@ -7,6 +7,7 @@ import ExecutiveDashboard from './pages/ExecutiveDashboard'
 import ChurnDashboard     from './pages/ChurnDashboard'
 import HotelDashboard     from './pages/HotelDashboard'
 import IaDigoxPage        from './pages/IaDigoxPage'
+import AutomationsPage    from './pages/AutomationsPage'
 import './App.css'
 
 const ETL_FILES = [
@@ -44,7 +45,8 @@ export default function App() {
         <Route path="/executive" element={<ExecutiveDashboard />} />
         <Route path="/churn"     element={<ChurnDashboard />} />
         <Route path="/hotel"     element={<HotelDashboard />} />
-        <Route path="/ia-digox"  element={<IaDigoxPage />} />
+        <Route path="/ia-digox"     element={<IaDigoxPage />} />
+        <Route path="/automations"  element={<AutomationsPage />} />
       </Routes>
     </BrowserRouter>
   )

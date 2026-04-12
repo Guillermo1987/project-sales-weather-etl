@@ -1,0 +1,462 @@
+{
+  "workflows": [
+    {
+      "id": "8YjV6hbqFreYos4T",
+      "name": "Prospecting Semanal — Apify → ICP Score → SDR",
+      "active": false,
+      "color": "#f472b6",
+      "status": "development",
+      "nodes": [
+        {
+          "id": "node1",
+          "name": "Cada Lunes 9am",
+          "type": "scheduleTrigger",
+          "position": [
+            100,
+            300
+          ],
+          "icon": "⏰",
+          "typeLabel": "Schedule",
+          "typeColor": "#f472b6",
+          "params": {
+            "rule": "{'interval': [{'field': 'weeks', 'triggerAtDay': [1], 'triggerAtHour': 9, 'triggerAtMinute': 0}]}"
+          }
+        },
+        {
+          "id": "node2",
+          "name": "Definir Busquedas Semanales",
+          "type": "code",
+          "position": [
+            320,
+            300
+          ],
+          "icon": "💻",
+          "typeLabel": "Code",
+          "typeColor": "#fbbf24",
+          "params": {
+            "jsCode": "const week = Math.ceil(new Date().getDate() / 7);\nconst all = {\n  1: ['agencia marketing digital Madrid','empresa automa"
+          }
+        },
+        {
+          "id": "node3",
+          "name": "Apify — Run Google Maps Scraper",
+          "type": "httpRequest",
+          "position": [
+            540,
+            300
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "POST",
+            "url": "https://api.apify.com/v2/acts/compass~crawler-google-places/runs",
+            "sendBody": "True",
+            "contentType": "json",
+            "body": "={\"searchStrings\": {{ JSON.stringify($json.searches) }}, \"maxCrawledPlaces\": 50, \"language\": \"es\" }"
+          }
+        },
+        {
+          "id": "node4",
+          "name": "Esperar 3 minutos",
+          "type": "wait",
+          "position": [
+            760,
+            300
+          ],
+          "icon": "⏱️",
+          "typeLabel": "Wait",
+          "typeColor": "#94a3b8",
+          "params": {
+            "unit": "minutes",
+            "amount": "3"
+          }
+        },
+        {
+          "id": "node5",
+          "name": "Apify — Obtener Resultados",
+          "type": "httpRequest",
+          "position": [
+            980,
+            300
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "GET",
+            "url": "=https://api.apify.com/v2/datasets/{{ $node[\"Apify — Run Google Maps Scraper\"].json.data.defaultDatasetId }}/items?limit"
+          }
+        },
+        {
+          "id": "node6",
+          "name": "Calcular ICP Score y Filtrar",
+          "type": "code",
+          "position": [
+            1200,
+            300
+          ],
+          "icon": "💻",
+          "typeLabel": "Code",
+          "typeColor": "#fbbf24",
+          "params": {
+            "jsCode": "const results = $input.all();\nconst scored = [];\nfor (const item of results) {\n  const p = item.json;\n  let s = 0;\n  if "
+          }
+        },
+        {
+          "id": "node7",
+          "name": "Notificar SDR en Paperclip",
+          "type": "httpRequest",
+          "position": [
+            1420,
+            300
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "POST",
+            "url": "http://localhost:3100/api/companies/50fb291a-e38b-4ddf-b1b0-e3028f3d352c/issues",
+            "authentication": "genericCredentialType",
+            "genericAuthType": "httpHeaderAuth",
+            "sendBody": "True",
+            "contentType": "json",
+            "body": "{\"title\": \"Prospecting semanal completado — nuevos leads en Firestore\", \"description\": \"Workflow Apify ejecutado. Leads "
+          }
+        }
+      ],
+      "connections": {
+        "Cada Lunes 9am": {
+          "main": [
+            [
+              {
+                "node": "Definir Busquedas Semanales",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Definir Busquedas Semanales": {
+          "main": [
+            [
+              {
+                "node": "Apify — Run Google Maps Scraper",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Apify — Run Google Maps Scraper": {
+          "main": [
+            [
+              {
+                "node": "Esperar 3 minutos",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Esperar 3 minutos": {
+          "main": [
+            [
+              {
+                "node": "Apify — Obtener Resultados",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Apify — Obtener Resultados": {
+          "main": [
+            [
+              {
+                "node": "Calcular ICP Score y Filtrar",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Calcular ICP Score y Filtrar": {
+          "main": [
+            [
+              {
+                "node": "Notificar SDR en Paperclip",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "CarwWM4IAKhLXST7",
+      "name": "GitHub Push → Code Review → Paperclip CTO",
+      "active": true,
+      "color": "#34d399",
+      "status": "active",
+      "nodes": [
+        {
+          "id": "node-webhook",
+          "name": "GitHub Push Webhook",
+          "type": "webhook",
+          "position": [
+            240,
+            300
+          ],
+          "icon": "📥",
+          "typeLabel": "Webhook",
+          "typeColor": "#60a5fa",
+          "params": {
+            "httpMethod": "POST",
+            "path": "github-code-review",
+            "responseMode": "onReceived",
+            "responseData": "allEntries"
+          }
+        },
+        {
+          "id": "node-filter",
+          "name": "Is Push Event?",
+          "type": "if",
+          "position": [
+            460,
+            300
+          ],
+          "icon": "🔀",
+          "typeLabel": "Condition",
+          "typeColor": "#a78bfa",
+          "params": {
+            "conditions": "{'options': {'caseSensitive': True, 'leftValue': '', 'typeValidation': 'strict'}, 'conditions': [{'id': 'cond1', 'leftVa"
+          }
+        },
+        {
+          "id": "node-get-diff",
+          "name": "Get Commit Diff",
+          "type": "httpRequest",
+          "position": [
+            680,
+            200
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "GET",
+            "url": "=https://api.github.com/repos/{{ $json.body.repository.full_name }}/commits/{{ $json.body.head_commit.id }}"
+          }
+        },
+        {
+          "id": "node-prepare",
+          "name": "Prepare Paperclip Issue",
+          "type": "code",
+          "position": [
+            900,
+            200
+          ],
+          "icon": "💻",
+          "typeLabel": "Code",
+          "typeColor": "#fbbf24",
+          "params": {
+            "jsCode": "const body = $('GitHub Push Webhook').item.json.body;\nconst diff = $input.item.json.data;\nconst commitMsg = body?.head_c"
+          }
+        },
+        {
+          "id": "node-post-paperclip",
+          "name": "Create Paperclip Issue (CTO)",
+          "type": "httpRequest",
+          "position": [
+            1120,
+            200
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "POST",
+            "url": "http://localhost:3100/api/companies/50fb291a-e38b-4ddf-b1b0-e3028f3d352c/issues",
+            "sendBody": "True",
+            "contentType": "json",
+            "specifyBody": "keypair",
+            "bodyParameters": "{'parameters': [{'name': 'title', 'value': '={{ $json.title }}'}, {'name': 'body', 'value': '={{ $json.body }}'}, {'name"
+          }
+        }
+      ],
+      "connections": {
+        "GitHub Push Webhook": {
+          "main": [
+            [
+              {
+                "node": "Is Push Event?",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Is Push Event?": {
+          "main": [
+            [
+              {
+                "node": "Get Commit Diff",
+                "type": "main",
+                "index": 0
+              }
+            ],
+            []
+          ]
+        },
+        "Get Commit Diff": {
+          "main": [
+            [
+              {
+                "node": "Prepare Paperclip Issue",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Prepare Paperclip Issue": {
+          "main": [
+            [
+              {
+                "node": "Create Paperclip Issue (CTO)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "y3coLpMUPhuh3snU",
+      "name": "GitHub Webhook → Paperclip Issues",
+      "active": true,
+      "color": "#fbbf24",
+      "status": "active",
+      "nodes": [
+        {
+          "id": "webhook-node",
+          "name": "GitHub Webhook",
+          "type": "webhook",
+          "position": [
+            240,
+            300
+          ],
+          "icon": "📥",
+          "typeLabel": "Webhook",
+          "typeColor": "#60a5fa",
+          "params": {
+            "httpMethod": "POST",
+            "path": "github-digox",
+            "responseMode": "onReceived"
+          }
+        },
+        {
+          "id": "code-node",
+          "name": "Preparar Payload",
+          "type": "code",
+          "position": [
+            460,
+            300
+          ],
+          "icon": "💻",
+          "typeLabel": "Code",
+          "typeColor": "#fbbf24",
+          "params": {
+            "jsCode": "const body = $input.first().json.body || {};\nconst headers = $input.first().json.headers || {};\nconst event = headers[\"x"
+          }
+        },
+        {
+          "id": "paperclip-node",
+          "name": "Crear Issue en Paperclip",
+          "type": "httpRequest",
+          "position": [
+            700,
+            300
+          ],
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "method": "POST",
+            "url": "http://localhost:3100/api/companies/50fb291a-e38b-4ddf-b1b0-e3028f3d352c/issues",
+            "sendBody": "True",
+            "contentType": "json",
+            "specifyBody": "keypair",
+            "bodyParameters": "{'parameters': [{'name': 'title', 'value': '={{ $json.title }}'}, {'name': 'description', 'value': '={{ $json.descriptio"
+          }
+        }
+      ],
+      "connections": {
+        "GitHub Webhook": {
+          "main": [
+            [
+              {
+                "node": "Preparar Payload",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Preparar Payload": {
+          "main": [
+            [
+              {
+                "node": "Crear Issue en Paperclip",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "raZQieUzm95zJUIP",
+      "name": "GitHub → Paperclip (IA Digox)",
+      "active": false,
+      "color": "#a78bfa",
+      "status": "development",
+      "nodes": [
+        {
+          "id": "n1",
+          "name": "GitHub Webhook",
+          "type": "webhook",
+          "icon": "📥",
+          "typeLabel": "Webhook",
+          "typeColor": "#60a5fa",
+          "params": {}
+        },
+        {
+          "id": "n2",
+          "name": "Parsear Evento",
+          "type": "code",
+          "icon": "💻",
+          "typeLabel": "Code",
+          "typeColor": "#fbbf24",
+          "params": {}
+        },
+        {
+          "id": "n3",
+          "name": "Sync IA Digox Board",
+          "type": "httpRequest",
+          "icon": "🌐",
+          "typeLabel": "HTTP",
+          "typeColor": "#34d399",
+          "params": {
+            "url": "http://localhost:13100/api/..."
+          }
+        }
+      ],
+      "connections": {}
+    }
+  ]
+}
