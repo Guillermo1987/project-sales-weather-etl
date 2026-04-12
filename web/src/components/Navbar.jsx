@@ -2,10 +2,12 @@ import { useState, useRef, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 
 const PROJECTS = [
-  { to: '/',          label: 'Sales & Weather ETL',      badge: 'Data Engineering',   icon: '⚙️', color: '#60a5fa' },
-  { to: '/executive', label: 'Executive Dashboard 360°', badge: 'BI & RevOps',         icon: '📊', color: '#34d399' },
-  { to: '/churn',     label: 'Churn Analysis',           badge: 'Data Science',        icon: '🔬', color: '#a78bfa' },
-  { to: '/hotel',     label: 'Hotel Pricing Engine',     badge: 'Revenue Management',  icon: '🏨', color: '#fb923c' },
+  { to: '/',          label: 'Sobre mí',               badge: 'Portada',             icon: '👤', color: '#94a3b8' },
+  { to: '/etl',       label: 'Sales & Weather ETL',     badge: 'Data Engineering',   icon: '⚙️', color: '#60a5fa' },
+  { to: '/executive', label: 'Executive Dashboard 360°',badge: 'BI & RevOps',         icon: '📊', color: '#34d399' },
+  { to: '/churn',     label: 'Churn Analysis',          badge: 'Data Science',        icon: '🔬', color: '#a78bfa' },
+  { to: '/hotel',     label: 'Hotel Pricing Engine',    badge: 'Revenue Management',  icon: '🏨', color: '#fb923c' },
+  { to: '/ia-digox',  label: 'IA Digox Services',       badge: 'AI Automation',       icon: '🤖', color: '#f472b6' },
 ]
 
 export default function Navbar() {
@@ -17,7 +19,6 @@ export default function Navbar() {
     p.to === '/' ? location.pathname === '/' : location.pathname.startsWith(p.to)
   ) ?? PROJECTS[0]
 
-  // Close on outside click
   useEffect(() => {
     function handler(e) {
       if (ref.current && !ref.current.contains(e.target)) setOpen(false)
@@ -26,18 +27,15 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  // Close on navigation
   useEffect(() => { setOpen(false) }, [location.pathname])
 
   return (
     <nav className="navbar" ref={ref}>
-      {/* Brand */}
       <div className="navbar-brand">
         <span className="navbar-name">Guillermo Ubeda</span>
         <span className="navbar-role">Data &amp; BI Analyst</span>
       </div>
 
-      {/* Dropdown trigger */}
       <button
         className={`nav-trigger ${open ? 'nav-trigger--open' : ''}`}
         onClick={() => setOpen(o => !o)}
@@ -53,7 +51,6 @@ export default function Navbar() {
         </svg>
       </button>
 
-      {/* Dropdown panel */}
       {open && (
         <div className="nav-dropdown">
           {PROJECTS.map(({ to, label, badge, icon, color }) => (
