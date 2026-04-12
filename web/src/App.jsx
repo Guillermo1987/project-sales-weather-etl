@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { LangProvider }   from './contexts/LangContext'
 import Navbar             from './components/Navbar'
 import HomePage           from './pages/HomePage'
 import EtlDashboard       from './pages/EtlDashboard'
@@ -38,6 +39,7 @@ function EtlLoader() {
 export default function App() {
   return (
     <BrowserRouter>
+      <LangProvider>
       <Navbar />
       <Routes>
         <Route path="/"          element={<HomePage />} />
@@ -48,6 +50,7 @@ export default function App() {
         <Route path="/ia-digox"     element={<IaDigoxPage />} />
         <Route path="/automations"  element={<AutomationsPage />} />
       </Routes>
+      </LangProvider>
     </BrowserRouter>
   )
 }

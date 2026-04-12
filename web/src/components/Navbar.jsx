@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useLang } from '../contexts/LangContext'
 
 const PROJECTS = [
   { to: '/',          label: 'Sobre mí',               badge: 'Portada',             icon: '👤', color: '#94a3b8' },
@@ -15,6 +16,7 @@ export default function Navbar() {
   const [open, setOpen]   = useState(false)
   const location          = useLocation()
   const ref               = useRef(null)
+  const { lang, toggleLang } = useLang()
 
   const active = PROJECTS.find(p =>
     p.to === '/' ? location.pathname === '/' : location.pathname.startsWith(p.to)
@@ -36,6 +38,10 @@ export default function Navbar() {
         <span className="navbar-name">Guillermo Ubeda</span>
         <span className="navbar-role">Data &amp; BI Analyst</span>
       </div>
+
+      <button className="lang-toggle nav-lang-toggle" onClick={toggleLang}>
+        {lang === 'es' ? '🇬🇧 EN' : '🇪🇸 ES'}
+      </button>
 
       <button
         className={`nav-trigger ${open ? 'nav-trigger--open' : ''}`}

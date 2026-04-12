@@ -548,7 +548,7 @@ footer a:hover,
   margin-bottom: 0.6rem;
 }
 
-/* Language toggle button */
+/* Language toggle button (shared: navbar + hero) */
 .lang-toggle {
   display: inline-flex;
   align-items: center;
@@ -567,6 +567,12 @@ footer a:hover,
 .lang-toggle:hover {
   background: #273549;
   color: #f1f5f9;
+}
+
+/* Toggle inside navbar — tighter padding */
+.nav-lang-toggle {
+  font-size: 0.72rem;
+  padding: 0.18rem 0.55rem;
 }
 
 .home-hero-badge {
@@ -1377,6 +1383,22 @@ footer a:hover,
   color: #334155;
   font-size: 0.78rem;
 }
+
+.footer-context {
+  font-size: 0.75rem;
+  color: #334155;
+  margin-bottom: 0.6rem;
+}
+.footer-context a { color: #60a5fa; text-decoration: none; }
+.footer-context a:hover { text-decoration: underline; }
+
+.footer-built {
+  font-size: 0.72rem;
+  color: #334155;
+  margin-top: 0.5rem;
+}
+.footer-built a { color: #60a5fa; text-decoration: none; }
+.footer-built a:hover { text-decoration: underline; }
 
 /* ── AutomationsPage ────────────────────────────────────────────────────────── */
 

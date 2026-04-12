@@ -1,89 +1,187 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import PortfolioFooter from '../components/PortfolioFooter'
+import { useLang } from '../contexts/LangContext'
 
-/* ── Paperclip agents (hardcoded — Paperclip offline during build) ── */
-const AGENTS = [
-  {
-    icon: '👔', color: '#34d399', role: 'CEO',
-    name: 'Agente Estratégico',
-    desc: 'Visión de negocio, toma de decisiones estratégicas y coordinación general de la empresa.',
-    responsibilities: [
-      'Define la visión y dirección de la empresa',
-      'Aprueba o rechaza propuestas de los demás agentes',
-      'Evalúa oportunidades de negocio entrantes',
-      'Coordina la comunicación entre agentes',
-    ],
-    model: 'claude-sonnet-4',
+/* ── Translations ── */
+const T = {
+  es: {
+    badge: 'Solo lectura · View only',
+    title: 'Automatizaciones & Agentes IA',
+    desc: 'Vista de solo lectura de los workflows de n8n y los agentes de Paperclip que operan IA Digox Services. Haz clic en los nodos para explorar la configuración de cada paso.',
+    heroStats: ['Workflows n8n', 'Activos 24/7', 'Agentes Claude', 'Nodos totales'],
+    tabWorkflows: '⚡ Workflows n8n',
+    tabAgents:    '🤖 Agentes Paperclip',
+    workflowsDesc: 'Workflows reales extraídos de n8n vía API. Haz clic en una tarjeta para ver el flujo completo y la configuración de cada nodo.',
+    agentsDesc: 'Cinco agentes especializados operados por Claude (Anthropic) y orquestados desde Paperclip, el sistema nervioso central de IA Digox.',
+    loading: 'Cargando workflows…',
+    hint: 'Haz clic en un nodo para ver sus detalles',
+    noticeWorkflows: 'Vista de solo lectura. Los workflows se ejecutan en n8n self-hosted. No es posible modificar, activar ni ejecutar nada desde esta página.',
+    noticeAgents: 'Vista de solo lectura. Los agentes operan de forma autónoma en Paperclip. No es posible interactuar con ellos desde esta página.',
+    active: '● Activo',
+    dev:    '◌ En desarrollo',
+    inactive: '○ Inactivo',
+    nodes: 'nodos',
+    footerCtx: 'Sistema operado por agentes Claude (Anthropic) · n8n · Paperclip',
   },
-  {
-    icon: '⚙️', color: '#60a5fa', role: 'CTO',
-    name: 'Agente Técnico',
-    desc: 'Arquitectura de sistemas, code reviews automáticos vía GitHub y decisiones de stack tecnológico.',
-    responsibilities: [
-      'Revisa cada push a GitHub automáticamente',
-      'Detecta vulnerabilidades de seguridad en el código',
-      'Propone mejoras de arquitectura',
-      'Gestiona issues técnicos en Paperclip',
-    ],
-    model: 'claude-sonnet-4',
+  en: {
+    badge: 'Read-only · View only',
+    title: 'Automations & AI Agents',
+    desc: 'Read-only view of the n8n workflows and Paperclip agents that operate IA Digox Services. Click on nodes to explore the configuration of each step.',
+    heroStats: ['n8n Workflows', 'Active 24/7', 'Claude Agents', 'Total nodes'],
+    tabWorkflows: '⚡ n8n Workflows',
+    tabAgents:    '🤖 Paperclip Agents',
+    workflowsDesc: 'Real workflows fetched from n8n via API. Click a card to see the full flow and each node\'s configuration.',
+    agentsDesc: 'Five specialized agents operated by Claude (Anthropic) and orchestrated from Paperclip, the central nervous system of IA Digox.',
+    loading: 'Loading workflows…',
+    hint: 'Click a node to see its details',
+    noticeWorkflows: 'Read-only view. Workflows run on a self-hosted n8n instance. It is not possible to modify, activate or execute anything from this page.',
+    noticeAgents: 'Read-only view. Agents operate autonomously in Paperclip. It is not possible to interact with them from this page.',
+    active: '● Active',
+    dev:    '◌ In development',
+    inactive: '○ Inactive',
+    nodes: 'nodes',
+    footerCtx: 'System operated by Claude (Anthropic) agents · n8n · Paperclip',
   },
-  {
-    icon: '📣', color: '#f472b6', role: 'CMO',
-    name: 'Agente de Marketing',
-    desc: 'Estrategia de contenido, prospección de clientes y gestión del mensaje de marca.',
-    responsibilities: [
-      'Genera outreach personalizado para leads',
-      'Calcula ICP Score de prospectos',
-      'Diseña la estrategia de contenido semanal',
-      'Monitorea el posicionamiento de marca',
-    ],
-    model: 'claude-sonnet-4',
-  },
-  {
-    icon: '🔧', color: '#fbbf24', role: 'Ops',
-    name: 'Agente de Operaciones',
-    desc: 'Gestión de proyectos activos, seguimiento de tareas e issues y coordinación de entregas.',
-    responsibilities: [
-      'Monitorea el estado de proyectos en curso',
-      'Escala issues críticos al agente correcto',
-      'Genera reportes de estado semanales',
-      'Coordina los SLAs de entrega',
-    ],
-    model: 'claude-sonnet-4',
-  },
-  {
-    icon: '📋', color: '#a78bfa', role: 'PM',
-    name: 'Agente de Proyectos',
-    desc: 'Planning de sprints, priorización del backlog y comunicación entre agentes y clientes.',
-    responsibilities: [
-      'Planifica sprints y prioriza el backlog',
-      'Traduce requerimientos de clientes a tareas',
-      'Comunica el progreso a stakeholders',
-      'Mantiene actualizado el tablero en Paperclip',
-    ],
-    model: 'claude-sonnet-4',
-  },
-]
+}
 
-/* ── Node type descriptions ── */
+/* ── Paperclip agents (bilingual) ── */
+const AGENTS = {
+  es: [
+    {
+      icon: '👔', color: '#34d399', role: 'CEO',
+      name: 'Agente Estratégico',
+      desc: 'Visión de negocio, toma de decisiones estratégicas y coordinación general de la empresa.',
+      responsibilities: [
+        'Define la visión y dirección de la empresa',
+        'Aprueba o rechaza propuestas de los demás agentes',
+        'Evalúa oportunidades de negocio entrantes',
+        'Coordina la comunicación entre agentes',
+      ],
+    },
+    {
+      icon: '⚙️', color: '#60a5fa', role: 'CTO',
+      name: 'Agente Técnico',
+      desc: 'Arquitectura de sistemas, code reviews automáticos vía GitHub y decisiones de stack tecnológico.',
+      responsibilities: [
+        'Revisa cada push a GitHub automáticamente',
+        'Detecta vulnerabilidades de seguridad en el código',
+        'Propone mejoras de arquitectura',
+        'Gestiona issues técnicos en Paperclip',
+      ],
+    },
+    {
+      icon: '📣', color: '#f472b6', role: 'CMO',
+      name: 'Agente de Marketing',
+      desc: 'Estrategia de contenido, prospección de clientes y gestión del mensaje de marca.',
+      responsibilities: [
+        'Genera outreach personalizado para leads',
+        'Calcula ICP Score de prospectos',
+        'Diseña la estrategia de contenido semanal',
+        'Monitorea el posicionamiento de marca',
+      ],
+    },
+    {
+      icon: '🔧', color: '#fbbf24', role: 'Ops',
+      name: 'Agente de Operaciones',
+      desc: 'Gestión de proyectos activos, seguimiento de tareas e issues y coordinación de entregas.',
+      responsibilities: [
+        'Monitorea el estado de proyectos en curso',
+        'Escala issues críticos al agente correcto',
+        'Genera reportes de estado semanales',
+        'Coordina los SLAs de entrega',
+      ],
+    },
+    {
+      icon: '📋', color: '#a78bfa', role: 'PM',
+      name: 'Agente de Proyectos',
+      desc: 'Planning de sprints, priorización del backlog y comunicación entre agentes y clientes.',
+      responsibilities: [
+        'Planifica sprints y prioriza el backlog',
+        'Traduce requerimientos de clientes a tareas',
+        'Comunica el progreso a stakeholders',
+        'Mantiene actualizado el tablero en Paperclip',
+      ],
+    },
+  ],
+  en: [
+    {
+      icon: '👔', color: '#34d399', role: 'CEO',
+      name: 'Strategic Agent',
+      desc: 'Business vision, strategic decision-making and general coordination of the company.',
+      responsibilities: [
+        'Defines the vision and direction of the company',
+        'Approves or rejects proposals from other agents',
+        'Evaluates incoming business opportunities',
+        'Coordinates communication between agents',
+      ],
+    },
+    {
+      icon: '⚙️', color: '#60a5fa', role: 'CTO',
+      name: 'Technical Agent',
+      desc: 'Systems architecture, automatic code reviews via GitHub and tech stack decisions.',
+      responsibilities: [
+        'Reviews every GitHub push automatically',
+        'Detects security vulnerabilities in code',
+        'Proposes architecture improvements',
+        'Manages technical issues in Paperclip',
+      ],
+    },
+    {
+      icon: '📣', color: '#f472b6', role: 'CMO',
+      name: 'Marketing Agent',
+      desc: 'Content strategy, customer prospecting and brand message management.',
+      responsibilities: [
+        'Generates personalized outreach for leads',
+        'Calculates ICP Score for prospects',
+        'Designs the weekly content strategy',
+        'Monitors brand positioning',
+      ],
+    },
+    {
+      icon: '🔧', color: '#fbbf24', role: 'Ops',
+      name: 'Operations Agent',
+      desc: 'Active project management, task and issue tracking and delivery coordination.',
+      responsibilities: [
+        'Monitors the status of ongoing projects',
+        'Escalates critical issues to the right agent',
+        'Generates weekly status reports',
+        'Coordinates delivery SLAs',
+      ],
+    },
+    {
+      icon: '📋', color: '#a78bfa', role: 'PM',
+      name: 'Projects Agent',
+      desc: 'Sprint planning, backlog prioritization and communication between agents and clients.',
+      responsibilities: [
+        'Plans sprints and prioritizes the backlog',
+        'Translates client requirements into tasks',
+        'Communicates progress to stakeholders',
+        'Keeps the Paperclip board up to date',
+      ],
+    },
+  ],
+}
+
+/* ── Node type descriptions (bilingual) ── */
 const NODE_DESC = {
-  webhook:         'Recibe llamadas HTTP externas y dispara el workflow',
-  scheduleTrigger: 'Ejecuta el workflow automáticamente según un horario',
-  if:              'Evalúa una condición y bifurca el flujo en dos ramas',
-  code:            'Ejecuta lógica JavaScript personalizada para procesar datos',
-  httpRequest:     'Realiza llamadas a APIs externas (REST)',
-  wait:            'Pausa la ejecución durante un tiempo definido',
+  webhook:         { es: 'Recibe llamadas HTTP externas y dispara el workflow', en: 'Receives external HTTP calls and triggers the workflow' },
+  scheduleTrigger: { es: 'Ejecuta el workflow automáticamente según un horario', en: 'Executes the workflow automatically on a schedule' },
+  if:              { es: 'Evalúa una condición y bifurca el flujo en dos ramas', en: 'Evaluates a condition and splits the flow into two branches' },
+  code:            { es: 'Ejecuta lógica JavaScript personalizada para procesar datos', en: 'Executes custom JavaScript logic to process data' },
+  httpRequest:     { es: 'Realiza llamadas a APIs externas (REST)', en: 'Makes calls to external APIs (REST)' },
+  wait:            { es: 'Pausa la ejecución durante un tiempo definido', en: 'Pauses execution for a defined period of time' },
 }
 
 /* ── StatusBadge ── */
-function StatusBadge({ active, status }) {
-  if (active) return <span className="auto-badge auto-badge--active">● Activo</span>
-  if (status === 'development') return <span className="auto-badge auto-badge--dev">◌ En desarrollo</span>
-  return <span className="auto-badge auto-badge--inactive">○ Inactivo</span>
+function StatusBadge({ active, status, t }) {
+  if (active) return <span className="auto-badge auto-badge--active">{t.active}</span>
+  if (status === 'development') return <span className="auto-badge auto-badge--dev">{t.dev}</span>
+  return <span className="auto-badge auto-badge--inactive">{t.inactive}</span>
 }
 
-/* ── Workflow flow diagram ── */
-function WorkflowFlow({ nodes, connections, selectedNode, onSelectNode }) {
+/* ── WorkflowFlow ── */
+function WorkflowFlow({ nodes, selectedNode, onSelectNode }) {
   return (
     <div className="auto-flow">
       {nodes.map((node, i) => (
@@ -106,10 +204,10 @@ function WorkflowFlow({ nodes, connections, selectedNode, onSelectNode }) {
   )
 }
 
-/* ── Node detail panel ── */
-function NodeDetail({ node, onClose }) {
+/* ── NodeDetail ── */
+function NodeDetail({ node, lang, onClose }) {
   if (!node) return null
-  const desc = NODE_DESC[node.type] || 'Nodo de n8n'
+  const desc = NODE_DESC[node.type]?.[lang] || node.typeLabel
   const hasParams = Object.keys(node.params || {}).length > 0
   return (
     <div className="auto-node-detail" style={{ '--node-color': node.typeColor }}>
@@ -124,7 +222,7 @@ function NodeDetail({ node, onClose }) {
       <p className="auto-node-detail-desc">{desc}</p>
       {hasParams && (
         <div className="auto-node-params">
-          <p className="auto-node-params-title">Parámetros</p>
+          <p className="auto-node-params-title">{lang === 'es' ? 'Parámetros' : 'Parameters'}</p>
           {Object.entries(node.params).map(([k, v]) => (
             <div key={k} className="auto-node-param">
               <span className="auto-node-param-key">{k}</span>
@@ -137,40 +235,30 @@ function NodeDetail({ node, onClose }) {
   )
 }
 
-/* ── Workflow card ── */
-function WorkflowCard({ workflow, expanded, onToggle }) {
+/* ── WorkflowCard ── */
+function WorkflowCard({ workflow, expanded, onToggle, t, lang }) {
   const [selectedNode, setSelectedNode] = useState(null)
-
-  // Reset selected node when collapsed
-  useEffect(() => {
-    if (!expanded) setSelectedNode(null)
-  }, [expanded])
+  useEffect(() => { if (!expanded) setSelectedNode(null) }, [expanded])
 
   return (
     <div className={`auto-workflow-card ${expanded ? 'auto-workflow-card--expanded' : ''}`}
          style={{ '--wf-color': workflow.color }}>
       <button className="auto-workflow-header" onClick={onToggle}>
         <div className="auto-workflow-header-left">
-          <StatusBadge active={workflow.active} status={workflow.status} />
+          <StatusBadge active={workflow.active} status={workflow.status} t={t} />
           <h3 className="auto-workflow-name">{workflow.name}</h3>
         </div>
         <div className="auto-workflow-header-right">
-          <span className="auto-workflow-node-count">{workflow.nodes.length} nodos</span>
+          <span className="auto-workflow-node-count">{workflow.nodes.length} {t.nodes}</span>
           <span className="auto-workflow-chevron">{expanded ? '▲' : '▼'}</span>
         </div>
       </button>
-
       {expanded && (
         <div className="auto-workflow-body">
-          <p className="auto-workflow-hint">Haz clic en un nodo para ver sus detalles</p>
-          <WorkflowFlow
-            nodes={workflow.nodes}
-            connections={workflow.connections}
-            selectedNode={selectedNode}
-            onSelectNode={setSelectedNode}
-          />
+          <p className="auto-workflow-hint">{t.hint}</p>
+          <WorkflowFlow nodes={workflow.nodes} selectedNode={selectedNode} onSelectNode={setSelectedNode} />
           {selectedNode && (
-            <NodeDetail node={selectedNode} onClose={() => setSelectedNode(null)} />
+            <NodeDetail node={selectedNode} lang={lang} onClose={() => setSelectedNode(null)} />
           )}
         </div>
       )}
@@ -180,10 +268,13 @@ function WorkflowCard({ workflow, expanded, onToggle }) {
 
 /* ── Main component ── */
 export default function AutomationsPage() {
-  const [tab, setTab] = useState('workflows')
+  const { lang } = useLang()
+  const t = T[lang]
+  const agents = AGENTS[lang]
+  const [tab, setTab]           = useState('workflows')
   const [workflows, setWorkflows] = useState([])
   const [expandedId, setExpandedId] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading]   = useState(true)
 
   useEffect(() => {
     fetch('/data/automations.json')
@@ -192,31 +283,23 @@ export default function AutomationsPage() {
       .catch(() => setLoading(false))
   }, [])
 
-  function toggleWorkflow(id) {
-    setExpandedId(prev => prev === id ? null : id)
-  }
-
   return (
     <div>
       {/* ── Hero ── */}
       <div className="auto-hero">
         <div className="auto-hero-inner">
           <div className="auto-hero-top">
-            <span className="auto-hero-badge">Read-only · View only</span>
+            <span className="auto-hero-badge">{t.badge}</span>
             <Link to="/ia-digox" className="auto-hero-link">IA Digox →</Link>
           </div>
-          <h1 className="auto-hero-title">Automatizaciones & Agentes IA</h1>
-          <p className="auto-hero-desc">
-            Vista de solo lectura de los workflows de <strong>n8n</strong> y los agentes de{' '}
-            <strong>Paperclip</strong> que operan <strong>IA Digox Services</strong>.
-            Haz clic en los nodos para explorar la configuración de cada paso.
-          </p>
+          <h1 className="auto-hero-title">{t.title}</h1>
+          <p className="auto-hero-desc">{t.desc}</p>
           <div className="auto-hero-stats">
             {[
-              { num: '4', lbl: 'Workflows n8n' },
-              { num: '2', lbl: 'Activos 24/7' },
-              { num: '5', lbl: 'Agentes Claude' },
-              { num: '18', lbl: 'Nodos totales' },
+              { num: '4',  lbl: t.heroStats[0] },
+              { num: '2',  lbl: t.heroStats[1] },
+              { num: '5',  lbl: t.heroStats[2] },
+              { num: '18', lbl: t.heroStats[3] },
             ].map(({ num, lbl }) => (
               <div key={lbl} className="auto-hero-stat">
                 <span className="auto-hero-stat-num">{num}</span>
@@ -230,17 +313,11 @@ export default function AutomationsPage() {
       {/* ── Tabs ── */}
       <div className="auto-tabs-bar">
         <div className="auto-tabs">
-          <button
-            className={`auto-tab ${tab === 'workflows' ? 'auto-tab--active' : ''}`}
-            onClick={() => setTab('workflows')}
-          >
-            <span>⚡</span> Workflows n8n
+          <button className={`auto-tab ${tab === 'workflows' ? 'auto-tab--active' : ''}`} onClick={() => setTab('workflows')}>
+            {t.tabWorkflows}
           </button>
-          <button
-            className={`auto-tab ${tab === 'agents' ? 'auto-tab--active' : ''}`}
-            onClick={() => setTab('agents')}
-          >
-            <span>🤖</span> Agentes Paperclip
+          <button className={`auto-tab ${tab === 'agents' ? 'auto-tab--active' : ''}`} onClick={() => setTab('agents')}>
+            {t.tabAgents}
           </button>
         </div>
       </div>
@@ -248,14 +325,11 @@ export default function AutomationsPage() {
       {/* ── Content ── */}
       <div className="auto-content">
 
-        {/* Workflows tab */}
         {tab === 'workflows' && (
           <div>
-            <p className="auto-section-desc">
-              Workflows reales extraídos de n8n vía API. Haz clic en una tarjeta para ver el flujo completo y la configuración de cada nodo.
-            </p>
+            <p className="auto-section-desc">{t.workflowsDesc}</p>
             {loading ? (
-              <div className="loading">Cargando workflows…</div>
+              <div className="loading">{t.loading}</div>
             ) : (
               <div className="auto-workflows-list">
                 {workflows.map(wf => (
@@ -263,26 +337,25 @@ export default function AutomationsPage() {
                     key={wf.id}
                     workflow={wf}
                     expanded={expandedId === wf.id}
-                    onToggle={() => toggleWorkflow(wf.id)}
+                    onToggle={() => setExpandedId(prev => prev === wf.id ? null : wf.id)}
+                    t={t}
+                    lang={lang}
                   />
                 ))}
               </div>
             )}
             <div className="auto-notice">
               <span>🔒</span>
-              <p>Vista de solo lectura. Los workflows se ejecutan en n8n self-hosted. No es posible modificar, activar ni ejecutar nada desde esta página.</p>
+              <p>{t.noticeWorkflows}</p>
             </div>
           </div>
         )}
 
-        {/* Agents tab */}
         {tab === 'agents' && (
           <div>
-            <p className="auto-section-desc">
-              Cinco agentes especializados operados por Claude (Anthropic) y orquestados desde Paperclip, el sistema nervioso central de IA Digox.
-            </p>
+            <p className="auto-section-desc">{t.agentsDesc}</p>
             <div className="auto-agents-grid">
-              {AGENTS.map(agent => (
+              {agents.map(agent => (
                 <div key={agent.role} className="auto-agent-card" style={{ '--agent-color': agent.color }}>
                   <div className="auto-agent-header">
                     <span className="auto-agent-icon">{agent.icon}</span>
@@ -290,7 +363,7 @@ export default function AutomationsPage() {
                       <span className="auto-agent-role" style={{ color: agent.color }}>{agent.role}</span>
                       <p className="auto-agent-name">{agent.name}</p>
                     </div>
-                    <span className="auto-agent-model">{agent.model}</span>
+                    <span className="auto-agent-model">claude-sonnet-4</span>
                   </div>
                   <p className="auto-agent-desc">{agent.desc}</p>
                   <ul className="auto-agent-list">
@@ -305,20 +378,14 @@ export default function AutomationsPage() {
             </div>
             <div className="auto-notice">
               <span>🔒</span>
-              <p>Vista de solo lectura. Los agentes operan de forma autónoma en Paperclip. No es posible interactuar con ellos desde esta página.</p>
+              <p>{t.noticeAgents}</p>
             </div>
           </div>
         )}
 
       </div>
 
-      <footer>
-        <p>
-          Sistema operado por agentes Claude (Anthropic) · n8n · Paperclip &middot;{' '}
-          <Link to="/ia-digox">IA Digox Services</Link>
-          {' '}&middot; Construido por <Link to="/">Guillermo Ubeda Garay</Link>
-        </p>
-      </footer>
+      <PortfolioFooter context={t.footerCtx} />
     </div>
   )
 }
