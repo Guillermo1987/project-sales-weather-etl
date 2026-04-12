@@ -209,7 +209,7 @@ function OrgLogo({ org }) {
   if (org === 'Indiana Tech') return (
     <svg viewBox="0 0 32 32" width="30" height="30" aria-label="Indiana Institute of Technology">
       {/* LinkedIn logo: dark crimson bg, INDIANA white thin, TECH orange bold */}
-      <rect width="32" height="32" rx="5" fill="#8B0020"/>
+      <rect width="32" height="32" rx="5" fill="#111111"/>
       <text x="16" y="14" textAnchor="middle" fontFamily={ff} fontSize="6.5" fontWeight="300" fill="#ffffff" letterSpacing="0.6">INDIANA</text>
       <text x="16" y="24" textAnchor="middle" fontFamily={ff} fontSize="9"   fontWeight="800" fill="#F07820">TECH</text>
     </svg>
