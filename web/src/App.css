@@ -1338,3 +1338,533 @@ footer a:hover,
   border-radius: 4px;
   padding: 0.15rem 0.5rem;
 }
+
+/* ── Footer with icons ──────────────────────────────────────────────────────── */
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 0.78rem;
+  transition: color 0.15s;
+}
+.footer-link:hover { color: #93c5fd; }
+
+.footer-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.footer-sep {
+  color: #334155;
+  font-size: 0.78rem;
+}
+
+/* ── AutomationsPage ────────────────────────────────────────────────────────── */
+
+/* Hero */
+.auto-hero {
+  background: #0a1120;
+  border-bottom: 1px solid #1e293b;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.auto-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.auto-hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.auto-hero-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #34d399;
+  background: #34d39915;
+  border: 1px solid #34d39930;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
+.auto-hero-link {
+  font-size: 0.78rem;
+  color: #f472b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+.auto-hero-link:hover { text-decoration: underline; }
+
+.auto-hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.auto-hero-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+.auto-hero-desc strong { color: #94a3b8; }
+
+.auto-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.auto-hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auto-hero-stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.auto-hero-stat-lbl {
+  font-size: 0.65rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.3rem;
+}
+
+/* Tabs */
+.auto-tabs-bar {
+  background: #0a1120;
+  border-bottom: 1px solid #1e293b;
+  padding: 0 1.5rem;
+}
+
+.auto-tabs {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+}
+
+.auto-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.25rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.auto-tab:hover { color: #94a3b8; }
+
+.auto-tab--active {
+  color: #f1f5f9;
+  border-bottom-color: #a78bfa;
+}
+
+/* Content area */
+.auto-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.auto-section-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+/* Workflow cards */
+.auto-workflows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.auto-workflow-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-left: 3px solid var(--wf-color, #60a5fa);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.auto-workflow-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+}
+.auto-workflow-header:hover { background: #243047; }
+
+.auto-workflow-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.auto-workflow-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.auto-workflow-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.auto-workflow-node-count {
+  font-size: 0.72rem;
+  color: #475569;
+}
+
+.auto-workflow-chevron {
+  font-size: 0.65rem;
+  color: #475569;
+}
+
+/* Status badges */
+.auto-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.auto-badge--active   { color: #34d399; background: #34d39915; border: 1px solid #34d39930; }
+.auto-badge--dev      { color: #fbbf24; background: #fbbf2415; border: 1px solid #fbbf2430; }
+.auto-badge--inactive { color: #475569; background: #47556915; border: 1px solid #47556930; }
+
+/* Workflow body */
+.auto-workflow-body {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px solid #334155;
+}
+
+.auto-workflow-hint {
+  font-size: 0.72rem;
+  color: #334155;
+  margin: 0.75rem 0 1rem;
+  font-style: italic;
+}
+
+/* Flow diagram */
+.auto-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.auto-flow-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.auto-flow-node {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  text-align: left;
+}
+.auto-flow-node:hover {
+  background: #1e293b;
+  border-color: var(--node-color, #60a5fa);
+  transform: translateY(-1px);
+}
+.auto-flow-node--selected {
+  background: #1e293b;
+  border-color: var(--node-color, #60a5fa);
+  box-shadow: 0 0 0 1px var(--node-color, #60a5fa);
+}
+
+.auto-node-icon { font-size: 1rem; line-height: 1; flex-shrink: 0; }
+
+.auto-node-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.auto-node-type {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.auto-node-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.auto-flow-arrow {
+  color: #334155;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Node detail panel */
+.auto-node-detail {
+  background: #0f172a;
+  border: 1px solid var(--node-color, #60a5fa);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.auto-node-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.auto-node-detail-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+.auto-node-detail-type {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.auto-node-detail-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1.2;
+}
+
+.auto-node-detail-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #475569;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  line-height: 1;
+}
+.auto-node-detail-close:hover { color: #94a3b8; }
+
+.auto-node-detail-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.auto-node-params {
+  margin-top: 0.75rem;
+  border-top: 1px solid #1e293b;
+  padding-top: 0.75rem;
+}
+
+.auto-node-params-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.auto-node-param {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  margin-bottom: 0.3rem;
+  align-items: flex-start;
+}
+
+.auto-node-param-key {
+  color: #60a5fa;
+  font-weight: 600;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.auto-node-param-val {
+  color: #94a3b8;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+/* Agents grid */
+.auto-agents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.auto-agent-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-top: 3px solid var(--agent-color, #60a5fa);
+  border-radius: 10px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auto-agent-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.auto-agent-icon { font-size: 1.3rem; flex-shrink: 0; line-height: 1; margin-top: 0.1rem; }
+
+.auto-agent-role {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.auto-agent-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1.2;
+}
+
+.auto-agent-model {
+  margin-left: auto;
+  font-size: 0.6rem;
+  color: #334155;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.auto-agent-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.auto-agent-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.1rem;
+}
+
+.auto-agent-item {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  line-height: 1.45;
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Notice box */
+.auto-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.auto-notice span { font-size: 1rem; flex-shrink: 0; margin-top: 0.05rem; }
+
+.auto-notice p {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .auto-agents-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .auto-hero-title  { font-size: 1.6rem; }
+  .auto-hero-stats  { gap: 1.25rem; }
+  .auto-agents-grid { grid-template-columns: 1fr; }
+  .auto-flow-node   { padding: 0.45rem 0.65rem; }
+  .auto-node-name   { font-size: 0.68rem; }
+  .auto-workflow-name { font-size: 0.82rem; }
+}

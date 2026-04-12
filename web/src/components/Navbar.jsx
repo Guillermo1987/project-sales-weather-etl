@@ -7,7 +7,8 @@ const PROJECTS = [
   { to: '/executive', label: 'Executive Dashboard 360°',badge: 'BI & RevOps',         icon: '📊', color: '#34d399' },
   { to: '/churn',     label: 'Churn Analysis',          badge: 'Data Science',        icon: '🔬', color: '#a78bfa' },
   { to: '/hotel',     label: 'Hotel Pricing Engine',    badge: 'Revenue Management',  icon: '🏨', color: '#fb923c' },
-  { to: '/ia-digox',  label: 'IA Digox Services',       badge: 'AI Automation',       icon: '🤖', color: '#f472b6' },
+  { to: '/ia-digox',     label: 'IA Digox Services',    badge: 'AI Automation',    icon: '🤖', color: '#f472b6' },
+  { to: '/automations',  label: 'Automatizaciones',     badge: 'n8n · Paperclip',  icon: '⚡', color: '#a78bfa' },
 ]
 
 export default function Navbar() {
