@@ -32,6 +32,14 @@ const T = {
     ],
     eduTitle:  'Formación',
     certTitle: 'Licencias y Certificaciones',
+    currentProjectTitle: 'Proyecto en desarrollo',
+    iaDigoxDesc: 'Empresa de consultoría IA operada de forma autónoma: 5 agentes Claude especializados gestionan ventas, desarrollo, marketing y operaciones. Orquestación con n8n y Paperclip como sistema nervioso central.',
+    iaDigoxBadge: 'AI Automation · En marcha',
+    iaDigoxStats: [
+      { num: '5',    lbl: 'Agentes IA' },
+      { num: '4',    lbl: 'Workflows n8n' },
+      { num: '24/7', lbl: 'Operación autónoma' },
+    ],
     skillCats: [
       'Lenguajes & Datos',
       'Business Intelligence',
@@ -78,6 +86,14 @@ const T = {
     ],
     eduTitle:  'Education',
     certTitle: 'Licenses & Certifications',
+    currentProjectTitle: 'Current project',
+    iaDigoxDesc: 'Autonomous AI consulting company: 5 specialized Claude agents manage sales, development, marketing and operations. Orchestrated with n8n and Paperclip as the central nervous system.',
+    iaDigoxBadge: 'AI Automation · In progress',
+    iaDigoxStats: [
+      { num: '5',    lbl: 'AI Agents' },
+      { num: '4',    lbl: 'n8n Workflows' },
+      { num: '24/7', lbl: 'Autonomous op.' },
+    ],
     skillCats: [
       'Languages & Data',
       'Business Intelligence',
@@ -235,6 +251,31 @@ export default function HomePage() {
           <div className="home-avail-box">
             <p className="home-avail-title">{t.availTitle}</p>
             {t.availItems.map(item => <p key={item} className="home-avail-item">{item}</p>)}
+          </div>
+
+          {/* IA Digox project card */}
+          <div className="home-iadigox-card">
+            <div className="home-iadigox-header">
+              <span className="home-iadigox-icon">🤖</span>
+              <div>
+                <Link to="/ia-digox" className="home-iadigox-link">IA Digox Services</Link>
+                <span className="home-iadigox-badge">{t.iaDigoxBadge}</span>
+              </div>
+            </div>
+            <p className="home-iadigox-desc">{t.iaDigoxDesc}</p>
+            <div className="home-iadigox-stats">
+              {t.iaDigoxStats.map(({ num, lbl }) => (
+                <div key={lbl} className="home-iadigox-stat">
+                  <span className="home-iadigox-stat-num">{num}</span>
+                  <span className="home-iadigox-stat-lbl">{lbl}</span>
+                </div>
+              ))}
+            </div>
+            <div className="home-iadigox-techs">
+              {['Claude', 'n8n', 'Paperclip', 'Firebase', 'React'].map(tech => (
+                <span key={tech} className="home-iadigox-tech">{tech}</span>
+              ))}
+            </div>
           </div>
         </div>
 
