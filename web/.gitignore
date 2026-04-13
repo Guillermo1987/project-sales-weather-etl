@@ -1,3 +1,11 @@
+# Privacidad
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+.env
+.env.*
+!.env.example
+
 # Logs
 logs
 *.log
