@@ -11,13 +11,13 @@ const T = {
     cta1: 'LinkedIn →', cta2: 'GitHub',
     stats: [
       { num: '+10',  lbl: 'Años de experiencia' },
-      { num: '5',    lbl: 'Proyectos portafolio' },
+      { num: '8',    lbl: 'Proyectos portafolio' },
       { num: '100%', lbl: 'Trabajo remoto' },
       { num: 'MBA',  lbl: '+ Business Analytics' },
       { num: 'ISC2', lbl: 'CC Certified' },
     ],
     projectsTitle: 'Proyectos de portafolio',
-    projectsDesc:  'Cinco proyectos end-to-end desplegados en producción, cada uno demostrando una especialidad diferente con datos reales o sintéticos y dashboards interactivos.',
+    projectsDesc:  'Ocho proyectos end-to-end publicados en GitHub: Data Engineering, BI, Data Science, Revenue Management, Web Development, Ciberseguridad y AI Automation. Cinco con dashboard live interactivo.',
     viewBtn:     'Ver →',
     skillsTitle: 'Stack técnico',
     aboutTitle:  'Sobre mí',
@@ -56,6 +56,9 @@ const T = {
       'Modelo de Regresión Logística con 81.4% accuracy y AUC 0.881. Identifica los drivers clave de abandono de clientes.',
       'Motor algorítmico de Revenue Management: optimiza ADR y RevPAR usando estacionalidad, eventos locales y presión de ocupación.',
       'Empresa de consultoría IA autónoma: 5 agentes Claude especializados, 4 workflows n8n y orquestación con Paperclip.',
+      '5 queries analíticas SQL sobre 10.000 registros: regiones más rentables, vendedores top, estacionalidades y productos con bajo margen. Listo para Power BI/Tableau.',
+      'Web app vanilla JS con KPIs en tiempo real (ADR, RevPAR, Occupancy) + simulador de pricing interactivo con 5 parámetros. Canvas API, sin frameworks.',
+      'Stack defensivo de ciberseguridad aplicada (ISC2 CC): SIEM simulado que detecta fuerza bruta sobre 5.000 logs + escáner de vulnerabilidades estilo Nmap con reporte Markdown.',
     ],
   },
   en: {
@@ -65,13 +68,13 @@ const T = {
     cta1: 'LinkedIn →', cta2: 'GitHub',
     stats: [
       { num: '+10',  lbl: 'Years of experience' },
-      { num: '5',    lbl: 'Portfolio projects' },
+      { num: '8',    lbl: 'Portfolio projects' },
       { num: '100%', lbl: 'Remote work' },
       { num: 'MBA',  lbl: '+ Business Analytics' },
       { num: 'ISC2', lbl: 'CC Certified' },
     ],
     projectsTitle: 'Portfolio Projects',
-    projectsDesc:  'Five end-to-end projects deployed in production, each demonstrating a different speciality with real or synthetic data and interactive dashboards.',
+    projectsDesc:  'Eight end-to-end projects published on GitHub: Data Engineering, BI, Data Science, Revenue Management, Web Development, Cybersecurity and AI Automation. Five with a live interactive dashboard.',
     viewBtn:     'View →',
     skillsTitle: 'Tech Stack',
     aboutTitle:  'About me',
@@ -110,6 +113,9 @@ const T = {
       'Logistic Regression model with 81.4% accuracy and AUC 0.881. Identifies key drivers of customer churn.',
       'Algorithmic Revenue Management engine: optimizes ADR and RevPAR using seasonality, local events and occupancy pressure.',
       'Autonomous AI consulting company: 5 specialized Claude agents, 4 n8n workflows and Paperclip orchestration.',
+      '5 analytical SQL queries on 10,000 records: most profitable regions, top sellers, seasonality and low-margin products. Power BI/Tableau-ready.',
+      'Vanilla JS web app with real-time KPIs (ADR, RevPAR, Occupancy) + interactive pricing simulator with 5 parameters. Canvas API, no frameworks.',
+      'Defensive cybersecurity stack applied (ISC2 CC): simulated SIEM detecting brute-force attacks over 5,000 logs + Nmap-style vulnerability scanner with Markdown report.',
     ],
   },
 }
@@ -128,11 +134,14 @@ const SKILL_COLORS = ['#60a5fa','#34d399','#60a5fa','#fbbf24','#34d399','#f472b6
 
 /* ── Projects ──────────────────────────────────────────────────────────────── */
 const PROJECTS = [
-  { to:'/etl',       icon:'⚙️', color:'#60a5fa', title:'Sales & Weather ETL',      category:'Data Engineering',   techs:['Python','Pandas','React','Firebase'] },
-  { to:'/executive', icon:'📊', color:'#34d399', title:'Executive Dashboard 360°', category:'BI & RevOps',         techs:['Python','Pandas','React','Recharts'] },
-  { to:'/churn',     icon:'🔬', color:'#a78bfa', title:'Predictive Churn Analysis',category:'Data Science',        techs:['Scikit-learn','Python','Pandas','React'] },
-  { to:'/hotel',     icon:'🏨', color:'#fb923c', title:'Hotel Pricing Engine',      category:'Revenue Management', techs:['Python','NumPy','React','Recharts'] },
-  { to:'/ia-digox',  icon:'🤖', color:'#f472b6', title:'IA Digox Services',         category:'AI Automation',      techs:['Claude','n8n','Paperclip','Firebase'] },
+  { to:'/etl',       external:false, icon:'⚙️', color:'#60a5fa', title:'Sales & Weather ETL',      category:'Data Engineering',   techs:['Python','Pandas','React','Firebase'] },
+  { to:'/executive', external:false, icon:'📊', color:'#34d399', title:'Executive Dashboard 360°', category:'BI & RevOps',         techs:['Python','Pandas','React','Recharts'] },
+  { to:'/churn',     external:false, icon:'🔬', color:'#a78bfa', title:'Predictive Churn Analysis',category:'Data Science',        techs:['Scikit-learn','Python','Pandas','React'] },
+  { to:'/hotel',     external:false, icon:'🏨', color:'#fb923c', title:'Hotel Pricing Engine',      category:'Revenue Management', techs:['Python','NumPy','React','Recharts'] },
+  { to:'/ia-digox',  external:false, icon:'🤖', color:'#f472b6', title:'IA Digox Services',         category:'AI Automation',      techs:['Claude','n8n','Paperclip','Firebase'] },
+  { to:'https://github.com/mindset-code/project-sales-optimization-sql',   external:true, icon:'🗄️', color:'#38bdf8', title:'Sales Optimization SQL',   category:'SQL & BI',           techs:['SQL','GROUP BY','Power BI','Tableau'] },
+  { to:'https://github.com/mindset-code/project-revenue-management-web',   external:true, icon:'💡', color:'#fbbf24', title:'Revenue Management Web',   category:'Web Development',     techs:['HTML','CSS','Vanilla JS','Canvas API'] },
+  { to:'https://github.com/mindset-code/project-security-log-analysis',    external:true, icon:'🛡️', color:'#ef4444', title:'Security Log Analysis + Scanner', category:'Ciberseguridad',      techs:['Python','SIEM','ISC2 CC','Nmap'] },
 ]
 
 /* ── Education ─────────────────────────────────────────────────────────────── */
@@ -257,20 +266,25 @@ export default function HomePage() {
         <h2 className="home-section-title">{t.projectsTitle}</h2>
         <p className="home-section-desc">{t.projectsDesc}</p>
         <div className="home-projects-grid">
-          {PROJECTS.map(({ to, icon, color, title, category, techs }, i) => (
-            <Link key={to} to={to} className="home-project-card" style={{ '--card-color': color }}>
-              <div className="home-project-top">
-                <span className="home-project-icon">{icon}</span>
-                <span className="home-project-badge" style={{ color, background: color+'18', border:`1px solid ${color}40` }}>{category}</span>
-              </div>
-              <h3 className="home-project-title">{title}</h3>
-              <p className="home-project-desc">{t.projectDescs[i]}</p>
-              <div className="home-project-footer">
-                <div className="home-project-techs">{techs.map(tech => <span key={tech} className="home-project-tech">{tech}</span>)}</div>
-                <span className="home-project-link">{t.viewBtn}</span>
-              </div>
-            </Link>
-          ))}
+          {PROJECTS.map(({ to, external, icon, color, title, category, techs }, i) => {
+            const cardBody = (
+              <>
+                <div className="home-project-top">
+                  <span className="home-project-icon">{icon}</span>
+                  <span className="home-project-badge" style={{ color, background: color+'18', border:`1px solid ${color}40` }}>{category}</span>
+                </div>
+                <h3 className="home-project-title">{title}</h3>
+                <p className="home-project-desc">{t.projectDescs[i]}</p>
+                <div className="home-project-footer">
+                  <div className="home-project-techs">{techs.map(tech => <span key={tech} className="home-project-tech">{tech}</span>)}</div>
+                  <span className="home-project-link">{external ? 'GitHub ↗' : t.viewBtn}</span>
+                </div>
+              </>
+            )
+            return external
+              ? <a key={to} href={to} target="_blank" rel="noreferrer" className="home-project-card" style={{ '--card-color': color }}>{cardBody}</a>
+              : <Link key={to} to={to} className="home-project-card" style={{ '--card-color': color }}>{cardBody}</Link>
+          })}
         </div>
       </section>
 

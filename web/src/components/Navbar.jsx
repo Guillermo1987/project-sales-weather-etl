@@ -10,6 +10,7 @@ const PROJECTS = [
   { to: '/hotel',     label: 'Hotel Pricing Engine',    badge: 'Revenue Management',  icon: '🏨', color: '#fb923c' },
   { to: '/ia-digox',     label: 'IA Digox Services',    badge: 'AI Automation',    icon: '🤖', color: '#f472b6' },
   { to: '/automations',  label: 'Automatizaciones',     badge: 'n8n · Paperclip',  icon: '⚡', color: '#a78bfa' },
+  { to: '/dashboards',   label: 'Dashboards Power BI / Tableau', badge: 'BI Embed',  icon: '📈', color: '#10b981' },
 ]
 
 export default function Navbar() {
