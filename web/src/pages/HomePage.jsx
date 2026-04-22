@@ -6,8 +6,8 @@ import PortfolioFooter from '../components/PortfolioFooter'
 const T = {
   es: {
     badge:   'Disponible para nuevas oportunidades',
-    role:    'Data & BI Analyst · Revenue Operations · AI Automation',
-    tagline: '+10 años convirtiendo datos complejos en estrategias de negocio accionables. Especialista en Revenue Analytics, pipelines ETL, dashboards ejecutivos y automatización con IA. Trabajo 100% remoto con equipos en EMEA y Américas.',
+    role:    'Independent AI & Analytics Practitioner · Commercial & Revenue Operations · Data & BI',
+    tagline: 'AI Engineer y Commercial Strategy Builder disponible para roles 100% remotos a nivel global. La intuición sin IA+datos es apuesta; la IA sin dirección comercial es un juguete caro. Mi trabajo es integrar las tres.',
     cta1: 'LinkedIn →', cta2: 'GitHub',
     stats: [
       { num: '+10',  lbl: 'Años de experiencia' },
@@ -15,6 +15,39 @@ const T = {
       { num: '100%', lbl: 'Trabajo remoto' },
       { num: 'MBA',  lbl: '+ Business Analytics' },
       { num: 'ISC2', lbl: 'CC Certified' },
+    ],
+    careerTitle: 'Trayectoria',
+    careerDesc:  'De liderazgo comercial B2B a AI Engineer Full-Stack — una reconversión técnica profunda en 4 años.',
+    careerCards: [
+      {
+        icon: '📈',
+        color: '#34d399',
+        title: 'Liderazgo comercial (10+ años)',
+        body: 'Sales Operations, Revenue Operations y estrategia comercial en B2B de alta complejidad.',
+        bullets: [
+          'Procter & Gamble / BGR — equipo 100+ personas a nivel regional',
+          '+18% expansión de cuota · +28% precisión en forecasting',
+          'El Mercurio — rediseño del funnel RevOps, +2% revenue e-commerce',
+        ],
+      },
+      {
+        icon: '🔧',
+        color: '#60a5fa',
+        title: 'Reconversión técnica (4 años)',
+        body: 'De líder comercial ejecutivo a AI Engineer con stack Full-Stack completo.',
+        bullets: [
+          'Portafolio público con 14+ proyectos shipped',
+          'Data Engineering · Revenue Management algorítmico',
+          'Machine Learning · Ciberseguridad · Desarrollo web',
+        ],
+      },
+      {
+        icon: '🤖',
+        color: '#a78bfa',
+        title: 'Stack IA como rutina diaria',
+        body: 'Herramientas que uso todos los días para diseñar, construir y operar soluciones.',
+        stack: ['Claude Code', 'Antigravity', 'Claude Cowork', 'OpenClaw', 'n8n', 'Power BI (DAX, RLS)', 'SQL', 'Python (Pandas, Scikit-learn, XGBoost)', 'React', 'Firebase', 'ETL', 'APIs REST', 'Agentic AI', 'LLM fine-tuning'],
+      },
     ],
     projectsTitle: 'Proyectos de portafolio',
     projectsDesc:  'Once proyectos end-to-end: Data Engineering, BI, Data Science, Revenue Management, Web Development, Ciberseguridad, AI Automation y un sitio corporativo. Siete con dashboard live interactivo.',
@@ -66,8 +99,8 @@ const T = {
   },
   en: {
     badge:   'Open to new opportunities',
-    role:    'Data & BI Analyst · Revenue Operations · AI Automation',
-    tagline: '+10 years turning complex data into actionable business strategies. Specialized in Revenue Analytics, ETL pipelines, executive dashboards and AI automation. 100% remote work with EMEA and Americas teams.',
+    role:    'Independent AI & Analytics Practitioner · Commercial & Revenue Operations · Data & BI',
+    tagline: 'AI Engineer and Commercial Strategy Builder, open to 100% remote roles worldwide. Intuition without AI+data is a bet; AI without commercial direction is an expensive toy. My job is to integrate the three.',
     cta1: 'LinkedIn →', cta2: 'GitHub',
     stats: [
       { num: '+10',  lbl: 'Years of experience' },
@@ -75,6 +108,39 @@ const T = {
       { num: '100%', lbl: 'Remote work' },
       { num: 'MBA',  lbl: '+ Business Analytics' },
       { num: 'ISC2', lbl: 'CC Certified' },
+    ],
+    careerTitle: 'Background',
+    careerDesc:  'From B2B commercial leadership to Full-Stack AI Engineer — a deep technical reinvention over 4 years.',
+    careerCards: [
+      {
+        icon: '📈',
+        color: '#34d399',
+        title: 'Commercial leadership (10+ years)',
+        body: 'Sales Operations, Revenue Operations and commercial strategy in high-complexity B2B environments.',
+        bullets: [
+          'Procter & Gamble / BGR — regional team of 100+ people',
+          '+18% quota expansion · +28% forecasting accuracy',
+          'El Mercurio — RevOps funnel redesign, +2% e-commerce revenue',
+        ],
+      },
+      {
+        icon: '🔧',
+        color: '#60a5fa',
+        title: 'Technical reinvention (4 years)',
+        body: 'From executive commercial leader to AI Engineer with a complete Full-Stack technical stack.',
+        bullets: [
+          'Public portfolio of 14+ shipped projects',
+          'Data Engineering · Algorithmic Revenue Management',
+          'Machine Learning · Cybersecurity · Web development',
+        ],
+      },
+      {
+        icon: '🤖',
+        color: '#a78bfa',
+        title: 'AI stack as daily routine',
+        body: 'Tools I use every day to design, build and operate solutions.',
+        stack: ['Claude Code', 'Antigravity', 'Claude Cowork', 'OpenClaw', 'n8n', 'Power BI (DAX, RLS)', 'SQL', 'Python (Pandas, Scikit-learn, XGBoost)', 'React', 'Firebase', 'ETL', 'REST APIs', 'Agentic AI', 'LLM fine-tuning'],
+      },
     ],
     projectsTitle: 'Portfolio Projects',
     projectsDesc:  'Eleven end-to-end projects: Data Engineering, BI, Data Science, Revenue Management, Web Development, Cybersecurity, AI Automation and a corporate website. Seven with a live interactive dashboard.',
@@ -270,9 +336,36 @@ export default function HomePage() {
         ))}
       </section>
 
+      {/* ── Career ───────────────────────────────────────────────────────── */}
+      <section className="home-section">
+        <h2 className="home-section-title home-section-title-center">{t.careerTitle}</h2>
+        <p className="home-section-desc">{t.careerDesc}</p>
+        <div className="home-career-grid">
+          {t.careerCards.map(card => (
+            <div key={card.title} className="home-career-card" style={{ '--card-color': card.color }}>
+              <div className="home-career-head">
+                <span className="home-career-icon">{card.icon}</span>
+                <h3 className="home-career-title">{card.title}</h3>
+              </div>
+              <p className="home-career-body">{card.body}</p>
+              {card.bullets && (
+                <ul className="home-career-list">
+                  {card.bullets.map(b => <li key={b}>{b}</li>)}
+                </ul>
+              )}
+              {card.stack && (
+                <div className="home-career-chips">
+                  {card.stack.map(s => <span key={s} className="home-career-chip">{s}</span>)}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ── Projects ─────────────────────────────────────────────────────── */}
       <section className="home-section">
-        <h2 className="home-section-title">{t.projectsTitle}</h2>
+        <h2 className="home-section-title home-section-title-center">{t.projectsTitle}</h2>
         <p className="home-section-desc">{t.projectsDesc}</p>
         <div className="home-projects-grid">
           {PROJECTS.map(({ to, external, icon, color, title, category, techs }, i) => {
