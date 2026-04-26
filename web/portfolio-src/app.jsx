@@ -402,10 +402,39 @@ function FeaturedProjects({lang}){
 
 // ── TechStack ─────────────────────────────────────────────────────────────────
 const STACK_CATS=[
-  {n:'01',es:'Lenguajes & Data Eng.',en:'Languages & Data Eng.',items:[{t:'Python',c:'#3B82F6'},{t:'SQL',c:'#3B82F6'},{t:'Pandas',c:'#60a5fa'},{t:'Jupyter',c:'#60a5fa'},{t:'ETL',c:'#93c5fd'},{t:'Scikit-learn',c:'#93c5fd'}]},
-  {n:'02',es:'BI & Visualización',   en:'BI & Visualization',  items:[{t:'Power BI',c:'#f59e0b'},{t:'DAX/RLS',c:'#f59e0b'},{t:'Tableau',c:'#fbbf24'},{t:'Chart.js',c:'#fcd34d'},{t:'D3.js',c:'#fde68a'},{t:'HTML',c:'#f97316'},{t:'CSS',c:'#60a5fa'}]},
-  {n:'03',es:'AI & Automatización',  en:'AI & Automation',     items:[{t:'Claude AI',c:'#8B5CF6'},{t:'n8n',c:'#a78bfa'},{t:'Agentes',c:'#c4b5fd'},{t:'LLMs',c:'#c4b5fd'},{t:'Prompting',c:'#a78bfa'},{t:'MCP',c:'#ddd6fe'}]},
-  {n:'04',es:'Cloud & Infra',        en:'Cloud & Infra',       items:[{t:'Firebase',c:'#f97316'},{t:'React',c:'#60a5fa'},{t:'Git',c:'#34d399'},{t:'Vite',c:'#34d399'},{t:'Docker',c:'#22d3ee'},{t:'Vercel',c:'#f1f5f9'},{t:'Google Cloud',c:'#4ade80'},{t:'AWS',c:'#fbbf24'},{t:'Azure',c:'#60a5fa'}]},
+  {n:'01',es:'AI Engineering',        en:'AI Engineering',
+   items:[
+     {t:'Claude API',c:'#8B5CF6'},{t:'LangChain',c:'#a78bfa'},{t:'LlamaIndex',c:'#c4b5fd'},
+     {t:'RAG Systems',c:'#a78bfa'},{t:'Prompt Engineering',c:'#ddd6fe'},
+     {t:'Multi-agent',c:'#8B5CF6'},{t:'MCP',c:'#c4b5fd'},{t:'n8n',c:'#a78bfa'},
+     {t:'OpenAI API',c:'#c4b5fd'},{t:'Hugging Face',c:'#f59e0b'},
+   ]},
+  {n:'02',es:'Data Engineering',      en:'Data Engineering',
+   items:[
+     {t:'Python',c:'#3B82F6'},{t:'SQL',c:'#3B82F6'},{t:'Pandas',c:'#60a5fa'},
+     {t:'NumPy',c:'#60a5fa'},{t:'dbt',c:'#f97316'},{t:'Airflow',c:'#60a5fa'},
+     {t:'Scikit-learn',c:'#93c5fd'},{t:'XGBoost',c:'#93c5fd'},
+     {t:'PostgreSQL',c:'#3B82F6'},{t:'BigQuery',c:'#4ade80'},{t:'Snowflake',c:'#22d3ee'},
+   ]},
+  {n:'03',es:'BI & Visualización',    en:'BI & Visualization',
+   items:[
+     {t:'Power BI',c:'#f59e0b'},{t:'DAX',c:'#f59e0b'},{t:'RLS',c:'#fbbf24'},
+     {t:'Tableau',c:'#fbbf24'},{t:'Looker Studio',c:'#4ade80'},
+     {t:'Metabase',c:'#60a5fa'},{t:'Chart.js',c:'#93c5fd'},{t:'D3.js',c:'#60a5fa'},
+   ]},
+  {n:'04',es:'Fullstack & APIs',      en:'Fullstack & APIs',
+   items:[
+     {t:'React',c:'#60a5fa'},{t:'TypeScript',c:'#3B82F6'},{t:'FastAPI',c:'#4ade80'},
+     {t:'Node.js',c:'#4ade80'},{t:'REST',c:'#93c5fd'},{t:'GraphQL',c:'#f87171'},
+     {t:'HTML5',c:'#f97316'},{t:'CSS3',c:'#60a5fa'},{t:'Vite',c:'#8B5CF6'},
+   ]},
+  {n:'05',es:'Cloud, DevOps & Seguridad', en:'Cloud, DevOps & Security',
+   items:[
+     {t:'GCP',c:'#4ade80'},{t:'AWS',c:'#fbbf24'},{t:'Azure',c:'#60a5fa'},
+     {t:'Firebase',c:'#f97316'},{t:'Vercel',c:'#f1f5f9'},{t:'Docker',c:'#22d3ee'},
+     {t:'Git',c:'#34d399'},{t:'CI/CD',c:'#34d399'},{t:'ISC2 CC',c:'#f87171'},
+     {t:'OWASP',c:'#f87171'},
+   ]},
 ];
 function TechStack(){
   return (
@@ -413,8 +442,8 @@ function TechStack(){
       <div className="section-inner">
         <Reveal><p className="section-label"><T es="Herramientas" en="Tools"/></p></Reveal>
         <Reveal delay={0.05}><h2 className="section-title"><T es="Stack Técnico" en="Tech Stack"/></h2></Reveal>
-        <Reveal delay={0.1}><p className="section-desc"><T es="Cuatro años profundizando en las herramientas que mueven datos desde la fuente hasta la decisión." en="Four years deepening expertise in the tools that move data from source to decision."/></p></Reveal>
-        <div className="stack-grid">
+        <Reveal delay={0.1}><p className="section-desc"><T es="Stack completo desde la ingesta de datos hasta el producto IA en producción." en="Full stack from data ingestion to production AI products."/></p></Reveal>
+        <div className="stack-grid" style={{gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))'}}>
           {STACK_CATS.map((cat,i)=>(
             <Reveal key={cat.n} delay={i*0.07} style={{height:'100%'}}>
               <div className="stack-cat" style={{height:'100%'}}>
