@@ -119,7 +119,7 @@ function Navbar({lang,setLang}){
     <nav id="navbar">
       <div className="nav-inner">
         <a href="#hero" className="nav-logo" aria-label="Inicio">
-          <div className="logo-mark">GU</div>
+          <img src="/assets/profile.jpg" alt="Mindset & Code" style={{width:'32px',height:'32px',borderRadius:'50%',objectFit:'cover',border:'2px solid rgba(59,130,246,.5)',flexShrink:0}}/>
           <span className="logo-name">Mindset & Code</span>
         </a>
         <ul className="nav-links" role="list">
@@ -147,6 +147,12 @@ function Hero(){
       <div className="hero-grid" aria-hidden="true"/>
       <div className="hero-glow"  aria-hidden="true"/>
       <div className="hero-content">
+        <div style={{display:'flex',justifyContent:'center',marginBottom:'20px'}}>
+          <div style={{position:'relative',display:'inline-block'}}>
+            <img src="/assets/profile.jpg" alt="Mindset & Code" style={{width:'110px',height:'110px',borderRadius:'50%',objectFit:'cover',border:'3px solid transparent',background:'linear-gradient(#0A0E1A,#0A0E1A) padding-box, linear-gradient(135deg,#3B82F6,#8B5CF6) border-box',boxShadow:'0 0 32px rgba(59,130,246,.25)'}}/>
+            <span style={{position:'absolute',bottom:'6px',right:'6px',width:'14px',height:'14px',background:'#4ade80',borderRadius:'50%',border:'2px solid #0A0E1A'}}/>
+          </div>
+        </div>
         <div className="avail-badge">
           <span className="dot-green" aria-hidden="true"/>
           <T es="Disponible para roles remotos · Barcelona" en="Available for remote roles · Barcelona"/>
@@ -607,7 +613,7 @@ function About(){
       <div className="section-inner">
         <Reveal><p className="section-label"><T es="Sobre mí" en="About me"/></p></Reveal>
         <div className="about-grid">
-          <Reveal><div className="about-avatar" aria-label="Mindset & Code">GU</div></Reveal>
+          <Reveal><img src="/assets/profile.jpg" alt="Mindset & Code" className="about-avatar" style={{objectFit:'cover',borderRadius:'50%',border:'3px solid transparent',background:'linear-gradient(var(--s1),var(--s1)) padding-box, linear-gradient(135deg,#3B82F6,#8B5CF6) border-box',boxShadow:'0 8px 32px rgba(59,130,246,.2)'}}/></Reveal>
           <div className="about-text">
             <Reveal><h3><T es="De la operación comercial al dato, del dato a la IA." en="From commercial ops to data, from data to AI."/></h3></Reveal>
             <Reveal delay={0.05}><p><T es="Mi carrera empezó en ventas de campo en Agrosuper — aprendí que la diferencia entre cerrar o perder un cliente muchas veces es el dato correcto en el momento correcto. Eso me llevó a liderar Revenue Operations en El Mercurio y luego en Procter & Gamble, donde co-diseñé un sistema de forecasting que pasó del 64% al 82% de precisión y redujo el error de inventario un 35%. Gestioné un equipo de 100 personas y un P&L de USD 2M+." en="My career started in field sales at Agrosuper — I learned early that winning or losing a deal often comes down to having the right data at the right moment. That led me to lead Revenue Operations at El Mercurio and then Procter & Gamble, where I co-designed a forecasting system that went from 64% to 82% accuracy and cut inventory error by 35%. I managed a 100-person team and a $2M+ P&L."/></p></Reveal>
