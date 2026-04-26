@@ -336,7 +336,28 @@ function CardLink({href,label}){
 
 // ── FeaturedProjects ──────────────────────────────────────────────────────────
 const FEAT_BADGES=['badge-ai','badge-ml','badge-bi','badge-etl'];
-const FEAT_GH=['https://github.com/mindset-code','https://github.com/mindset-code','https://github.com/mindset-code','https://github.com/mindset-code'];
+const FEAT_GH=[
+  'https://github.com/mindset-code/ia-digox-services',
+  'https://github.com/mindset-code/project-churn-analysis',
+  'https://github.com/mindset-code/project-executive-dashboard-data',
+  'https://github.com/mindset-code/project-hotel-pricing-engine',
+];
+const FEAT_DEMO=[
+  'https://ia-digox-services.web.app',
+  '/churn',
+  '/dashboard',
+  '/hotel',
+];
+const ALL_GH=[
+  'https://github.com/mindset-code/project-sales-weather-etl',
+  'https://github.com/mindset-code/project-sales-optimization-sql',
+  'https://github.com/mindset-code/project-revenue-management-web',
+  'https://github.com/mindset-code/project-security-log-analysis',
+  'https://github.com/mindset-code/project-vulnerability-scanner',
+  'https://github.com/mindset-code/Proyecto-Licitaciones-Publicas-automatizadas',
+  'https://github.com/mindset-code/Busqueda_empleo',
+];
+const ALL_DEMO=['/etl','/sql','/revenue','/siem','/scanner','/licita','/jobpilot'];
 
 function FeaturedProjects({lang}){
   const [openStory,setOpenStory]=React.useState(null);
@@ -365,8 +386,9 @@ function FeaturedProjects({lang}){
                 <div className="card-impact">{t(s.impact).split('·')[0].trim()}</div>
                 <div className="card-links">
                   <CardLink href={FEAT_GH[i]} label="GitHub"/>
+                  <CardLink href={FEAT_DEMO[i]} label="Live Demo"/>
                   <button onClick={()=>setOpenStory(s)} style={{display:'inline-flex',alignItems:'center',gap:'5px',padding:'6px 12px',borderRadius:'7px',background:'rgba(59,130,246,.1)',border:'1px solid rgba(59,130,246,.3)',fontSize:'12px',color:'#93c5fd',cursor:'pointer',fontFamily:'Inter,sans-serif',transition:'all .2s'}} onMouseOver={e=>{e.currentTarget.style.background='rgba(59,130,246,.2)'}} onMouseOut={e=>{e.currentTarget.style.background='rgba(59,130,246,.1)'}}>
-                    ▶ Demo
+                    ▶ Historia
                   </button>
                 </div>
               </div>
@@ -534,8 +556,10 @@ function AdditionalProjects({lang}){
                 <p className="card-desc" style={{fontSize:'13px'}}>{t(s.problem).split('.')[0]}.</p>
                 <div className="card-stack">{s.stack.map(sk=><span key={sk} className="stack-pill">{sk}</span>)}</div>
                 <div className="card-links">
+                  <CardLink href={ALL_GH[i]} label="GitHub"/>
+                  <CardLink href={ALL_DEMO[i]} label="Live Demo"/>
                   <button onClick={()=>setOpenStory(s)} style={{display:'inline-flex',alignItems:'center',gap:'5px',padding:'6px 12px',borderRadius:'7px',background:'rgba(59,130,246,.1)',border:'1px solid rgba(59,130,246,.3)',fontSize:'12px',color:'#93c5fd',cursor:'pointer',fontFamily:'Inter,sans-serif',transition:'all .2s'}} onMouseOver={e=>{e.currentTarget.style.background='rgba(59,130,246,.2)'}} onMouseOut={e=>{e.currentTarget.style.background='rgba(59,130,246,.1)'}}>
-                    ▶ Demo
+                    ▶ Historia
                   </button>
                 </div>
               </div>
