@@ -4,6 +4,7 @@ import { useLang } from '../contexts/LangContext'
 
 const PROJECTS = [
   { to: '/',          label: 'Sobre mí',               badge: 'Portada',             icon: '👤', color: '#94a3b8' },
+  { to: '/portfolio', label: 'Portafolio',             badge: '7 Proyectos',        icon: '🎯', color: '#60a5fa' },
   { to: '/etl',       label: 'Sales & Weather ETL',     badge: 'Data Engineering',   icon: '⚙️', color: '#60a5fa' },
   { to: '/executive', label: 'Executive Dashboard 360°',badge: 'BI & RevOps',         icon: '📊', color: '#34d399' },
   { to: '/churn',     label: 'Churn Analysis',          badge: 'Data Science',        icon: '🔬', color: '#a78bfa' },

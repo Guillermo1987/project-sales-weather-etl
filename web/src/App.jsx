@@ -10,6 +10,8 @@ import HotelDashboard     from './pages/HotelDashboard'
 import IaDigoxPage        from './pages/IaDigoxPage'
 import AutomationsPage    from './pages/AutomationsPage'
 import DashboardsPage     from './pages/DashboardsPage'
+import PortfolioIndexPage from './pages/PortfolioIndexPage'
+import PortfolioProjectPage from './pages/PortfolioProjectPage'
 import './App.css'
 
 const ETL_FILES = [
@@ -51,6 +53,8 @@ export default function App() {
         <Route path="/ia-digox"     element={<IaDigoxPage />} />
         <Route path="/automations"  element={<AutomationsPage />} />
         <Route path="/dashboards"   element={<DashboardsPage />} />
+        <Route path="/portfolio"    element={<PortfolioIndexPage />} />
+        <Route path="/portfolio/:projectId" element={<PortfolioProjectPage />} />
       </Routes>
       </LangProvider>
     </BrowserRouter>
