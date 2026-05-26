@@ -8,12 +8,12 @@ const T = {
   es: {
     badge: 'Solo lectura · View only',
     title: 'Automatizaciones & Agentes IA',
-    desc: 'Vista de solo lectura de los workflows de n8n y los agentes de Paperclip que operan IA Digox Services. Haz clic en los nodos para explorar la configuración de cada paso.',
+    desc: 'Vista de solo lectura de los workflows de n8n y los agentes de Paperclip que operan Consultoría Tech. Haz clic en los nodos para explorar la configuración de cada paso.',
     heroStats: ['Workflows n8n', 'Activos 24/7', 'Agentes Claude', 'Nodos totales'],
     tabWorkflows: '⚡ Workflows n8n',
     tabAgents:    '🤖 Agentes Paperclip',
     workflowsDesc: 'Workflows reales extraídos de n8n vía API. Haz clic en una tarjeta para ver el flujo completo y la configuración de cada nodo.',
-    agentsDesc: 'Cinco agentes especializados operados por Claude (Anthropic) y orquestados desde Paperclip, el sistema nervioso central de IA Digox.',
+    agentsDesc: 'Cinco agentes especializados operados por Claude (Anthropic) y orquestados desde Paperclip, el sistema nervioso central de Consultoría Tech.',
     loading: 'Cargando workflows…',
     hint: 'Haz clic en un nodo para ver sus detalles',
     noticeWorkflows: 'Vista de solo lectura. Los workflows se ejecutan en n8n self-hosted. No es posible modificar, activar ni ejecutar nada desde esta página.',
@@ -27,12 +27,12 @@ const T = {
   en: {
     badge: 'Read-only · View only',
     title: 'Automations & AI Agents',
-    desc: 'Read-only view of the n8n workflows and Paperclip agents that operate IA Digox Services. Click on nodes to explore the configuration of each step.',
+    desc: 'Read-only view of the n8n workflows and Paperclip agents that operate Consultoría Tech. Click on nodes to explore the configuration of each step.',
     heroStats: ['n8n Workflows', 'Active 24/7', 'Claude Agents', 'Total nodes'],
     tabWorkflows: '⚡ n8n Workflows',
     tabAgents:    '🤖 Paperclip Agents',
     workflowsDesc: 'Real workflows fetched from n8n via API. Click a card to see the full flow and each node\'s configuration.',
-    agentsDesc: 'Five specialized agents operated by Claude (Anthropic) and orchestrated from Paperclip, the central nervous system of IA Digox.',
+    agentsDesc: 'Five specialized agents operated by Claude (Anthropic) and orchestrated from Paperclip, the central nervous system of Consultoría Tech.',
     loading: 'Loading workflows…',
     hint: 'Click a node to see its details',
     noticeWorkflows: 'Read-only view. Workflows run on a self-hosted n8n instance. It is not possible to modify, activate or execute anything from this page.',
@@ -290,7 +290,7 @@ export default function AutomationsPage() {
         <div className="auto-hero-inner">
           <div className="auto-hero-top">
             <span className="auto-hero-badge">{t.badge}</span>
-            <Link to="/ia-digox" className="auto-hero-link">IA Digox →</Link>
+            <Link to="/ia-digox" className="auto-hero-link">Consultoría Tech →</Link>
           </div>
           <h1 className="auto-hero-title">{t.title}</h1>
           <p className="auto-hero-desc">{t.desc}</p>

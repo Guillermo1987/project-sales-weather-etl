@@ -24,7 +24,7 @@ const T = {
     workflowsTitle: 'Workflows de automatización (n8n)',
     workflowsDesc:  'Flujos que conectan GitHub, Paperclip, Claude y servicios externos',
     stackTitle: 'Stack tecnológico',
-    stackDesc:  'Herramientas que componen el sistema de IA Digox',
+    stackDesc:  'Herramientas que componen el sistema de Consultoría Tech',
     active: '● Activo',
     dev:    '◌ En desarrollo',
     footerCtx: 'Empresa operada por agentes Claude (Anthropic) · n8n · Paperclip',
@@ -49,7 +49,7 @@ const T = {
     workflowsTitle: 'Automation Workflows (n8n)',
     workflowsDesc:  'Flows connecting GitHub, Paperclip, Claude and external services',
     stackTitle: 'Tech stack',
-    stackDesc:  'Tools that make up the IA Digox system',
+    stackDesc:  'Tools that make up the Consultoría Tech system',
     active: '● Active',
     dev:    '◌ In development',
     footerCtx: 'Company operated by Claude (Anthropic) agents · n8n · Paperclip',
@@ -92,13 +92,13 @@ const WORKFLOWS = {
     { icon:'🔍', color:'#60a5fa', status:'development', name:'Prospecting Semanal',       desc:'Apify extrae leads → filtro ICP con IA → agente SDR genera outreach personalizado.',                              tech:'Apify · Claude · n8n' },
     { icon:'🔬', color:'#34d399', status:'active',      name:'GitHub Push → Code Review', desc:'Cada push activa un code review automático por el agente CTO con análisis de seguridad y calidad.',             tech:'GitHub Webhooks · Claude · n8n' },
     { icon:'📌', color:'#fbbf24', status:'active',      name:'GitHub → Paperclip Issues', desc:'Los commits se convierten automáticamente en issues de Paperclip para trazabilidad completa.',                   tech:'GitHub · Paperclip · n8n' },
-    { icon:'🔄', color:'#a78bfa', status:'development', name:'GitHub → IA Digox Board',   desc:'Sincronización bidireccional entre GitHub y el tablero principal de IA Digox en Paperclip.',                    tech:'GitHub · Paperclip API · n8n' },
+    { icon:'🔄', color:'#a78bfa', status:'development', name:'GitHub → Consultoría Tech Board', desc:'Sincronización bidireccional entre GitHub y el tablero principal de Consultoría Tech en Paperclip.',              tech:'GitHub · Paperclip API · n8n' },
   ],
   en: [
     { icon:'🔍', color:'#60a5fa', status:'development', name:'Weekly Prospecting',        desc:'Apify extracts leads → AI ICP filter → SDR agent generates personalized outreach.',                              tech:'Apify · Claude · n8n' },
     { icon:'🔬', color:'#34d399', status:'active',      name:'GitHub Push → Code Review', desc:'Every push triggers an automatic code review by the CTO agent with security and quality analysis.',             tech:'GitHub Webhooks · Claude · n8n' },
     { icon:'📌', color:'#fbbf24', status:'active',      name:'GitHub → Paperclip Issues', desc:'Commits are automatically converted into Paperclip issues for full traceability.',                              tech:'GitHub · Paperclip · n8n' },
-    { icon:'🔄', color:'#a78bfa', status:'development', name:'GitHub → IA Digox Board',   desc:'Bidirectional sync between GitHub and the main IA Digox board in Paperclip.',                                   tech:'GitHub · Paperclip API · n8n' },
+    { icon:'🔄', color:'#a78bfa', status:'development', name:'GitHub → Consultoría Tech Board', desc:'Bidirectional sync between GitHub and the main Consultoría Tech board in Paperclip.',                            tech:'GitHub · Paperclip API · n8n' },
   ],
 }
 
@@ -138,7 +138,7 @@ export default function IaDigoxPage() {
             </a>
           </div>
 
-          <h1 className="iad-hero-title">IA Digox Services</h1>
+          <h1 className="iad-hero-title">Consultoría Tech</h1>
 
           <p className="iad-hero-desc">{t.heroDesc}</p>
 

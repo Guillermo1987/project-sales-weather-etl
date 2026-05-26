@@ -67,7 +67,7 @@ const T = {
     eduTitle:  'Formación',
     certTitle: 'Licencias y Certificaciones',
     currentProjectTitle: 'Proyecto en desarrollo',
-    iaDigoxDesc: 'Empresa de consultoría IA operada de forma autónoma: 5 agentes Claude especializados gestionan ventas, desarrollo, marketing y operaciones. Orquestación con n8n y Paperclip como sistema nervioso central.',
+    iaDigoxDesc: 'Consultoría Tech: consultoría IA operada de forma autónoma con agentes Claude especializados que gestionan ventas, desarrollo, marketing y operaciones. Orquestación con n8n y Paperclip como sistema nervioso central.',
     iaDigoxBadge: 'AI Automation · En marcha',
     iaDigoxStats: [
       { num: '5',    lbl: 'Agentes IA' },
@@ -90,8 +90,8 @@ const T = {
       'Modelo de Regresión Logística con 81.4% accuracy y AUC 0.881. Identifica los drivers clave de abandono de clientes.',
       'Motor algorítmico de Revenue Management: optimiza ADR y RevPAR usando estacionalidad, eventos locales y presión de ocupación.',
       'Empresa de consultoría IA autónoma: 5 agentes Claude especializados, 4 workflows n8n y orquestación con Paperclip.',
-      'Vista interactiva (read-only) de los workflows n8n y los 5 agentes Claude que operan IA Digox Services 24/7. Nodos explorables paso a paso.',
-      'Sitio corporativo bilingüe de IA Digox Services desplegado en Firebase: landing + tres líneas de servicio (AI Strategy, Digital Build, Smart Automation) con captación de leads. React + Vite.',
+      'Vista interactiva (read-only) de los workflows n8n y los agentes Claude que operan Consultoría Tech 24/7. Nodos explorables paso a paso.',
+      'Sitio corporativo bilingüe de Consultoría Tech desplegado en Firebase: landing + tres líneas de servicio (AI Strategy, Digital Build, Smart Automation) con captación de leads. React + Vite.',
       '5 queries analíticas SQL sobre 10.000 registros: regiones más rentables, vendedores top, estacionalidades y productos con bajo margen. Listo para Power BI/Tableau.',
       'Web app vanilla JS con KPIs en tiempo real (ADR, RevPAR, Occupancy) + simulador de pricing interactivo con 5 parámetros. Canvas API, sin frameworks.',
       'Stack defensivo de ciberseguridad aplicada (ISC2 CC): SIEM simulado que detecta fuerza bruta sobre 5.000 logs + escáner de vulnerabilidades estilo Nmap con reporte Markdown.',
@@ -160,7 +160,7 @@ const T = {
     eduTitle:  'Education',
     certTitle: 'Licenses & Certifications',
     currentProjectTitle: 'Current project',
-    iaDigoxDesc: 'Autonomous AI consulting company: 5 specialized Claude agents manage sales, development, marketing and operations. Orchestrated with n8n and Paperclip as the central nervous system.',
+    iaDigoxDesc: 'Consultoría Tech: autonomous AI consultancy with specialized Claude agents managing sales, development, marketing and operations. Orchestrated with n8n and Paperclip as the central nervous system.',
     iaDigoxBadge: 'AI Automation · In progress',
     iaDigoxStats: [
       { num: '5',    lbl: 'AI Agents' },
@@ -183,8 +183,8 @@ const T = {
       'Logistic Regression model with 81.4% accuracy and AUC 0.881. Identifies key drivers of customer churn.',
       'Algorithmic Revenue Management engine: optimizes ADR and RevPAR using seasonality, local events and occupancy pressure.',
       'Autonomous AI consulting company: 5 specialized Claude agents, 4 n8n workflows and Paperclip orchestration.',
-      'Interactive (read-only) view of the n8n workflows and 5 Claude agents that operate IA Digox Services 24/7. Step-by-step explorable nodes.',
-      'Bilingual corporate website for IA Digox Services deployed on Firebase: landing + three service lines (AI Strategy, Digital Build, Smart Automation) with lead capture. React + Vite.',
+      'Interactive (read-only) view of the n8n workflows and Claude agents that operate Consultoría Tech 24/7. Step-by-step explorable nodes.',
+      'Bilingual corporate website for Consultoría Tech deployed on Firebase: landing + three service lines (AI Strategy, Digital Build, Smart Automation) with lead capture. React + Vite.',
       '5 analytical SQL queries on 10,000 records: most profitable regions, top sellers, seasonality and low-margin products. Power BI/Tableau-ready.',
       'Vanilla JS web app with real-time KPIs (ADR, RevPAR, Occupancy) + interactive pricing simulator with 5 parameters. Canvas API, no frameworks.',
       'Defensive cybersecurity stack applied (ISC2 CC): simulated SIEM detecting brute-force attacks over 5,000 logs + Nmap-style vulnerability scanner with Markdown report.',
@@ -211,9 +211,9 @@ const PROJECTS = [
   { to:'/dashboards',  external:false, icon:'📈', color:'#10b981', title:'Dashboards Power BI & Tableau', category:'BI Embed',           techs:['HTML','React','Power BI','Tableau'] },
   { to:'/churn',       external:false, icon:'🔬', color:'#a78bfa', title:'Predictive Churn Analysis',     category:'Data Science',        techs:['Scikit-learn','Python','Pandas','React'] },
   { to:'/hotel',       external:false, icon:'🏨', color:'#fb923c', title:'Hotel Pricing Engine',          category:'Revenue Management', techs:['Python','NumPy','React','Recharts'] },
-  { to:'/ia-digox',    external:false, icon:'🤖', color:'#f472b6', title:'IA Digox Services',             category:'AI Automation',      techs:['Claude','n8n','Paperclip','Firebase'] },
+  { to:'/ia-digox',    external:false, icon:'🤖', color:'#f472b6', title:'Consultoría Tech',              category:'AI Automation',      techs:['Claude','n8n','Paperclip','Firebase'] },
   { to:'/automations', external:false, icon:'⚡', color:'#8b5cf6', title:'Automatizaciones & Agentes IA', category:'n8n · Paperclip',    techs:['n8n','Paperclip','Claude','React'] },
-  { to:'https://ia-digox-services.web.app/services/ai-strategy',            external:true, icon:'🌐', color:'#06b6d4', title:'IA Digox Corporate Site',  category:'Corporate Web',      techs:['React','Vite','Firebase'] },
+  { to:'https://consultoria-tech.web.app',                                  external:true, icon:'🌐', color:'#06b6d4', title:'Consultoría Tech Corporate', category:'Corporate Web',      techs:['React','Vite','Firebase'] },
   { to:'https://github.com/mindset-code/project-sales-optimization-sql',   external:true, icon:'🗄️', color:'#38bdf8', title:'Sales Optimization SQL',   category:'SQL & BI',           techs:['SQL','GROUP BY','Power BI','Tableau'] },
   { to:'https://github.com/mindset-code/project-revenue-management-web',   external:true, icon:'💡', color:'#fbbf24', title:'Revenue Management Web',   category:'Web Development',     techs:['HTML','CSS','Vanilla JS','Canvas API'] },
   { to:'https://github.com/mindset-code/project-security-log-analysis',    external:true, icon:'🛡️', color:'#ef4444', title:'Security Log Analysis + Scanner', category:'Ciberseguridad',      techs:['Python','SIEM','ISC2 CC','Nmap'] },
@@ -414,7 +414,7 @@ export default function HomePage() {
           <p className="home-about-p">{t.aboutP1}</p>
           <p className="home-about-p">
             {t.aboutP2}{' '}
-            <Link to="/ia-digox" className="home-inline-link">IA Digox Services</Link>
+            <Link to="/ia-digox" className="home-inline-link">Consultoría Tech</Link>
             {t.aboutP2b}
           </p>
           <div className="home-avail-box">
@@ -427,7 +427,7 @@ export default function HomePage() {
             <div className="home-iadigox-header">
               <span className="home-iadigox-icon">🤖</span>
               <div>
-                <Link to="/ia-digox" className="home-iadigox-link">IA Digox Services</Link>
+                <Link to="/ia-digox" className="home-iadigox-link">Consultoría Tech</Link>
                 <span className="home-iadigox-badge">{t.iaDigoxBadge}</span>
               </div>
             </div>

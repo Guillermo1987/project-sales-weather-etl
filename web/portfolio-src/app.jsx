@@ -222,7 +222,7 @@ function DigoxViz(){
 // ── Story data ────────────────────────────────────────────────────────────────
 const FEAT_STORIES = [
   {
-    tag:'AI · 49 Agentes autónomos', title:'IA Digox Services — Autonomous AI Agency',
+    tag:'AI · Agentes autónomos', title:'Consultoría Tech — Autonomous AI Consultancy',
     stack:['Claude AI','n8n','React','Firebase'],
     problem:{es:'Las pymes latinoamericanas necesitan estrategia de IA pero no pueden pagar un equipo completo de consultores. La brecha entre necesidad y acceso es enorme.',en:'Latin American SMBs need AI strategy but can\'t afford a full consulting team. The gap between need and access is enormous.'},
     solution:{es:'Construí una agencia de consultoría IA autónoma donde agentes Claude actúan como CEO, CTO y CMO coordinados por workflows n8n. Cada agente tiene rol, contexto y herramientas específicas.',en:'I built an autonomous AI consulting agency where Claude agents act as CEO, CTO and CMO, coordinated by n8n workflows. Each agent has a specific role, context and toolset.'},
@@ -349,7 +349,7 @@ const FEAT_GH=[
   'https://github.com/mindset-code/project-hotel-pricing-engine',
 ];
 const FEAT_DEMO=[
-  'https://ia-digox-services.web.app',
+  'https://consultoria-tech.web.app',
   '/churn',
   '/dashboard',
   '/hotel',
@@ -473,7 +473,7 @@ const TL=[
   {y:'2020–2022',es:'Regional SalesOps Manager',en:'Regional SalesOps Manager',org:'Procter & Gamble (BGR)',ach:{es:'+18% market share · $2M+ P&L · 100 personas · Forecast 64%→82%',en:'+18% market share · $2M+ P&L · 100-person team · Forecast 64%→82%'},tags:['P&G','$2M+ P&L','100 personas'],acc:false},
   {y:'2022–2023',es:'MBA + Graduate Certificate Analytics',en:'MBA + Graduate Certificate Analytics',org:'Indiana Institute of Technology',ach:{es:'Posgrado completado con especialización en Analytics',en:'Graduate degree with Analytics specialization'},tags:['MBA','Business Analytics'],acc:false},
   {y:'2022–2024',es:'Reconversión Técnica',en:'Technical Retraining',org:'IBM Coursera · ISC2',ach:{es:'IBM Data Science · IBM Full Stack · ISC2 Certified in Cybersecurity',en:'IBM Data Science · IBM Full Stack · ISC2 CC'},tags:['Python','SQL','BI','ISC2 CC'],acc:false},
-  {y:'2024–Hoy',es:'AI Engineer & Data Analyst',en:'AI Engineer & Data Analyst',org:'IA Digox Services · Freelance · Barcelona',ach:{es:'14 proyectos · 49 agentes IA · Agencia autónoma operativa',en:'14 projects · 49 AI agents · Autonomous agency operational'},tags:['Claude AI','n8n','MCP','14 proyectos'],acc:true},
+  {y:'2024–Hoy',es:'AI Engineer & Data Analyst',en:'AI Engineer & Data Analyst',org:'Consultoría Tech · Freelance · Barcelona',ach:{es:'14 proyectos · Agentes IA Claude · Consultoría autónoma operativa',en:'14 projects · Claude AI agents · Autonomous consultancy operational'},tags:['Claude AI','n8n','MCP','14 proyectos'],acc:true},
 ];
 function Timeline(){
   const reversed=[...TL].reverse();
