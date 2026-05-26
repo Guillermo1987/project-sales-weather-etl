@@ -1,7 +1,8 @@
 # Sales & Weather ETL — Analytics Dashboard
 
-> **Data Engineering Portfolio Project** · Python ETL Pipeline + React Dashboard
-> **Status:** Finished · Deployed to production (2026-04)
+> **Data Engineering Portfolio Project** · Python ETL Pipeline
+> **Status:** Finished · Pipeline ETL en producción (2026-04)
+> **Nota:** El sitio React fue migrado a [project-portfolio](https://github.com/mindset-code/project-portfolio)
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
 [![Portfolio](https://img.shields.io/badge/Portfolio-proyectos--personales.web.app-8b5cf6?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
