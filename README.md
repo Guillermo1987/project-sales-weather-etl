@@ -1,128 +1,250 @@
-# Sales & Weather ETL — Analytics Dashboard
+# Sales & Weather ETL — Data Engineering Pipeline
 
-> **Data Engineering Portfolio Project** · Python ETL Pipeline
-> **Status:** Finished · Pipeline ETL en producción (2026-04)
-> **Nota:** El sitio React fue migrado a [project-portfolio](https://github.com/mindset-code/project-portfolio)
+> **Data Engineering portfolio project** · Python · Pandas · modular ETL
+> **Status:** Finished · Live on portfolio
+> A reproducible Extract–Transform–Load pipeline that joins two independent real-world datasets — retail sales and daily city temperatures — to answer a concrete business question: *does the weather move sales?*
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
-[![Portfolio](https://img.shields.io/badge/Portfolio-proyectos--personales.web.app-8b5cf6?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
-[![Executive Dashboard](https://img.shields.io/badge/Also%20See-Executive%20Dashboard%20360°-34d399?style=for-the-badge)](https://proyectos-personales.web.app/executive)
+> 🇬🇧 **English version first.** · 🇪🇸 **La versión en español está más abajo** → [ir a Español](#-español).
 
----
-
-## Project Status
-
-| Phase | Status |
-|---|---|
-| Data sourcing (Kaggle) | Done |
-| ETL pipeline (Python) | Done |
-| Feature engineering | Done |
-| React dashboard | Done |
-| Firebase deployment | Done |
-| Node.js fallback generator | Done |
-
-**Current phase:** maintenance — live and serving portfolio visits.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-a78bfa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app/etl)
+[![Portfolio](https://img.shields.io/badge/Portfolio-proyectos--personales.web.app-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
+[![Stack](https://img.shields.io/badge/Stack-Python%20%C2%B7%20Pandas%20%C2%B7%20ETL-3776AB?style=for-the-badge&logo=python&logoColor=white)](.)
+[![Domain](https://img.shields.io/badge/Domain-Data%20Engineering-16a34a?style=for-the-badge)](.)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 ---
 
-## What This Project Does
+## The problem this solves
 
-A production-ready ETL pipeline that joins two independent data sources — Superstore Sales transactions and US City daily temperatures — into a single analytical dataset. The output is served as a live React dashboard on Firebase Hosting.
+Real insight rarely lives in one table — it lives in the **join** between sources that were never designed to be combined. This project takes two independent public datasets and engineers a clean, reproducible pipeline that merges them by city and date, so a business can ask: *do temperature swings correlate with what people buy?*
 
-**Live dashboard → [proyectos-personales.web.app](https://proyectos-personales.web.app)**
+It demonstrates the core of **Data Engineering**: a modular Extract → Transform → Load architecture with logging and traceability, turning ~2.9M raw weather records and ~9,800 sales transactions into six pre-aggregated, dashboard-ready datasets.
+
+**▶ Live dashboard: [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)**
 
 ---
 
-## Architecture
+## Data sources
 
+| Source | Dataset | Volume |
+|--------|---------|--------|
+| Sales | Superstore Sales (Kaggle) | ~9,800 transactions |
+| Weather | Daily Temperature of Major Cities (Kaggle) | ~2.9M records |
+
+Joined on **city + date** — two systems that never knew about each other, unified.
+
+---
+
+## Architecture — modular ETL
+
+```mermaid
+flowchart LR
+    E["extract.py<br/>read raw CSVs"] --> T["transform.py<br/>clean · join · feature-engineer"]
+    T --> L["load.py<br/>CSV warehouse + JSON"]
+    L --> W["Dashboard /etl"]
+    P["pipeline.py"] -.orchestrates.-> E & T & L
 ```
-data/raw/sales/train.csv ──────┐
-                                ├──► Extract ──► Transform ──► Load ──► React Dashboard
-data/raw/weather/               │
-city_temperature.csv ──────────┘
-```
 
-| Layer | What it does |
-|-------|-------------|
-| **Extract** | Reads CSVs from two independent sources |
-| **Transform** | Cleans, joins on city + date, engineers features |
-| **Load** | Saves CSV warehouse + 6 pre-aggregated JSON files |
-| **Visualize** | React + Recharts dashboard deployed on Firebase |
+| Stage | Module | Responsibility |
+|-------|--------|----------------|
+| **Extract** | `src/extract.py` | Read raw CSVs with explicit dtypes + row-count logging |
+| **Transform** | `src/transform.py` | Clean nulls/types, aggregate weather to city-day, °F→°C, **join sales × weather**, bucket temperatures (Cold/Mild/Warm/Hot) |
+| **Load** | `src/load.py` | Write CSV warehouse + 6 pre-aggregated JSONs |
+| **Orchestrate** | `src/pipeline.py` | Run E→T→L with logging |
+
+A **Node.js fallback** (`generate_json.mjs`) reproduces the same outputs where Pandas isn't available.
 
 ---
 
-## Skills Demonstrated
+## Output datasets
 
-- **Data Engineering (ETL):** Modular Extract → Transform → Load architecture
-- **Python / Pandas:** Data cleaning, joins, feature engineering
-- **Data Integration:** Merging two heterogeneous datasets on city + date key
-- **Feature Engineering:** Temperature buckets, sales tiers, weekend flags
-- **Web Deployment:** React dashboard served as static site on Firebase Hosting
-
----
-
-## Charts & KPIs
-
-| Chart | Insight |
-|-------|---------|
-| 5 KPI Summary Cards | Total revenue, orders, avg order, top category, peak month |
-| Revenue by Category | Furniture vs Office Supplies vs Technology |
-| Revenue by Region | US geographic distribution |
-| Monthly Revenue Trend | 4-year trend with seasonality |
-| Sales by Temperature | Weather impact on order volume |
-| Weekend vs Weekday | Order patterns by day type |
-| Temperature × Sales Scatter | Correlation analysis by category |
+| File | Description |
+|------|-------------|
+| `sales_by_category.json` | Revenue by product category |
+| `monthly_revenue.json` | Revenue by month |
+| `sales_by_temp.json` | Revenue by temperature bucket |
+| `sales_by_region.json` | Revenue by US region |
+| `sales_weekend_vs_weekday.json` | Weekend vs weekday |
+| `temp_vs_sales_scatter.json` | Temperature × sales (500-point sample) |
 
 ---
 
-## Tech Stack
+## Tech stack
 
 | Layer | Technology |
 |-------|-----------|
-| ETL | Python 3.12, Pandas 2.2, NumPy |
-| Web | React 19, Vite, Recharts |
-| Hosting | Firebase Hosting (Spark plan) |
-| Data | Kaggle — Superstore Sales × Daily Temperature of Major Cities |
+| ETL | Python 3.12 · Pandas · NumPy |
+| Fallback | Node.js (ES Modules) |
+| Visualization | React · Recharts (in `project-portfolio`) |
+| Domain | Data Engineering · ETL · feature engineering |
 
 ---
 
-## How to Run
+## Getting started
 
 ```bash
-# Clone
 git clone https://github.com/mindset-code/project-sales-weather-etl.git
 cd project-sales-weather-etl
-
-# Run ETL (Python)
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python etl_pipeline.py
 
-# Start dashboard
-cd web && npm install && npm run dev
+python etl_pipeline.py      # Extract → Transform → Load
+# or, without Pandas:
+node generate_json.mjs
 ```
 
-> **No Python available?** Use the Node.js fallback: `node generate_json.mjs`
+> Raw datasets are not versioned — download the two Kaggle datasets into `data/raw/` first.
 
 ---
 
-## Data Sources
+## Repository structure
 
-| Dataset | Source | Rows |
-|---------|--------|------|
-| [Superstore Sales](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting) | Kaggle | 9,800 |
-| [Daily Temperature of Major Cities](https://www.kaggle.com/datasets/sudalairajkumar/daily-temperature-of-major-cities) | Kaggle | ~2.9M |
+```
+project-sales-weather-etl/
+├── etl_pipeline.py        # entry point
+├── generate_json.mjs      # Node.js fallback
+├── requirements.txt
+├── src/
+│   ├── extract.py         # read raw CSVs
+│   ├── transform.py       # clean · join · feature-engineer
+│   ├── load.py            # CSV warehouse + JSON
+│   └── pipeline.py        # E→T→L orchestrator
+├── data/raw/              # source datasets (not versioned)
+├── LICENSE                # MIT
+└── README.md
+```
 
 ---
 
-## Also in This Repo
+## License & contact
 
-This project also hosts the **[Executive Dashboard 360°](https://proyectos-personales.web.app/executive)** — a BI portfolio project with 24 executive KPIs across Finance, RevOps and Marketing.
+Released under the **[MIT License](LICENSE)**.
+
+- **Live:** [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)
+- **LinkedIn:** [Mindset & Code](https://www.linkedin.com/company/mindset-code)
+- **Email:** contacto@mindset-code.com
 
 ---
 
-## Links
+# 🇪🇸 Español
 
-- **Portfolio:** [proyectos-personales.web.app](https://proyectos-personales.web.app)
+# Sales & Weather ETL — Pipeline de Data Engineering
+
+> **Proyecto de portafolio de Data Engineering** · Python · Pandas · ETL modular
+> **Estado:** Terminado · Publicado en el portafolio
+> Un pipeline Extract–Transform–Load reproducible que une dos datasets reales independientes —ventas retail y temperaturas diarias de ciudades— para responder una pregunta concreta de negocio: *¿el clima mueve las ventas?*
+
+> 🇪🇸 Traducción al español. La versión en inglés está al inicio → [ir a English](#sales--weather-etl--data-engineering-pipeline).
+
+---
+
+## El problema que resuelve
+
+El insight real rara vez vive en una sola tabla — vive en el **join** entre fuentes que nunca se diseñaron para combinarse. Este proyecto toma dos datasets públicos independientes y construye un pipeline limpio y reproducible que los une por ciudad y fecha, para que un negocio pueda preguntar: *¿las variaciones de temperatura se correlacionan con lo que compra la gente?*
+
+Demuestra el núcleo del **Data Engineering**: una arquitectura modular Extract → Transform → Load con logging y trazabilidad, que convierte ~2,9M de registros de clima y ~9.800 transacciones de ventas en seis datasets pre-agregados listos para dashboard.
+
+**▶ Dashboard en vivo: [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)**
+
+---
+
+## Fuentes de datos
+
+| Fuente | Dataset | Volumen |
+|--------|---------|---------|
+| Ventas | Superstore Sales (Kaggle) | ~9.800 transacciones |
+| Clima | Daily Temperature of Major Cities (Kaggle) | ~2,9M registros |
+
+Unidos por **ciudad + fecha** — dos sistemas que nunca supieron el uno del otro, unificados.
+
+---
+
+## Arquitectura — ETL modular
+
+```mermaid
+flowchart LR
+    E["extract.py<br/>lee CSVs raw"] --> T["transform.py<br/>limpia · join · feature-engineering"]
+    T --> L["load.py<br/>warehouse CSV + JSON"]
+    L --> W["Dashboard /etl"]
+    P["pipeline.py"] -.orquesta.-> E & T & L
+```
+
+| Etapa | Módulo | Responsabilidad |
+|-------|--------|-----------------|
+| **Extract** | `src/extract.py` | Lee CSVs raw con dtypes explícitos + logging de filas |
+| **Transform** | `src/transform.py` | Limpia nulls/tipos, agrega clima a city-day, °F→°C, **join ventas × clima**, buckets de temperatura (Cold/Mild/Warm/Hot) |
+| **Load** | `src/load.py` | Escribe warehouse CSV + 6 JSONs pre-agregados |
+| **Orquestar** | `src/pipeline.py` | Ejecuta E→T→L con logging |
+
+Un **fallback en Node.js** (`generate_json.mjs`) reproduce las mismas salidas donde no hay Pandas.
+
+---
+
+## Datasets de salida
+
+| Archivo | Descripción |
+|---------|-------------|
+| `sales_by_category.json` | Revenue por categoría de producto |
+| `monthly_revenue.json` | Revenue por mes |
+| `sales_by_temp.json` | Revenue por bucket de temperatura |
+| `sales_by_region.json` | Revenue por región US |
+| `sales_weekend_vs_weekday.json` | Fin de semana vs entre semana |
+| `temp_vs_sales_scatter.json` | Temperatura × ventas (muestra de 500 puntos) |
+
+---
+
+## Stack técnico
+
+| Capa | Tecnología |
+|------|-----------|
+| ETL | Python 3.12 · Pandas · NumPy |
+| Fallback | Node.js (ES Modules) |
+| Visualización | React · Recharts (en `project-portfolio`) |
+| Dominio | Data Engineering · ETL · feature engineering |
+
+---
+
+## Cómo empezar
+
+```bash
+git clone https://github.com/mindset-code/project-sales-weather-etl.git
+cd project-sales-weather-etl
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+python etl_pipeline.py      # Extract → Transform → Load
+# o, sin Pandas:
+node generate_json.mjs
+```
+
+> Los datasets raw no se versionan — descarga los dos datasets de Kaggle en `data/raw/` primero.
+
+---
+
+## Estructura del repositorio
+
+```
+project-sales-weather-etl/
+├── etl_pipeline.py        # entry point
+├── generate_json.mjs      # fallback Node.js
+├── requirements.txt
+├── src/
+│   ├── extract.py         # lee CSVs raw
+│   ├── transform.py       # limpia · join · feature-engineering
+│   ├── load.py            # warehouse CSV + JSON
+│   └── pipeline.py        # orquestador E→T→L
+├── data/raw/              # datasets fuente (no versionados)
+├── LICENSE                # MIT
+└── README.md
+```
+
+---
+
+## Licencia y contacto
+
+Publicado bajo la **[Licencia MIT](LICENSE)**.
+
+- **En vivo:** [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)
 - **LinkedIn:** [Mindset & Code](https://www.linkedin.com/company/mindset-code)
 - **Email:** contacto@mindset-code.com
 
