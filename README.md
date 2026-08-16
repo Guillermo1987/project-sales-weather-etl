@@ -6,8 +6,8 @@
 
 > 🇬🇧 **English version first.** · 🇪🇸 **La versión en español está más abajo** → [ir a Español](#-español).
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-a78bfa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app/etl)
-[![Portfolio](https://img.shields.io/badge/Portfolio-proyectos--personales.web.app-60a5fa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-personales.web.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-%E2%86%92%20Open%20Dashboard-a78bfa?style=for-the-badge&logo=firebase&logoColor=white)](https://proyectos-mindset-code.web.app/etl)
+[![Ficha del proyecto](https://img.shields.io/badge/Ficha%20del%20proyecto-mindset--code.com-2c4a6e?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://mindset-code.com/es/codigo)
 [![Stack](https://img.shields.io/badge/Stack-Python%20%C2%B7%20Pandas%20%C2%B7%20ETL-3776AB?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Domain](https://img.shields.io/badge/Domain-Data%20Engineering-16a34a?style=for-the-badge)](.)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
@@ -20,7 +20,7 @@ Real insight rarely lives in one table — it lives in the **join** between sour
 
 It demonstrates the core of **Data Engineering**: a modular Extract → Transform → Load architecture with logging and traceability, turning ~2.9M raw weather records and ~9,800 sales transactions into six pre-aggregated, dashboard-ready datasets.
 
-**▶ Live dashboard: [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)**
+**▶ Live dashboard: [proyectos-mindset-code.web.app/etl](https://proyectos-mindset-code.web.app/etl)**
 
 ---
 
@@ -120,8 +120,8 @@ project-sales-weather-etl/
 
 Released under the **[MIT License](LICENSE)**.
 
-- **Live:** [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)
-- **LinkedIn:** [Mindset & Code](https://www.linkedin.com/company/mindset-code)
+- **Live:** [proyectos-mindset-code.web.app/etl](https://proyectos-mindset-code.web.app/etl)
+- **Web:** [mindset-code.com](https://mindset-code.com/es)
 - **Email:** contacto@mindset-code.com
 
 ---
@@ -144,7 +144,7 @@ El insight real rara vez vive en una sola tabla — vive en el **join** entre fu
 
 Demuestra el núcleo del **Data Engineering**: una arquitectura modular Extract → Transform → Load con logging y trazabilidad, que convierte ~2,9M de registros de clima y ~9.800 transacciones de ventas en seis datasets pre-agregados listos para dashboard.
 
-**▶ Dashboard en vivo: [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)**
+**▶ Dashboard en vivo: [proyectos-mindset-code.web.app/etl](https://proyectos-mindset-code.web.app/etl)**
 
 ---
 
@@ -244,10 +244,10 @@ project-sales-weather-etl/
 
 Publicado bajo la **[Licencia MIT](LICENSE)**.
 
-- **En vivo:** [proyectos-personales.web.app/etl](https://proyectos-personales.web.app/etl)
-- **LinkedIn:** [Mindset & Code](https://www.linkedin.com/company/mindset-code)
+- **En vivo:** [proyectos-mindset-code.web.app/etl](https://proyectos-mindset-code.web.app/etl)
+- **Web:** [mindset-code.com](https://mindset-code.com/es)
 - **Email:** contacto@mindset-code.com
 
 ---
 
-*Built by [Mindset & Code](https://github.com/mindset-code) · Data & BI Analyst · MBA · ISC2 CC*
+*Mindset & Code · asesoría fiscal y tecnológica · [mindset-code.com](https://mindset-code.com/es)*
