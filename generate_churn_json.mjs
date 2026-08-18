@@ -31,35 +31,34 @@ function parseCSV(filePath) {
   })
 }
 
-// ── Pre-computed model results (from Python/sklearn run) ──────────────────────
+// ── Model results — copied, never invented ───────────────────────────────────
+//
+// These three files describe a fitted model, and nothing in this script fits
+// one. They used to be hardcoded literals under a comment claiming they came
+// "from a Python/sklearn run", and they did not: the AUC-ROC of 0.8812 that
+// reached the dashboard, the README and the organisation profile could not be
+// reproduced from any code or data in either repository. The real value is
+// 0.703.
+//
+// They are now read from what churn_analysis.py actually wrote. If that output
+// is missing, this script writes the four aggregations it CAN compute from the
+// CSV and skips the other three, rather than publishing a number it made up.
+// Run `python churn_analysis.py` in project-churn-analysis first.
 
-const MODEL_PERFORMANCE = {
-  accuracy:    0.8140,
-  auc_roc:     0.8812,
-  precision:   0.7623,
-  recall:      0.7418,
-  f1:          0.7519,
-  train_size:  1500,
-  test_size:   500,
-  n_customers: 2000,
+const MODEL_DIR = path.join(__dirname, '..', 'project-churn-analysis', 'data')
+
+function leerDelModelo(nombre) {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(MODEL_DIR, nombre), 'utf8'))
+  } catch {
+    console.log(`  aviso: falta ${nombre} en ${MODEL_DIR} — no se genera`)
+    return null
+  }
 }
 
-const CONFUSION_MATRIX = {
-  tn: 327, fp: 47,
-  fn: 46,  tp: 80,  // test set ~500 rows, ~25% churn rate after balancing
-}
-
-const FEATURE_IMPORTANCE = [
-  { feature: 'ContractDuration_Months', coefficient: -0.7834 },
-  { feature: 'TenureMonths',            coefficient: -0.5621 },
-  { feature: 'SubscriptionType_Premium',coefficient: -0.4102 },
-  { feature: 'NumProducts',             coefficient: -0.3287 },
-  { feature: 'SubscriptionType_Standard',coefficient:-0.1543 },
-  { feature: 'TotalUsageHours',         coefficient: -0.1298 },
-  { feature: 'Age',                     coefficient: -0.0621 },
-  { feature: 'MonthlyCharges',          coefficient:  0.3845 },
-  { feature: 'SupportTickets',          coefficient:  0.8923 },
-]
+const MODEL_PERFORMANCE  = leerDelModelo('model_performance.json')
+const CONFUSION_MATRIX   = leerDelModelo('confusion_matrix.json')
+const FEATURE_IMPORTANCE = leerDelModelo('feature_importance.json')
 
 // ── Compute aggregations from CSV ────────────────────────────────────────────
 
@@ -69,29 +68,21 @@ try {
   rows = parseCSV(CSV_PATH)
   console.log(`  ${rows.length} customers loaded`)
 } catch {
-  console.log('  churn_data.csv not found — generating synthetic data inline')
-  // Inline fallback data if CSV not available
-  const seed = (() => { let s = 42; return () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff } })()
-  const choice = (opts, probs) => { let r = seed(), c = 0; for (let i = 0; i < probs.length; i++) { c += probs[i]; if (r < c) return opts[i] } return opts[opts.length-1] }
-  rows = Array.from({ length: 2000 }, (_, i) => {
-    const sub  = choice(['Basic','Standard','Premium'], [0.40, 0.35, 0.25])
-    const cont = choice([1, 12, 24], [0.45, 0.32, 0.23])
-    const tick = Math.min(12, Math.max(0, Math.round(-Math.log(1 - seed()) * 2.2)))
-    const charge = sub === 'Basic' ? 20 + seed()*40 : sub === 'Standard' ? 55 + seed()*45 : 95 + seed()*55
-    const churnP = 0.10 + 0.22*(tick>=5) + 0.18*(charge>100) + 0.15*(cont===1) - 0.12*(sub==='Premium') - 0.06*(cont===24)
-    return {
-      CustomerID: i+1, SubscriptionType: sub, ContractDuration_Months: cont,
-      SupportTickets: tick, MonthlyCharges: Math.round(charge*100)/100,
-      TotalUsageHours: Math.round((30 + seed()*570)*10)/10,
-      TenureMonths: Math.round(1 + seed()*59),
-      NumProducts: choice([1,2,3,4],[0.40,0.30,0.20,0.10]),
-      Churn: seed() < Math.min(0.92, Math.max(0.02, churnP)) ? 1 : 0,
-    }
-  })
+  // There used to be an inline generator here that invented 2.000 customers
+  // when the CSV was missing, and the aggregations it produced then shipped to
+  // the dashboard indistinguishable from real ones. Stopping is the only
+  // honest option: these files describe a dataset, and without the dataset
+  // there is nothing to describe.
+  console.error(`\nNo se pudo leer ${CSV_PATH}`)
+  console.error('Este script agrega el dataset de project-churn-analysis; no lo genera.')
+  console.error('Clona los dos repositorios uno al lado del otro y ejecuta antes:')
+  console.error('    cd ../project-churn-analysis && python generate_data.py && python churn_analysis.py\n')
+  process.exit(1)
 }
 
-MODEL_PERFORMANCE.churn_rate = Math.round(rows.filter(r => r.Churn === 1).length / rows.length * 10000) / 10000
-MODEL_PERFORMANCE.n_customers = rows.length
+// The Python already reports churn_rate and n_customers from the same CSV, so
+// overwriting them here is what produced a model_performance.json that said
+// 1500 train + 500 test and n_customers 1000 in the same breath. Left alone.
 
 // ── Aggregations ──────────────────────────────────────────────────────────────
 
@@ -152,9 +143,9 @@ const save = (name, data) => {
 }
 
 console.log('\nGenerating churn JSON exports...')
-save('model_performance.json',    MODEL_PERFORMANCE)
-save('confusion_matrix.json',     CONFUSION_MATRIX)
-save('feature_importance.json',   FEATURE_IMPORTANCE)
+if (MODEL_PERFORMANCE)  save('model_performance.json',  MODEL_PERFORMANCE)
+if (CONFUSION_MATRIX)   save('confusion_matrix.json',   CONFUSION_MATRIX)
+if (FEATURE_IMPORTANCE) save('feature_importance.json', FEATURE_IMPORTANCE)
 save('churn_by_subscription.json', bySubscription)
 save('churn_by_contract.json',     byContract)
 save('churn_by_tickets.json',      byTickets)
