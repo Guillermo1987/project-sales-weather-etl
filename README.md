@@ -12,6 +12,10 @@
 [![Domain](https://img.shields.io/badge/Domain-Data%20Engineering-16a34a?style=for-the-badge)](.)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
+[![ETL pipeline running: 9,800 transactions aggregated by category and region](docs/captura.jpg)](https://proyectos-mindset-code.web.app/etl)
+
+*[Open the live demo](https://proyectos-mindset-code.web.app/etl)*
+
 ---
 
 ## The problem this solves
