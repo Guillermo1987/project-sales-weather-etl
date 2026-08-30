@@ -68,8 +68,17 @@ const contractionRev  = revenue.map((r,i) => r0(r * (linspace(0.03,0.015,N)[i] +
 const nrr = T.map(i => r4(clip((revenue[i] + expansionRev[i] - contractionRev[i]) / revenue[i], 0.7, 1.4)))
 
 const mktSpend  = revenue.map((r,i) => r0(r * (linspace(0.10,0.07,N)[i] + norm(0,0.006))))
-const mqls      = mktSpend.map((s,i) => Math.max(1, Math.round(s / (linspace(180,110,N)[i] + norm(0,12)))))
-const sqls      = mqls.map((q,i) => Math.max(1, Math.round(q * (linspace(0.28,0.38,N)[i] + norm(0,0.02)))))
+// El embudo se construye HACIA ATRAS, desde los clientes cerrados.
+//
+// Antes se generaba hacia delante -- MQLs desde el gasto, SQLs desde los MQLs --
+// mientras newCust venia de su propia tendencia, sin relacion con ninguno de los
+// dos. Salian meses con 105 clientes cerrados sobre 70 oportunidades
+// cualificadas: un sql_to_won_rate de 1,50 servido en el panel publico.
+// Derivandolos del cierre, el embudo solo puede estrecharse.
+const sqlToWon  = T.map(i => clip(linspace(0.42,0.55,N)[i] + norm(0,0.02), 0.15, 0.80))
+const sqls      = T.map(i => Math.max(1, Math.ceil(newCust[i] / sqlToWon[i])))
+const mqlToSql  = T.map(i => clip(linspace(0.28,0.38,N)[i] + norm(0,0.02), 0.10, 0.90))
+const mqls      = T.map(i => Math.max(1, Math.ceil(sqls[i] / mqlToSql[i])))
 const cac       = mktSpend.map((s,i) => r2(s / Math.max(1, newCust[i])))
 const ltv       = T.map(i => r2(clip((revenue[i] / Math.max(1, cumCust[i])) / Math.max(0.01, churnRate[i]), 100, 999999)))
 const ltvCac    = T.map(i => r2(ltv[i] / Math.max(1, cac[i])))
