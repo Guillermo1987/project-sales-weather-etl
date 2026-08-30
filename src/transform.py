@@ -48,12 +48,28 @@ def join_sales_weather(sales: pd.DataFrame, weather: pd.DataFrame) -> pd.DataFra
     """
     Left-join sales to weather on city + order_date.
     Cities not matched keep sales data with NaN weather cols.
+
+    Dos precauciones que no son cosmeticas:
+
+    - Se trabaja sobre copias. Antes se escribia _city_key directamente sobre
+      los DataFrames del llamante: la columna sobrevivia a la funcion y acababa
+      viajando hasta el CSV del almacen.
+    - Se deduplica el parte meteorologico por (ciudad, dia). clean_weather ya
+      agrega por esa clave, pero si alguien cruza la tabla cruda -- dos
+      estaciones en la misma ciudad y dia -- el LEFT JOIN no falla: duplica cada
+      venta de esa ciudad y la facturacion sale al doble sin un solo aviso.
     """
+    sales = sales.copy()
+    weather = weather.copy()
     sales["_city_key"] = sales["city"].str.title()
     weather["_city_key"] = weather["city"].str.title()
 
+    derecha = weather[["_city_key", "date", "avg_temp_f", "avg_temp_c"]].drop_duplicates(
+        subset=["_city_key", "date"]
+    )
+
     merged = sales.merge(
-        weather[["_city_key", "date", "avg_temp_f", "avg_temp_c"]],
+        derecha,
         left_on=["_city_key", "order_date"],
         right_on=["_city_key", "date"],
         how="left",
